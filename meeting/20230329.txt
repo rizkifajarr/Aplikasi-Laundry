@@ -4,7 +4,7 @@ Rapat 20230329 pukul 10.00
   - definisi user
   - brainstorming fitur-fitur
 
-Rapat 20230329 pukul 16.00
+Rapat 20230329 pukul 20.00
 Usulan user
 - Admin/Pemilik laundry
 - User 
