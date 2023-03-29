@@ -21,4 +21,5 @@ User
 - Biodata pribadi
 - Buat pesanan laundry
 - Track status pesanan laundry
+- pilih paket (hemat atau reguler)
 
