@@ -1,1 +1,5 @@
-rapat pertama berdua bersama kanada belajar cara comit 
+Rapat 20230329 pukul 10.00 
+- rapat pertama, belajar cara commit 
+- merencanakan rapat sore hari jam 16.00 dengan agenda sebagai berikut :
+  - definisi user
+  - brainstorming fitur-fitur
