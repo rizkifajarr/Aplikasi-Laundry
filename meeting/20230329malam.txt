@@ -1,0 +1,24 @@
+Rapat Kedua malam 20:00 
+
+
+nama aplikasi "Loundry Kite"
+
+Usulan user
+- Admin/Pemilik laundry
+- User (jika pilihan hemat harga tetap dan jika pilihan reguler langsung masuk ke vip member)
+- vip member (potongan harga)
+
+Usulan fitur
+Admin
+- CRUD status pesanan laundry (30 hari baju tidak di ambil di luar tanggung jawab pihak loundry)
+- CRUD user laundry
+- CRUD paket laundry ( hemat dan reguler)
+- CRUD pesanan laundry 
+
+
+User
+- Registrasi & Login
+- Biodata pribadi
+- Buat pesanan laundry
+- Track status pesanan laundry
+
