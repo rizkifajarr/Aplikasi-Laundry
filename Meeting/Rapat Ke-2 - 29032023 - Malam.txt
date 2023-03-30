@@ -1,12 +1,11 @@
-Rapat Kedua malam 20:00 
+Rapat Ke-2 malam 20:00 
 
-
-nama aplikasi "Loundry Kite"
+Nama aplikasi "Loundry Kite"
 
 Usulan user
 - Admin/Pemilik laundry
 - User (jika pilihan hemat harga tetap dan jika pilihan reguler langsung masuk ke vip member)
-- vip member (potongan harga)
+- Vip member (potongan harga)
 
 Usulan fitur
 Admin
@@ -22,4 +21,3 @@ User
 - Buat pesanan laundry
 - Track status pesanan laundry
 - pilih paket (hemat atau reguler)
-
