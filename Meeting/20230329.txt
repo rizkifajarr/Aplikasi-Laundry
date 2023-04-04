@@ -1,0 +1,25 @@
+Rapat 20230329 pukul 10.00 
+- rapat pertama, belajar cara commit 
+- merencanakan rapat sore hari jam 16.00 dengan agenda sebagai berikut :
+  - definisi user
+  - brainstorming fitur-fitur
+
+Rapat 20230329 pukul 20.00
+Usulan user
+- Admin/Pemilik laundry
+- User 
+- vip member
+
+Usulan fitur
+Admin
+- CRUD status pesanan laundry
+- CRUD user laundry
+- CRUD paket laundry
+- CRUD pesanan laundry
+
+User
+- Registrasi & Login
+- Biodata pribadi
+- Buat pesanan laundry
+- Track status pesanan laundry
+
