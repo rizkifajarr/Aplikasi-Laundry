@@ -1,10 +1,12 @@
-Rapat 20230329 pukul 10.00 
-- rapat pertama, belajar cara commit 
-- merencanakan rapat sore hari jam 16.00 dengan agenda sebagai berikut :
-  - definisi user
-  - brainstorming fitur-fitur
+Rapat Ke-1 pukul 10.00 
 
-Rapat 20230329 pukul 20.00
+- Rapat pertama, belajar cara commit 
+- Merencanakan rapat sore hari jam 16.00 dengan agenda sebagai berikut :
+  - Definisi user
+  - Brainstorming fitur-fitur
+
+Rapat Ke-2 20230329 pukul 20.00
+
 Usulan user
 - Admin/Pemilik laundry
 - User 
