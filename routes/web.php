@@ -22,8 +22,8 @@ Route::get('/admin', function () {
 });
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
-});
+    return view('dashboard.index');
+})->name('dashboard');
 
 Route::get('/dashboard/pesanan', function () {
     return view('dashboard-pesanan');
