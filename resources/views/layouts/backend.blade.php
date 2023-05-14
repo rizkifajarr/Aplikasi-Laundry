@@ -147,7 +147,7 @@
                 <div data-i18n="Analytics">Dashboard</div>
               </a>
             </li>
-            <li class="menu-item">
+            <li class="menu-item {{ (request()->segment('2')=='' || request()->segment('1')== 'pesanan') ? 'active' : '' }}">
               <a href="/dashboard/pesanan" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">Pesanan</div>
