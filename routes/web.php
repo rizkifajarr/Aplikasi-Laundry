@@ -15,8 +15,8 @@ use App\Http\Controllers\PaketController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-})->name('welcome');
+    return view('index');
+})->name('index');
 
 Route::get('/dashboard', function () {
     return view('dashboard.index');
