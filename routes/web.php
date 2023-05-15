@@ -30,6 +30,10 @@ Route::get('/login', function () {
     return view('login');
 })->name('login');
 
+Route::get('/tambah', function () {
+    return view('dashboard.paket.tambah');
+})->name('paket.tambah');
+
 Route::controller(PaketController::class)->name('paket.')->group(function () {
     Route::get('dashboard/paket', 'index')->name('index');
     Route::post('/simpan', 'saveUser')->name('saveUser');

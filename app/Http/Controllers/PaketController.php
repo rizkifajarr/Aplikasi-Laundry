@@ -14,7 +14,7 @@ class PaketController extends Controller
     public function index(Paket $paket)
     {
         $dataPaket = $paket->get();
-        return view('dashboard.paket', compact('dataPaket'));
+        return view('dashboard.paket.index', compact('dataPaket'));
     }
 
     /**

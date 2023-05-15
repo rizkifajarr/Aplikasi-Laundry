@@ -7,7 +7,7 @@
     
     <!-- Hoverable Table rows -->
     <div class="card">
-        <h5 class="card-header"><a href="{{ route('paket.index')}}"><button type="button" class="btn btn-sm btn-primary">Tambah paket</button></a></h5>
+        <h5 class="card-header"><a href="{{ route('paket.tambah')}}"><button type="button" class="btn btn-sm btn-primary">Tambah paket</button></a></h5>
         <div class="card-body">
             <div class="table-responsive text-nowrap">
                 <table class="table table-hover table-bordered">
