@@ -11,9 +11,10 @@ class PaketController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Paket $paket)
     {
-        //
+        $dataPaket = $paket->get();
+        return view('dashboard.paket', compact('dataPaket'));
     }
 
     /**
