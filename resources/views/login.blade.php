@@ -1,4 +1,4 @@
-@extends('layouts.backend-empty')
+@extends('layouts.dashboard-empty')
 @section('content')
     <!-- Content -->
 
