@@ -73,6 +73,7 @@
           </li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
           <li><a class="getstarted scrollto" href="{{ route('login')}}">Masuk</a></li>
+          <li><a class="getstarted scrollto" href="{{ route('register')}}">Daftar</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->

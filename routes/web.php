@@ -14,9 +14,9 @@ use App\Http\Controllers\PaketController;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-})->name('index');
+// Route::get('/', function () {
+//     return view('index');
+// })->name('index');
 
 Route::get('/dashboard', function () {
     return view('dashboard.index');
@@ -36,6 +36,7 @@ Route::get('/tambah', function () {
 
 Route::controller(PaketController::class)->name('paket.')->group(function () {
     Route::get('dashboard/paket', 'index')->name('index');
+    Route::get('/', 'landingpage')->name('landingpage');
     Route::post('/simpan', 'saveUser')->name('saveUser');
     // Route::get('/tambah', 'tambahForm')->name('tambahForm');
     Route::get('/edit/{user}', 'editForm')->name('editForm');

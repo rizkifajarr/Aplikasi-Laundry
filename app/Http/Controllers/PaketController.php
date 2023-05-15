@@ -16,6 +16,12 @@ class PaketController extends Controller
         $dataPaket = $paket->get();
         return view('dashboard.paket.index', compact('dataPaket'));
     }
+    
+    public function landingpage(Paket $paket)
+    {
+        $dataPaket = $paket->get();
+        return view('index', compact('dataPaket'));
+    }
 
     /**
      * Show the form for creating a new resource.

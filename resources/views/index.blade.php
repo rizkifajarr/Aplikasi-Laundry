@@ -9,8 +9,7 @@
           <h1>Laundry Kite</h1>
           <h2>Solusi praktis untuk semua kebutuhan laundry kiloan Anda!</h2>
           <div class="d-flex justify-content-center justify-content-lg-start">
-            <a href="#pricing" class="btn-get-started scrollto">Pesan Sekarang</a>
-            <a href="{{ route('login')}}" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Masuk</span></a>
+            <a href="#paket" class="btn-get-started scrollto">Pesan Sekarang</a>
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
@@ -28,35 +27,22 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>About Us</h2>
+          <h2>Tentang Kami</h2>
         </div>
 
         <div class="row content">
-          <div class="col-lg-6">
+          <div class="col-lg-12 pt-4 pt-lg-0 text-center">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+                Laundry Kilat adalah mitra tepercaya untuk kebutuhan laundry kiloan Anda. Dengan pengalaman dan keahlian kami, kami memberikan layanan cuci kiloan yang berkualitas tinggi dengan kecepatan dan efisiensi yang luar biasa. Kami menggunakan peralatan modern dan bahan pembersih terbaik untuk memberikan hasil terbaik bagi pakaian Anda. Tim profesional kami siap membantu Anda dengan pelayanan pelanggan yang prima. Bersama Laundry Kilat, nikmati pengalaman laundry kiloan yang mudah, cepat, dan handal.
             </p>
-            <ul>
-              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-              <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
-              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-            </ul>
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0">
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <a href="#" class="btn-learn-more">Learn More</a>
+            <a href="#" class="btn-learn-more text-center">Lebih lanjut ..</a>
           </div>
         </div>
 
       </div>
     </section><!-- End About Us Section -->
 
-    <!-- ======= Why Us Section ======= -->
+    {{-- <!-- ======= Why Us Section ======= -->
     <section id="why-us" class="why-us section-bg">
       <div class="container-fluid" data-aos="fade-up">
 
@@ -162,47 +148,47 @@
         </div>
 
       </div>
-    </section><!-- End Skills Section -->
+    </section><!-- End Skills Section --> --}}
 
     <!-- ======= Services Section ======= -->
     <section id="services" class="services section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Services</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Kelebihan Kami</h2>
+          <p>Mengapa memilih Laundry Kite? Berikut adalah beberapa alasan mengapa kami adalah pilihan yang tepat:</p>
         </div>
 
         <div class="row">
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4><a href="">Lorem Ipsum</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+              <h4><a href="">Kualitas Terbaik</a></h4>
+              <p>Kami menggunakan deterjen dan pewangi berkualitas tinggi yang tidak hanya membersihkan pakaian, tetapi juga menjaga warna dan tekstur kain. Pakaian Anda akan terlihat dan terasa seperti baru setiap kali Anda menggunakannya.</p>
             </div>
           </div>
 
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-file"></i></div>
-              <h4><a href="">Sed ut perspici</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+              <h4><a href="">Harga Terjangkau</a></h4>
+              <p>Kami memahami pentingnya anggaran dalam bisnis dan kehidupan sehari-hari. Oleh karena itu, kami menawarkan harga yang kompetitif untuk layanan laundry kiloan berkualitas tinggi. Anda akan mendapatkan nilai terbaik untuk uang Anda.</p>
             </div>
           </div>
 
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4><a href="">Magni Dolores</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+              <h4><a href="">Kecepatan dan Efisiensi</a></h4>
+              <p>Kami menghargai waktu Anda. Dengan sistem kerja yang terorganisir dengan baik, kami menjamin pengambilan, pencucian, dan pengantaran pakaian Anda dengan cepat dan tepat waktu.</p>
             </div>
           </div>
 
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-layer"></i></div>
-              <h4><a href="">Nemo Enim</a></h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+              <h4><a href="">Layanan Terbaik</a></h4>
+              <p>Tim kami selalu siap membantu Anda dengan segala pertanyaan atau permintaan yang Anda miliki. Kami berkomitmen untuk memberikan pelayanan pelanggan yang prima dan memberikan kepuasan kepada setiap pelanggan.</p>
             </div>
           </div>
 
@@ -217,18 +203,18 @@
 
         <div class="row">
           <div class="col-lg-9 text-center text-lg-start">
-            <h3>Call To Action</h3>
-            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h3>Hubungi Kami</h3>
+            <p>Hubungi kami hari ini dan nikmati pengalaman laundry kiloan yang mudah, cepat, dan handal bersama Laundry Kite. bersih, rapi, dan cepat!</p>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#">Call To Action</a>
+            <a class="cta-btn align-middle" href="#">Hubungi</a>
           </div>
         </div>
 
       </div>
     </section><!-- End Cta Section -->
 
-    <!-- ======= Portfolio Section ======= -->
+    {{-- <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
       <div class="container" data-aos="fade-up">
 
@@ -339,24 +325,24 @@
         </div>
 
       </div>
-    </section><!-- End Portfolio Section -->
+    </section><!-- End Portfolio Section --> --}}
 
     <!-- ======= Team Section ======= -->
     <section id="team" class="team section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Team</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Tim Kami</h2>
+          <p>Kami percaya bahwa kepuasan pelanggan adalah kunci kesuksesan kami. Itulah sebabnya tim kami selalu berusaha untuk memberikan layanan yang memenuhi harapan Anda. Kecepatan, ketepatan waktu, dan keamanan pakaian Anda adalah prioritas utama kami.</p>
         </div>
 
         <div class="row">
 
-          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="member d-flex align-items-start">
               <div class="pic"><img src="{{ asset('assets/img/team/team-1.jpg') }}" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>Walter White</h4>
+                <h4>Rizki Fajar</h4>
                 <span>Chief Executive Officer</span>
                 <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
                 <div class="social">
@@ -369,11 +355,11 @@
             </div>
           </div>
 
-          <div class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
             <div class="member d-flex align-items-start">
               <div class="pic"><img src="{{ asset('assets/img/team/team-2.jpg') }}" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>Sarah Jhonson</h4>
+                <h4>Putri Nirwana</h4>
                 <span>Product Manager</span>
                 <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
                 <div class="social">
@@ -386,30 +372,13 @@
             </div>
           </div>
 
-          <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
             <div class="member d-flex align-items-start">
               <div class="pic"><img src="{{ asset('assets/img/team/team-3.jpg') }}" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
+                <h4>Kanada Kurniawan</h4>
+                <span>Chief Technology Officer</span>
                 <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="{{ asset('assets/img/team/team-4.jpg') }}" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
-                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
@@ -426,63 +395,31 @@
     </section><!-- End Team Section -->
 
     <!-- ======= Pricing Section ======= -->
-    <section id="pricing" class="pricing">
+    <section id="paket" class="pricing">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Pricing</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Paket</h2>
+          <p>Laundry Kite memahami bahwa kesibukan Anda, dan mencuci pakaian mungkin bukan prioritas utama. Oleh karena itu, kami menyediakan layanan laundry kiloan yang cepat, efisien, dan terjangkau.</p>
         </div>
 
         <div class="row">
+            @foreach($dataPaket as $index => $paket)
 
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="box">
-              <h3>Free Plan</h3>
-              <h4><sup>$</sup>0<span>per month</span></h4>
-              <ul>
-                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-                <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-              </ul>
-              <a href="#" class="buy-btn">Get Started</a>
-            </div>
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="box">
+                <h3>{{ $paket->nama }}</h3>
+                <h4><sup>Rp</sup>.{{ $paket->harga }},-<span>per kilo</span></h4>
+                <ul>
+                  <li><i class="bx bx-check"></i> Selesai dalam {{ $paket->waktu }} hari</li>
+                  <li><i class="bx bx-check"></i> Cusi dan lipat</li>
+                  <li><i class="bx bx-check"></i> Termasuk antar jemput pakaian</li>
+                </ul>
+                <a href="#" class="buy-btn">Pesan</a>
+              </div>
+            </div>                        
+            @endforeach
           </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
-            <div class="box featured">
-              <h3>Business Plan</h3>
-              <h4><sup>$</sup>29<span>per month</span></h4>
-              <ul>
-                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-                <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
-                <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
-              </ul>
-              <a href="#" class="buy-btn">Get Started</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <div class="box">
-              <h3>Developer Plan</h3>
-              <h4><sup>$</sup>49<span>per month</span></h4>
-              <ul>
-                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-                <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
-                <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
-              </ul>
-              <a href="#" class="buy-btn">Get Started</a>
-            </div>
-          </div>
-
-        </div>
-
       </div>
     </section><!-- End Pricing Section -->
 
