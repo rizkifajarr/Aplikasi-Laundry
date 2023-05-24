@@ -16,7 +16,7 @@
                 </div>
                 {{-- <!-- /Logo -->
                 <h4 class="mb-2">Solusi praktis untuk semua kebutuhan laundry kiloan Anda!</h4> --}}
-                <p class="mb-4 text-center">Silakan masukkan isi form untuk melakukan pendaftaran</p>
+                <p class="mb-4 text-center">Silakan isi form untuk melakukan pendaftaran</p>
   
                 <form id="formAuthentication" class="mb-3" action="index.html" method="POST">
                   <div class="mb-3">
