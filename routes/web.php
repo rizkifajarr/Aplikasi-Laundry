@@ -36,10 +36,8 @@ Route::get('/tambah', function () {
 
 Route::controller(PaketController::class)->name('paket.')->group(function () {
     Route::get('dashboard/paket', 'index')->name('index');
-    Route::get('/', 'landingpage')->name('landingpage');
-    Route::post('/simpan', 'saveUser')->name('saveUser');
-    // Route::get('/tambah', 'tambahForm')->name('tambahForm');
-    Route::get('/edit/{user}', 'editForm')->name('editForm');
-    Route::patch('/update/{user}', 'updateUser')->name('updateUser');
-    Route::delete('/hapus/{user}', 'deleteUser')->name('deleteUser');
+    Route::post('/simpan', 'create')->name('simpan');
+    Route::get('/edit/{paket}', 'edit')->name('edit');
+    Route::patch('/update/{paket}', 'update')->name('update');
+    Route::delete('/hapus/{paket}', 'delete')->name('delete');
 });

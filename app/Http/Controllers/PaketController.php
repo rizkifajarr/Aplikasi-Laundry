@@ -26,11 +26,18 @@ class PaketController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function create(Paket $paket, StorePaketRequest $paketRequest)
     {
-        //
+        $data = $paketRequest->all();
+        $paket->create($data);
+        return redirect(route('paket.index'))->with('success', 'Data user berhasil ditambahkan');
     }
 
+    public function delete(Paket $paket)
+    {
+        $paket->delete();
+        return back()->with(['success' => 'Data berhasil dihapus']);
+    }
     /**
      * Store a newly created resource in storage.
      */
@@ -52,15 +59,18 @@ class PaketController extends Controller
      */
     public function edit(Paket $paket)
     {
-        //
+        return view('dashboard.paket.edit', compact('paket'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdatePaketRequest $request, Paket $paket)
+    public function update(Paket $paket, UpdatePaketRequest $request)
     {
-        //
+        $data = $request->all();
+        // dd($data);
+        $paket->update($data);
+        return redirect(route('paket.index'))->with('success', 'Data user berhasil diubah');
     }
 
     /**
