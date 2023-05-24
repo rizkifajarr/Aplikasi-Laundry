@@ -57,9 +57,9 @@ class PaketController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Paket $paket)
+    public function ubah(Paket $paket)
     {
-        return view('dashboard.paket.edit', compact('paket'));
+        return view('dashboard.paket.ubah', compact('paket'));
     }
 
     /**
