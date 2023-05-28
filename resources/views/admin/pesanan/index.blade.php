@@ -1,44 +1,45 @@
-@extends('layouts.dashboard')
+@extends('layouts.admin')
 @section('content')
 <!-- Content -->
 
 <div class="container-xxl flex-grow-1 container-p-y">
-    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Paket Layanan</span> Laundry Kite</h4>
+    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Pesanan</span> Laundry Kite</h4>
     
     <!-- Hoverable Table rows -->
     <div class="card">
-        <h5 class="card-header"><a href="{{ route('paket.tambah')}}"><button type="button" class="btn btn-sm btn-primary">Tambah paket</button></a></h5>
+        <h5 class="card-header"><a href="{{ route('pesanan.tambah')}}"><button type="button" class="btn btn-sm btn-primary">Tambah pesanan</button></a></h5>
         <div class="card-body">
             <div class="table-responsive text-nowrap">
                 <table class="table table-hover table-bordered">
                     <thead>
                         <tr> 
                             <th>No</th>
+                            <th>Nama</th>
                             <th>Paket</th>
-                            <th>Biaya</th>
-                            <th>Waktu</th>
                             <th>Status</th>
+                            <th>Jumlah</th>
+                            <th>Tanggal Pemesanan</th>
+                            <th>Tanggal Selesai</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
                     <tbody class="table-border-bottom-0">
-                        @foreach($dataPaket as $index => $paket)
+                        @foreach($dataPesanan as $index => $pesanan)
                         <tr>
                             <td>{{ ++$index }}</td>
-                            <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>{{ $paket->nama }}</strong></td>
-                            <td>Rp.{{ $paket->harga }},-</td>
-                            <td>{{ $paket->waktu }} hari</td>
-                            <td><span class="badge bg-label-primary me-1">Active</span></td>
+                            <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>{{ $pesanan->user_id }}</strong></td>
+                            <td>{{ $pesanan->paket_id }}</td>
+                            <td>{{ $pesanan->status_id }}</td>
                             <td>
                                 <div class="dropdown">
                                     <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
                                         <i class="bx bx-dots-vertical-rounded"></i>
                                     </button>
                                     <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="{{route('paket.ubah',[$paket->id])}}">
+                                        <a class="dropdown-item" href="{{route('pesanan.ubah',[$pesanan->id])}}">
                                             <i class="bx bx-edit-alt me-1"></i> Edit
                                         </a >
-                                        <form onsubmit="return confirm('Data pengguna akan dihapus?')" action=" {{route('paket.delete',$paket->id)}}" method="POST">
+                                        <form onsubmit="return confirm('Data pengguna akan dihapus?')" action=" {{route('pesanan.delete',$pesanan->id)}}" method="POST">
                                             @csrf
                                             @method('DELETE')
                                             <button type=" submit" class="dropdown-item">

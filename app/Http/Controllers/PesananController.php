@@ -13,9 +13,9 @@ class PesananController extends Controller
      */
     public function index()
     {
-        //
+        $dataPesanan = $pesanan->get();
+        return view('admin.pesanan.index', compact('dataPesanan'));
     }
-
     /**
      * Show the form for creating a new resource.
      */
