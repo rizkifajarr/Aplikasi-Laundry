@@ -36,6 +36,7 @@ Route::get('/tambah', function () {
 
 Route::controller(PaketController::class)->name('paket.')->group(function () {
     Route::get('dashboard/paket', 'index')->name('index');
+    Route::get('/', 'landingpage')->name('landingpage');
     Route::post('/simpan', 'create')->name('simpan');
     Route::get('/ubah/{paket}', 'ubah')->name('ubah');
     Route::patch('/update/{paket}', 'update')->name('update');

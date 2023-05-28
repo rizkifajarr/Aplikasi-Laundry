@@ -21,8 +21,10 @@ class StorePaketRequest extends FormRequest
      */
     public function rules(): array
     {
-        return [
-            //
+        return [            
+            'nama' => 'required|string|max:255',
+            'harga' => 'required|integer',
+            'waktu' => 'required|integer',
         ];
     }
 }

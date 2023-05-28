@@ -50,11 +50,12 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link   scrollto" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+          <li><a class="nav-link scrollto" href="#about">Tentang</a></li>
+          <li><a class="nav-link scrollto" href="#kelebihan">Kelebihan</a></li>
+          <li><a class="nav-link   scrollto" href="#hubungi">Kontak</a></li>
+          <li><a class="nav-link scrollto" href="#tim">Tim</a></li>
+          <li><a class="nav-link scrollto" href="#paket">Paket</a></li>
+          {{-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
               <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
@@ -70,8 +71,7 @@
               <li><a href="#">Drop Down 3</a></li>
               <li><a href="#">Drop Down 4</a></li>
             </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          </li> --}}
           <li><a class="getstarted scrollto" href="{{ route('login')}}">Masuk</a></li>
           <li><a class="getstarted scrollto" href="{{ route('register')}}">Daftar</a></li>
         </ul>
@@ -105,7 +105,7 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-3 col-md-6 footer-contact">
+          <div class="col-lg-6 col-md-6 footer-contact">
             <h3>Laundry Kite</h3>
             <p>
                 Jl. Jenderal Ahmad Yani No.111, <br>
@@ -117,7 +117,7 @@
             </p>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
+          {{-- <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
@@ -137,9 +137,9 @@
               <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
             </ul>
-          </div>
+          </div> --}}
 
-          <div class="col-lg-3 col-md-6 footer-links">
+          <div class="col-lg-6 col-md-6 footer-links">
             <h4>Sosial Media</h4>
             <p>Ikuti kami melalui sosial media berikut</p>
             <div class="social-links mt-3">
