@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\pesanan;
-use App\Http\Requests\StorepesananRequest;
-use App\Http\Requests\UpdatepesananRequest;
+use App\Models\Pesanan;
+use App\Http\Requests\StorePesananRequest;
+use App\Http\Requests\UpdatePesananRequest;
 
 class PesananController extends Controller
 {
@@ -27,7 +27,7 @@ class PesananController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StorepesananRequest $request)
+    public function store(StorePesananRequest $request)
     {
         //
     }
@@ -35,7 +35,7 @@ class PesananController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(pesanan $pesanan)
+    public function show(Pesanan $pesanan)
     {
         //
     }
@@ -43,7 +43,7 @@ class PesananController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(pesanan $pesanan)
+    public function edit(Pesanan $pesanan)
     {
         //
     }
@@ -51,7 +51,7 @@ class PesananController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdatepesananRequest $request, pesanan $pesanan)
+    public function update(UpdatePesananRequest $request, Pesanan $pesanan)
     {
         //
     }
@@ -59,7 +59,7 @@ class PesananController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(pesanan $pesanan)
+    public function destroy(Pesanan $pesanan)
     {
         //
     }

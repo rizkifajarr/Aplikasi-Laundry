@@ -10,7 +10,7 @@
               <div class="card-body">
                 <!-- Logo -->
                 <div class="app-brand justify-content-center">
-                  <a href="index.html" class="app-brand-link gap-2 mt-4">
+                  <a href="/" class="app-brand-link gap-2 mt-4">
                     <img src="{{ asset('backend-assets/img/logo.png') }}" height="40px"/>
                   </a>
                 </div>
