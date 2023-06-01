@@ -3,26 +3,30 @@
 <!-- Content -->
 
 <div class="container-xxl flex-grow-1 container-p-y">
-    <h4 class="fw-bold py-3 mb-4">Edit Paket</h4>    
+    <h4 class="fw-bold py-3 mb-4">Edit User</h4>    
     <!-- Hoverable Table rows -->
               <div class="row">
                 <div class="col-8">
                   <div class="card mb-4">
                     <div class="card-body">
-                      <form action="{{route('paket.update',$paket->id)}}" method="POST">
+                      <form action="{{route('user.update',$user->id)}}" method="POST">
                         @csrf
                         @method('patch')
                         <div class="mb-3">
-                          <label class="form-label" for="basic-default-fullname">Nama Paket</label>
-                          <input name="nama" type="text" class="form-control" id="namaPaket" placeholder="Reguler" value="{{ old('nama') ?? $paket->nama}}"/>
+                          <label class="form-label" for="basic-default-fullname">Nama Lengkap</label>
+                          <input name="nama" type="text" class="form-control" id="nama" value="{{ old('nama') ?? $user->nama}}"/>
                         </div>
                         <div class="mb-3">
-                          <label class="form-label" for="basic-default-company">Biaya</label>
-                          <input name="harga" type="text" class="form-control" id="basic-default-company" placeholder="15000" value="{{ old('harga') ?? $paket->harga}}"/>
+                          <label class="form-label" for="basic-default-company">Alamat</label>
+                          <textarea name="alamat" type="text" class="form-control" id="alamat">{{ old('alamat') ?? $user->alamat}}</textarea>
                         </div>
                         <div class="mb-3">
-                          <label class="form-label" for="basic-default-company">Waktu (hari)</label>
-                          <input name="waktu" type="text" class="form-control" id="basic-default-company" placeholder="3"  value="{{ old('waktu') ?? $paket->waktu}}"/>
+                          <label class="form-label" for="basic-default-company">Handphone</label>
+                          <input name="hp" type="tel" class="form-control" id="hp" placeholder="3"  value="{{ old('waktu') ?? $user->hp}}"/>
+                        </div>
+                        <div class="mb-3">
+                          <label class="form-label" for="basic-default-company">Email</label>
+                          <input name="email" type="email" class="form-control" id="email" value="{{ old('email') ?? $user->email}}" />
                         </div>
                         <button type="submit" class="btn btn-primary">Ubah</button>
                       </form>

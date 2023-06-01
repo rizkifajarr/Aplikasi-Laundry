@@ -3,7 +3,7 @@
 <!-- Content -->
 
 <div class="container-xxl flex-grow-1 container-p-y">
-    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Paket Layanan</span> Laundry Kite</h4>
+    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">User</span> Laundry Kite</h4>
     
     <!-- Hoverable Table rows -->
     <div class="card">
@@ -30,23 +30,23 @@
                             <td>{{ $user->hp }}</td>
                             <td>{{ $user->email }}</td>
                             <td>
-                                <div class="dropdown">
-                                    <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                                        <i class="bx bx-dots-vertical-rounded"></i>
-                                    </button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="{{route('user.ubah',[$user->id])}}">
-                                            <i class="bx bx-edit-alt me-1"></i> Edit
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text border-0">
+                                        <a class="btn btn-sm" href="{{route('user.ubah',[$user->id])}}">
+                                        <i class="bx bx-edit-alt me-1"></i> Edit
                                         </a >
+                                    </span>
+                                    <span class="input-group-text border-0">
                                         <form onsubmit="return confirm('Data pengguna akan dihapus?')" action=" {{route('user.delete',$user->id)}}" method="POST">
                                             @csrf
                                             @method('DELETE')
-                                            <button type=" submit" class="dropdown-item">
+                                            <button type="submit" class="btn btn-sm">
                                                 <i class="bx bx-trash me-1"></i> Delete
                                             </button>
                                         </form>
-                                    </div>
+                                    </span>
                                 </div>
+                                
                             </td>
                         </tr>                        
                         @endforeach

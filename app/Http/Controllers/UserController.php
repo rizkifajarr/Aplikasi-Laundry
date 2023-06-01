@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
-use Illuminate\Http\Request;
+use App\Http\Requests\StoreUserRequest;
+use App\Http\Requests\UpdateUserRequest;
 
 class UserController extends Controller
 {
@@ -20,13 +21,36 @@ class UserController extends Controller
     {
         return view('admin.user.tambah');
     }
+
+    public function create(User $user, StoreUserRequest $userRequest)
+    {
+        $data = $userRequest->all();
+        $data['password'] = bcrypt($userRequest->password);
+        $user->create($data);
+        return redirect(route('user.index'))->with('success', 'Data user berhasil ditambahkan');
+    }
+
+    public function delete(User $user)
+    {
+        $user->delete();
+        return back()->with(['success' => 'Data berhasil dihapus']);
+    }
+
+    public function ubah(User $user)
+    {
+        return view('admin.user.ubah', compact('user'));
+    }
+
+    public function update(User $user, UpdateUserRequest $request)
+    {
+        $data = $request->all();
+        // dd($data);
+        $user->update($data);
+        return redirect(route('user.index'))->with('success', 'Data user berhasil diubah');
+    }
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
-    {
-        //
-    }
 
     /**
      * Display the specified resource.
@@ -39,10 +63,6 @@ class UserController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, User $user)
-    {
-        //
-    }
 
     /**
      * Remove the specified resource from storage.
