@@ -41,18 +41,10 @@ class PaketController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StorePaketRequest $request)
-    {
-        //
-    }
 
     /**
      * Display the specified resource.
      */
-    public function show(Paket $paket)
-    {
-        //
-    }
 
     /**
      * Show the form for editing the specified resource.

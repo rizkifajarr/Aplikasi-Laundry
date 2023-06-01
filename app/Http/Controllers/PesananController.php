@@ -35,12 +35,30 @@ class PesananController extends Controller
         return redirect(route('pesanan.index'))->with('success', 'Data pesanan berhasil ditambahkan');
     }
 
+    public function ubah(Pesanan $pesanan,User $user,Paket $paket)
+    {
+        $dataUser = $user->get();
+        $dataPaket = $paket->get();
+        return view('admin.pesanan.ubah', compact('pesanan','dataPaket','dataUser'));
+    }
+
+    /**
+     * Update the specified resource in storage.
+     */
+    public function update(Pesanan $pesanan, UpdatePesananRequest $request)
+    {
+        $data = $request->all();
+        // dd($data);
+        $pesanan->update($data);
+        return redirect(route('pesanan.index'))->with('success', 'Data pesanan berhasil diubah');
+    }
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StorePesananRequest $request)
+    public function delete(Pesanan $pesanan)
     {
-        //
+        $pesanan->delete();
+        return back()->with(['success' => 'Data berhasil dihapus']);
     }
 
     /**
@@ -66,19 +84,5 @@ class PesananController extends Controller
     {
         //
     }
-    public function ubah(Pesanan $pesanan)
-    {
-        return view('admin.pesanan.ubah', compact('pesanan'));
-    }
 
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Pesanan $pesanan, UpdatePesananRequest $request)
-    {
-        $data = $request->all();
-        // dd($data);
-        $pesanan->update($data);
-        return redirect(route('pesanan.index'))->with('success', 'Data user berhasil diubah');
-    }
 }
