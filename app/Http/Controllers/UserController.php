@@ -30,6 +30,15 @@ class UserController extends Controller
         return redirect(route('user.index'))->with('success', 'Data user berhasil ditambahkan');
     }
 
+    //fungsi untuk fitur register di frontend
+    public function simpan(User $user, StoreUserRequest $userRequest)
+    {
+        $data = $userRequest->all();
+        $data['password'] = bcrypt($userRequest->password);
+        $user->create($data);
+        return redirect(route('login'))->with('success', 'Data user berhasil ditambahkan');
+    }
+
     public function delete(User $user)
     {
         $user->delete();

@@ -59,6 +59,7 @@ Route::controller(UserController::class)->name('user.')->group(function () {
     Route::get('admin/user', 'index')->name('index');
     Route::get('/admin/user/tambah', 'tambah')->name('tambah');
     Route::post('admin/user/simpan', 'create')->name('simpan');
+    Route::post('/simpan', 'simpan')->name('simpan-frontend');
     Route::get('admin/user/ubah/{user}', 'ubah')->name('ubah');
     Route::patch('admin/user/update/{user}', 'update')->name('update');
     Route::delete('admin/user/hapus/{user}', 'delete')->name('delete');

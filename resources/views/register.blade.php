@@ -18,7 +18,8 @@
                 <h4 class="mb-2">Solusi praktis untuk semua kebutuhan laundry kiloan Anda!</h4> --}}
                 <p class="mb-4 text-center">Silakan isi form untuk melakukan pendaftaran</p>
   
-                <form id="formAuthentication" class="mb-3" action="index.html" method="POST">
+                <form id="formAuthentication" class="mb-3" action="{{route('user.simpan-frontend')}}" method="POST">
+                        @csrf
                   <div class="mb-3">
                     <label for="username" class="form-label">Nama Lengkap</label>
                     <input
@@ -35,11 +36,11 @@
                   </div>
                   <div class="mb-3">
                     <label for="handphone" class="form-label">Handphone</label>
-                    <input type="text" class="form-control" id="handphone" name="handphone" />
+                    <input type="tel" class="form-control" id="hp" name="hp" placeholder="0812345678910"/>
                   </div>
                   <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
-                    <input type="text" class="form-control" id="email" name="email" />
+                    <input type="text" class="form-control" id="email" name="email" placeholder="email@kamu.com"/>
                   </div>
                   <div class="mb-3 form-password-toggle">
                     <label class="form-label" for="password">Password</label>
@@ -65,12 +66,12 @@
                       </label>
                     </div>
                   </div> --}}
-                  <button class="btn btn-primary d-grid w-100">Daftar</button>
+                  <button type="submit" class="btn btn-primary d-grid w-100">Daftar</button>
                 </form>
   
                 <p class="text-center">
                   <span>Sudah punya akun?</span>
-                  <a href="auth-login-basic.html">
+                  <a href="{{route('login')}}">
                     <span>Masuk ke sini</span>
                   </a>
                 </p>
