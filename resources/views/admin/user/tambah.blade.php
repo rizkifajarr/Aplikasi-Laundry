@@ -9,19 +9,27 @@
                 <div class="col-8">
                   <div class="card mb-4">
                     <div class="card-body">
-                      <form action="{{route('paket.simpan')}}" method="POST">
+                      <form action="{{route('user.simpan')}}" method="POST">
                         @csrf
                         <div class="mb-3">
-                          <label class="form-label" for="basic-default-fullname">Nama Paket</label>
-                          <input name="nama" type="text" class="form-control" id="namaPaket" placeholder="Reguler" />
+                          <label class="form-label" for="basic-default-fullname">Nama</label>
+                          <input name="nama" type="text" class="form-control" id="nama" placeholder="Reguler" />
                         </div>
                         <div class="mb-3">
-                          <label class="form-label" for="basic-default-company">Biaya</label>
+                          <label class="form-label" for="basic-default-company">Alamat</label>
                           <input name="harga" type="text" class="form-control" id="basic-default-company" placeholder="15000" />
                         </div>
                         <div class="mb-3">
-                          <label class="form-label" for="basic-default-company">Waktu (hari)</label>
+                          <label class="form-label" for="basic-default-company">Handphone</label>
                           <input name="waktu" type="text" class="form-control" id="basic-default-company" placeholder="3" />
+                        </div>
+                        <div class="mb-3">
+                          <label class="form-label" for="basic-default-company">Email</label>
+                          <input name="waktu" type="text" class="form-control" id="basic-default-company" placeholder="3" />
+                        </div>
+                        <div class="mb-3">
+                          <label class="form-label" for="basic-default-company">Password</label>
+                          <input name="password" type="password" class="form-control" id="password" placeholder="3" />
                         </div>
                         <button type="submit" class="btn btn-primary">Tambahkan</button>
                       </form>

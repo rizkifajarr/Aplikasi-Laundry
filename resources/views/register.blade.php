@@ -1,4 +1,4 @@
-@extends('layouts.dashboard-empty')
+@extends('layouts.admin-empty')
 @section('content')
 <!-- Content -->
 
@@ -20,12 +20,12 @@
   
                 <form id="formAuthentication" class="mb-3" action="index.html" method="POST">
                   <div class="mb-3">
-                    <label for="username" class="form-label">Username</label>
+                    <label for="username" class="form-label">Nama Lengkap</label>
                     <input
                       type="text"
                       class="form-control"
-                      id="username"
-                      name="username"
+                      id="nama"
+                      name="nama"
                       autofocus
                     />
                   </div>

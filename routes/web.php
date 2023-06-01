@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\PaketController;
+use App\Http\Controllers\PesananController;
 
 /*
 |--------------------------------------------------------------------------
@@ -44,14 +46,20 @@ Route::get('/admin/paket/tambah', function () {
 })->name('paket.tambah');
 
 
-Route::controller(PasananController::class)->name('pesanan.')->group(function () {
+Route::controller(PesananController::class)->name('pesanan.')->group(function () {
     Route::get('admin/pesanan', 'index')->name('index');
+    Route::get('/admin/pesanan/tambah', 'tambah')->name('tambah');
     Route::post('admin/pesanan/simpan', 'create')->name('simpan');
-    Route::get('admin/pesanan/ubah/{paket}', 'ubah')->name('ubah');
-    Route::patch('admin/pesanan/update/{paket}', 'update')->name('update');
-    Route::delete('admin/pesanan/hapus/{paket}', 'delete')->name('delete');
+    Route::get('admin/pesanan/ubah/{pesanan}', 'ubah')->name('ubah');
+    Route::patch('admin/pesanan/update/{pesanan}', 'update')->name('update');
+    Route::delete('admin/pesanan/hapus/{pesanan}', 'delete')->name('delete');
 });
 
-Route::get('/admin/pesanan/tambah', function () {
-    return view('admin.pesanan.tambah');
-})->name('pesanan.tambah');
+Route::controller(UserController::class)->name('user.')->group(function () {
+    Route::get('admin/user', 'index')->name('index');
+    Route::get('/admin/user/tambah', 'tambah')->name('tambah');
+    Route::post('admin/user/simpan', 'create')->name('simpan');
+    Route::get('admin/user/ubah/{user}', 'ubah')->name('ubah');
+    Route::patch('admin/user/update/{user}', 'update')->name('update');
+    Route::delete('admin/user/hapus/{user}', 'delete')->name('delete');
+});
