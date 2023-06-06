@@ -1,4 +1,7 @@
 @extends('layouts.admin')
+@section('judul')
+User
+@endsection
 @section('content')
 <!-- Content -->
 

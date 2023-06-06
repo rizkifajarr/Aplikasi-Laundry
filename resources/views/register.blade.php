@@ -1,4 +1,7 @@
 @extends('layouts.admin-empty')
+@section('judul')
+Register
+@endsection
 @section('content')
 <!-- Content -->
 

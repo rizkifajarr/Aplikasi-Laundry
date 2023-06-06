@@ -1,4 +1,7 @@
 @extends('layouts.admin')
+@section('judul')
+Tambah User
+@endsection
 @section('content')
 <!-- Content -->
 
