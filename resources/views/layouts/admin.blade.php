@@ -27,7 +27,13 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Dashboard - Analytics | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
+    <title>      
+      @if(request()->is('/'))
+          Laundry Kite
+      @else
+          @yield('judul') | Laundry Kite
+      @endif 
+    </title>
 
     <meta name="description" content="" />
 
@@ -93,7 +99,7 @@
               </a>
             </li>
             <li class="menu-item">
-              <a href="index.html" class="menu-link">
+              <a href="{{ route('pesanan.index')}}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">Pesanan</div>
               </a>
@@ -105,7 +111,7 @@
               </a>
             </li>
             <li class="menu-item">
-              <a href="index.html" class="menu-link">
+              <a href="{{ route('user.index')}}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">User</div>
               </a>

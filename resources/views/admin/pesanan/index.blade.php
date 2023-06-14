@@ -1,4 +1,7 @@
 @extends('layouts.admin')
+@section('judul')
+Pesanan
+@endsection
 @section('content')
 <!-- Content -->
 
@@ -18,8 +21,7 @@
                             <th>Paket</th>
                             <th>Status</th>
                             <th>Jumlah</th>
-                            <th>Tanggal Pemesanan</th>
-                            <th>Tanggal Selesai</th>
+                            <th>Waktu Pemesanan</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
@@ -27,9 +29,11 @@
                         @foreach($dataPesanan as $index => $pesanan)
                         <tr>
                             <td>{{ ++$index }}</td>
-                            <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>{{ $pesanan->user_id }}</strong></td>
-                            <td>{{ $pesanan->paket_id }}</td>
-                            <td>{{ $pesanan->status_id }}</td>
+                            <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>{{ $pesanan->user->nama }}</strong></td>
+                            <td>{{ $pesanan->paket->nama }}</td>
+                            <td>{{ $pesanan->status }}</td>
+                            <td>{{ $pesanan->jumlah }} kg</td>
+                            <td>{{ $pesanan->created_at }}</td>
                             <td>
                                 <div class="dropdown">
                                     <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
@@ -37,13 +41,13 @@
                                     </button>
                                     <div class="dropdown-menu">
                                         <a class="dropdown-item" href="{{route('pesanan.ubah',[$pesanan->id])}}">
-                                            <i class="bx bx-edit-alt me-1"></i> Edit
+                                            <i class="bx bx-edit-alt"></i> Edit
                                         </a >
                                         <form onsubmit="return confirm('Data pengguna akan dihapus?')" action=" {{route('pesanan.delete',$pesanan->id)}}" method="POST">
                                             @csrf
                                             @method('DELETE')
                                             <button type=" submit" class="dropdown-item">
-                                                <i class="bx bx-trash me-1"></i> Delete
+                                                <i class="bx bx-trash"></i> Delete
                                             </button>
                                         </form>
                                     </div>

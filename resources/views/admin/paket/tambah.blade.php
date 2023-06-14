@@ -1,4 +1,7 @@
 @extends('layouts.admin')
+@section('judul')
+Tambah Paket
+@endsection
 @section('content')
 <!-- Content -->
 

@@ -15,9 +15,9 @@ return new class extends Migration
             $table->id()->unique();
             $table->foreignId('user_id')->constrained();
             $table->foreignId('paket_id')->constrained();
-            $table->foreignId('status_id')->constrained();
+            $table->string('status');
             $table->integer('jumlah');
-            $table->dateTime('tanggal_selesai', $precision = 0);
+            // $table->dateTime('tanggal_selesai', $precision = 0);
             $table->timestamps();
         });
     }

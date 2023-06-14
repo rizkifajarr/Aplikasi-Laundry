@@ -1,4 +1,7 @@
 @extends('layouts.admin')
+@section('judul')
+Beranda Admin
+@endsection
 @section('content')
 <!-- Content -->
 

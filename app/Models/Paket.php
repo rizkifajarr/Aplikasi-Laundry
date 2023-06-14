@@ -16,4 +16,9 @@ class Paket extends Model
         'harga',
         'waktu',
     ];
+
+    public function Pesanan()
+    {
+        return $this->hasMany(Pesanan::class);
+    }
 }

@@ -1,4 +1,7 @@
 @extends('layouts.admin')
+@section('judul')
+Tambah Pesanan
+@endsection
 @section('content')
 <!-- Content -->
 
@@ -9,20 +12,38 @@
                 <div class="col-8">
                   <div class="card mb-4">
                     <div class="card-body">
-                      <form action="{{route('paket.simpan')}}" method="POST">
+                      <form action="{{route('pesanan.simpan')}}" method="POST">
                         @csrf
                         <div class="mb-3">
-                          <label class="form-label" for="basic-default-fullname">Nama Paket</label>
-                          <input name="nama" type="text" class="form-control" id="namaPaket" placeholder="Reguler" />
+                        <input type="hidden" id="status" name="status" value="sedang dikerjakan">
+
+                        <div class="mb-3">
+                          <label for="exampleFormControlSelect1" class="form-label">Pengguna</label>
+                          <select class="form-select" id="user_id"  name="user_id" aria-label="Default select example">
+                            <option selected="">Pilih salah satu</option>
+                            @foreach($dataUser as $index => $user)
+                            <option value="{{ $user->id }}">{{ $user->nama }}</option>
+                            @endforeach
+                          </select>
+                        </div>
+
+                        <div class="mb-3">
+                          <label for="exampleFormControlSelect1" class="form-label">Paket</label>
+                          <select class="form-select" id="paket_id"  name="paket_id" aria-label="Default select example">
+                            <option selected="">Pilih salah satu</option>
+                            @foreach($dataPaket as $index => $paket)
+                            <option value="{{ $paket->id }}">{{ $paket->nama }}</option>
+                            @endforeach
+                          </select>
                         </div>
                         <div class="mb-3">
-                          <label class="form-label" for="basic-default-company">Biaya</label>
-                          <input name="harga" type="text" class="form-control" id="basic-default-company" placeholder="15000" />
+                          <label class="form-label" for="basic-default-company">Jumlah</label>
+                          <input name="jumlah" type="text" class="form-control" id="basic-default-company" placeholder="3" />
                         </div>
-                        <div class="mb-3">
-                          <label class="form-label" for="basic-default-company">Waktu (hari)</label>
-                          <input name="waktu" type="text" class="form-control" id="basic-default-company" placeholder="3" />
-                        </div>
+                        {{-- <div class="mb-3">
+                          <label class="form-label" for="basic-default-company">Total biaya</label>
+                          <div id="biaya">Rp. 0,-</div>
+                        </div> --}}
                         <button type="submit" class="btn btn-primary">Tambahkan</button>
                       </form>
                     </div>
