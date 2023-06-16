@@ -92,13 +92,13 @@
 
           <ul class="menu-inner py-1">
             <!-- Dashboard -->
-            <li class="menu-item {{ Request::is('admin') ? 'active' : '' }}">
+            <li class="menu-item {{ Request::is('dashboard') ? 'active' : '' }}">
               <a href="{{ route('admin')}}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">Dashboard</div>
               </a>
             </li>
-            <li class="menu-item">
+            <li class="menu-item {{ Request::is('dashboard/pesanan*') ? 'active' : '' }}">
               <a href="{{ route('pesanan.index')}}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">Pesanan</div>
@@ -108,13 +108,13 @@
             <li class="menu-header small text-uppercase">
               <span class="menu-header-text">Admin</span>
             </li>
-            <li class="menu-item">
+            <li class="menu-item {{ Request::is('dashboard/paket*') ? 'active' : '' }}">
               <a href="{{ route('paket.index')}}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">Paket</div>
               </a>
             </li>
-            <li class="menu-item">
+            <li class="menu-item {{ Request::is('dashboard/user*') ? 'active' : '' }}">
               <a href="{{ route('user.index')}}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">User</div>

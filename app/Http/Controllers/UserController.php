@@ -17,12 +17,12 @@ class UserController extends Controller
     public function index(User $user)
     {
         $dataUser = $user->get();
-        return view('admin.user.index', compact('dataUser'));
+        return view('dashboard.user.index', compact('dataUser'));
     }
 
     public function tambah()
     {
-        return view('admin.user.tambah');
+        return view('dashboard.user.tambah');
     }
 
     public function create(User $user, StoreUserRequest $userRequest)
@@ -50,7 +50,7 @@ class UserController extends Controller
 
     public function ubah(User $user)
     {
-        return view('admin.user.ubah', compact('user'));
+        return view('dashboard.user.ubah', compact('user'));
     }
 
     public function update(User $user, UpdateUserRequest $request)
@@ -71,7 +71,7 @@ class UserController extends Controller
         $credentials = $request->only('email', 'password');
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
-            return redirect()->intended('admin') 
+            return redirect()->intended('dashboard') 
                 ->withSuccess('You have Successfully loggedin');
         }
         //return redirect("login")->withErrors('Oppes! You have entered invalid credentials');

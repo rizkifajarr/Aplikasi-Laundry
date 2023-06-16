@@ -14,7 +14,7 @@ class PaketController extends Controller
     public function index(Paket $paket)
     {
         $dataPaket = $paket->get();
-        return view('admin.paket.index', compact('dataPaket'));
+        return view('dashboard.paket.index', compact('dataPaket'));
     }
     
     public function landingpage(Paket $paket)
@@ -51,7 +51,7 @@ class PaketController extends Controller
      */
     public function ubah(Paket $paket)
     {
-        return view('admin.paket.ubah', compact('paket'));
+        return view('dashboard.paket.ubah', compact('paket'));
     }
 
     /**

@@ -16,7 +16,7 @@ class Admin
     public function handle(Request $request, Closure $next): Response
     {
         if (auth()->user()->admin == 0){
-            return redirect()->route('admin.tak-berhak');
+            return redirect()->route('dashboard.tak-berhak');
         }
         return $next($request);
     }

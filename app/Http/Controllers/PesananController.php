@@ -21,13 +21,13 @@ class PesananController extends Controller
         if (Gate::allows('admin-gate')) {
             $dataPesanan = $pesanan->get();
             // dd($dataPesanan);
-            return view('admin.pesanan.index', compact('dataPesanan'));
+            return view('dashboard.pesanan.index', compact('dataPesanan'));
         } else {
             $userId = Auth::id();
             $dataPesanan = $pesanan->where('user_id', $userId)->get();
             // $dataPesanan = Pesanan::where('user_id', $userId);
             // dd($dataPesanan);
-            return view('admin.pesanan.index', compact('dataPesanan'));
+            return view('dashboard.pesanan.index', compact('dataPesanan'));
         }
     }
     
@@ -35,7 +35,7 @@ class PesananController extends Controller
     {
         $dataUser = $user->get();
         $dataPaket = $paket->get();
-        return view('admin.pesanan.tambah', compact('dataPaket','dataUser'));
+        return view('dashboard.pesanan.tambah', compact('dataPaket','dataUser'));
     }
     /**
      * Show the form for creating a new resource.
@@ -59,7 +59,7 @@ class PesananController extends Controller
     {
         $dataUser = $user->get();
         $dataPaket = $paket->get();
-        return view('admin.pesanan.ubah', compact('pesanan','dataPaket','dataUser'));
+        return view('dashboard.pesanan.ubah', compact('pesanan','dataPaket','dataUser'));
     }
 
     /**
