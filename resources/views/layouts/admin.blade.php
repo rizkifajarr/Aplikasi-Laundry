@@ -92,7 +92,7 @@
 
           <ul class="menu-inner py-1">
             <!-- Dashboard -->
-            <li class="menu-item active">
+            <li class="menu-item {{ Request::is('admin') ? 'active' : '' }}">
               <a href="{{ route('admin')}}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">Dashboard</div>
@@ -105,6 +105,9 @@
               </a>
             </li>
             @can('admin-gate')
+            <li class="menu-header small text-uppercase">
+              <span class="menu-header-text">Admin</span>
+            </li>
             <li class="menu-item">
               <a href="{{ route('paket.index')}}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
@@ -120,7 +123,7 @@
             @endcan
 
             <!-- Layouts -->
-            <li class="menu-item">
+            {{-- <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-layout"></i>
                 <div data-i18n="Layouts">Layouts</div>
@@ -430,7 +433,7 @@
                 <i class="menu-icon tf-icons bx bx-file"></i>
                 <div data-i18n="Documentation">Documentation</div>
               </a>
-            </li>
+            </li> --}}
           </ul>
         </aside>
         <!-- / Menu -->
@@ -452,31 +455,15 @@
             <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
               <!-- Search -->
               <div class="navbar-nav align-items-center">
-                <div class="nav-item d-flex align-items-center">
-                  <i class="bx bx-search fs-4 lh-0"></i>
-                  <input
-                    type="text"
-                    class="form-control border-0 shadow-none"
-                    placeholder="Search..."
-                    aria-label="Search..."
-                  />
+                <div class="nav-item d-flex align-items-center">                
+                  <h4 class="mb-0">@yield('judul')</h4>
                 </div>
               </div>
               <!-- /Search -->
 
               <ul class="navbar-nav flex-row align-items-center ms-auto">
                 <!-- Place this tag where you want the button to render. -->
-                <li class="nav-item lh-1 me-3">
-                  <a
-                    class="github-button"
-                    href="https://github.com/themeselection/sneat-html-admin-template-free"
-                    data-icon="octicon-star"
-                    data-size="large"
-                    data-show-count="true"
-                    aria-label="Star themeselection/sneat-html-admin-template-free on GitHub"
-                    >Star</a
-                  >
-                </li>
+               
 
                 <!-- User -->
                 <li class="nav-item navbar-dropdown dropdown-user dropdown">
@@ -484,7 +471,7 @@
                     Halo, {{ auth()->user()->nama }}
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end">
-                    <li>
+                    {{-- <li>
                       <a class="dropdown-item" href="#">
                         <div class="d-flex">
                           <div class="flex-shrink-0 me-3">
@@ -498,10 +485,10 @@
                           </div>
                         </div>
                       </a>
-                    </li>
-                    <li>
+                    </li> --}}
+                    {{-- <li>
                       <div class="dropdown-divider"></div>
-                    </li>
+                    </li> --}}
                     {{-- <li>
                       <a class="dropdown-item" href="#">
                         <i class="bx bx-user me-2"></i>

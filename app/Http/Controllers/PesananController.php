@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use App\Models\Paket;
 use App\Models\Pesanan;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Gate;
 use App\Http\Requests\StorePesananRequest;
 use App\Http\Requests\UpdatePesananRequest;
 
@@ -15,8 +18,17 @@ class PesananController extends Controller
      */
     public function index(Pesanan $pesanan)
     {
-        $dataPesanan = $pesanan->get();
-        return view('admin.pesanan.index', compact('dataPesanan'));
+        if (Gate::allows('admin-gate')) {
+            $dataPesanan = $pesanan->get();
+            // dd($dataPesanan);
+            return view('admin.pesanan.index', compact('dataPesanan'));
+        } else {
+            $userId = Auth::id();
+            $dataPesanan = $pesanan->where('user_id', $userId)->get();
+            // $dataPesanan = Pesanan::where('user_id', $userId);
+            // dd($dataPesanan);
+            return view('admin.pesanan.index', compact('dataPesanan'));
+        }
     }
     
     public function tambah(User $user,Paket $paket)
@@ -30,9 +42,17 @@ class PesananController extends Controller
      */
     public function create(Pesanan $pesanan, StorePesananRequest $pesananRequest)
     {
-        $data = $pesananRequest->all();
-        $pesanan->create($data);
-        return redirect(route('pesanan.index'))->with('success', 'Data pesanan berhasil ditambahkan');
+        if (Gate::allows('admin-gate')) {
+            $data = $pesananRequest->all();
+            $pesanan->create($data);
+            return redirect(route('pesanan.index'))->with('success', 'Data pesanan berhasil ditambahkan');
+        } else {
+            $userId = Auth::id();
+            $data = $pesananRequest->all();
+            $data['user_id'] = $userId;
+            $pesanan->create($data);
+            return redirect(route('pesanan.index'))->with('success', 'Data pesanan berhasil ditambahkan');
+        }
     }
 
     public function ubah(Pesanan $pesanan,User $user,Paket $paket)

@@ -5,8 +5,7 @@ Tambah Pesanan
 @section('content')
 <!-- Content -->
 
-<div class="container-xxl flex-grow-1 container-p-y">
-    <h4 class="fw-bold py-3 mb-4">Tambah Pesanan</h4>    
+<div class="container-xxl flex-grow-1 container-p-y">    
     <!-- Hoverable Table rows -->
               <div class="row">
                 <div class="col-8">
@@ -16,7 +15,7 @@ Tambah Pesanan
                         @csrf
                         <div class="mb-3">
                         <input type="hidden" id="status" name="status" value="sedang dikerjakan">
-
+                        @can('admin-gate')
                         <div class="mb-3">
                           <label for="exampleFormControlSelect1" class="form-label">Pengguna</label>
                           <select class="form-select" id="user_id"  name="user_id" aria-label="Default select example">
@@ -26,6 +25,7 @@ Tambah Pesanan
                             @endforeach
                           </select>
                         </div>
+                        @endcan
 
                         <div class="mb-3">
                           <label for="exampleFormControlSelect1" class="form-label">Paket</label>

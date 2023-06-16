@@ -1,6 +1,10 @@
 @extends('layouts.admin')
 @section('judul')
+@can('admin-gate')
 Beranda Admin
+@else
+Beranda 
+@endcan
 @endsection
 @section('content')
 <!-- Content -->
