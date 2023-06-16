@@ -44,18 +44,7 @@ Route::controller(UserController::class)->name('user.')->group(function () {
 Route::middleware('auth')->group(function () {
     // Rute-rute yang memerlukan autentikasi
     Route::get('/admin', function () { return view('admin.index'); })->name('admin');
-    
-    Route::controller(PaketController::class)->name('paket.')->group(function () {
-        Route::get('admin/paket', 'index')->name('index');
-        Route::post('admin/paket/simpan', 'create')->name('simpan');
-        Route::get('admin/paket/ubah/{paket}', 'ubah')->name('ubah');
-        Route::patch('admin/paket/update/{paket}', 'update')->name('update');
-        Route::delete('admin/paket/hapus/{paket}', 'delete')->name('delete');
-    });
-    
-    Route::get('/admin/paket/tambah', function () {
-        return view('admin.paket.tambah');
-    })->name('paket.tambah');
+    Route::get('/admin/tak-berhak', function () { return view('admin.tak-berhak'); })->name('admin.tak-berhak');
     
     
     Route::controller(PesananController::class)->name('pesanan.')->group(function () {
@@ -66,17 +55,24 @@ Route::middleware('auth')->group(function () {
         Route::patch('admin/pesanan/update/{pesanan}', 'update')->name('update');
         Route::delete('admin/pesanan/hapus/{pesanan}', 'delete')->name('delete');
     });
-
     
-    Route::controller(UserController::class)->name('user.')->group(function () {
-        Route::get('admin/user', 'index')->name('index');
-        Route::get('/admin/user/tambah', 'tambah')->name('tambah');
-        Route::get('admin/user/ubah/{user}', 'ubah')->name('ubah');
-        Route::patch('admin/user/update/{user}', 'update')->name('update');
-        Route::delete('admin/user/hapus/{user}', 'delete')->name('delete');
-        Route::post('admin/user/simpan', 'create')->name('simpan');
+    Route::middleware('admin')->group(function () {
+        Route::controller(PaketController::class)->prefix('admin/paket')->name('paket.')->group(function () {
+            Route::get('/', 'index')->name('index');
+            Route::post('/simpan', 'create')->name('simpan');
+            Route::get('/ubah/{paket}', 'ubah')->name('ubah');
+            Route::patch('/update/{paket}', 'update')->name('update');
+            Route::delete('/hapus/{paket}', 'delete')->name('delete');
+            Route::get('/tambah', function () { return view('admin.paket.tambah'); })->name('tambah');
+        });    
+        
+        Route::controller(UserController::class)->name('user.')->group(function () {
+            Route::get('admin/user', 'index')->name('index');
+            Route::get('/admin/user/tambah', 'tambah')->name('tambah');
+            Route::get('admin/user/ubah/{user}', 'ubah')->name('ubah');
+            Route::patch('admin/user/update/{user}', 'update')->name('update');
+            Route::delete('admin/user/hapus/{user}', 'delete')->name('delete');
+            Route::post('admin/user/simpan', 'create')->name('simpan');
+        });
     });
-    // Route::middleware('admin')->group(function () {
-    //     // Rute yang memerlukan autentikasi dan otorisasi admin
-    // });
 });

@@ -104,6 +104,7 @@
                 <div data-i18n="Analytics">Pesanan</div>
               </a>
             </li>
+            @can('admin-gate')
             <li class="menu-item">
               <a href="{{ route('paket.index')}}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
@@ -116,6 +117,7 @@
                 <div data-i18n="Analytics">User</div>
               </a>
             </li>
+            @endcan
 
             <!-- Layouts -->
             <li class="menu-item">
@@ -478,10 +480,8 @@
 
                 <!-- User -->
                 <li class="nav-item navbar-dropdown dropdown-user dropdown">
-                  <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
-                    <div class="avatar avatar-online">
-                      <img src="{{ asset('backend-assets/img/avatars/1.png')}}" alt class="w-px-40 h-auto rounded-circle" />
-                    </div>
+                  <a class="nav-link dropdown-toggle" href="javascript:void(0);" data-bs-toggle="dropdown">
+                    Halo, {{ auth()->user()->nama }}
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end">
                     <li>
