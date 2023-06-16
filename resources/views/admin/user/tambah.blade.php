@@ -15,6 +15,14 @@ Tambah User
                       <form action="{{route('user.simpan')}}" method="POST">
                         @csrf
                         <div class="mb-3">
+                          <label for="exampleFormControlSelect1" class="form-label">Apakah User Ini Admin?</label>
+                          <select class="form-select" id="admin"  name="admin" aria-label="Default select example">
+                            <option selected="0">Pilih salah satu</option>
+                            <option value="1">Ya</option>
+                            <option value="0">Tidak</option>
+                          </select>
+                        </div>
+                        <div class="mb-3">
                           <label class="form-label" for="basic-default-fullname">Nama Lengkap</label>
                           <input name="nama" type="text" class="form-control" id="nama" placeholder="nama lengkap" />
                         </div>

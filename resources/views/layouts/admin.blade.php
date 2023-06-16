@@ -448,7 +448,7 @@
             </div>
 
             <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
-              <!-- Search -->tes
+              <!-- Search -->
               <div class="navbar-nav align-items-center">
                 <div class="nav-item d-flex align-items-center">
                   <i class="bx bx-search fs-4 lh-0"></i>
@@ -493,7 +493,7 @@
                             </div>
                           </div>
                           <div class="flex-grow-1">
-                            <span class="fw-semibold d-block">John Doe</span>
+                            <span class="fw-semibold d-block">{{ auth()->user()->nama }}</span>
                             <small class="text-muted">Admin</small>
                           </div>
                         </div>
@@ -502,7 +502,7 @@
                     <li>
                       <div class="dropdown-divider"></div>
                     </li>
-                    <li>
+                    {{-- <li>
                       <a class="dropdown-item" href="#">
                         <i class="bx bx-user me-2"></i>
                         <span class="align-middle">My Profile</span>
@@ -525,12 +525,12 @@
                     </li>
                     <li>
                       <div class="dropdown-divider"></div>
-                    </li>
+                    </li> --}}
                     <li>
-                      <a class="dropdown-item" href="auth-login-basic.html">
-                        <i class="bx bx-power-off me-2"></i>
-                        <span class="align-middle">Log Out</span>
-                      </a>
+                      <form action="{{ route('user.logout') }}" method="post">
+                        @csrf
+                      <button type="submit" class="dropdown-item"><i class="bi bi-box-arrow-right"></i> Logout</button>
+                      </form>
                     </li>
                   </ul>
                 </li>

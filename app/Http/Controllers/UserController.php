@@ -3,8 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use Illuminate\Support\Facades\Auth;
+use App\Http\Requests\AuthUserRequest;
 use App\Http\Requests\StoreUserRequest;
 use App\Http\Requests\UpdateUserRequest;
+use Illuminate\Support\Facades\Redirect;
 
 class UserController extends Controller
 {
@@ -57,27 +60,29 @@ class UserController extends Controller
         $user->update($data);
         return redirect(route('user.index'))->with('success', 'Data user berhasil diubah');
     }
-    /**
-     * Store a newly created resource in storage.
-     */
-
-    /**
-     * Display the specified resource.
-     */
-    public function show(User $user)
+   
+    public function otentifikasi(AuthUserRequest $request)
     {
-        //
+        $request->validate([
+            'email' => 'required|email:dns',
+            'password' => 'required',
+        ]);
+
+        $credentials = $request->only('email', 'password');
+        if (Auth::attempt($credentials)) {
+            $request->session()->regenerate();
+            return redirect()->intended('admin') 
+                ->withSuccess('You have Successfully loggedin');
+        }
+        //return redirect("login")->withErrors('Oppes! You have entered invalid credentials');
+        return Redirect::back()->with('loginError','Login gagal!');        //
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(User $user)
+    public function logout()
     {
-        //
+        Auth::logout();
+        request()->session()->invalidate();
+        request()->session()->regenerateToken();
+        return redirect(route('paket.landingpage'));
     }
 }

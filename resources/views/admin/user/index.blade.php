@@ -21,6 +21,7 @@ User
                             <th>Alamat</th>
                             <th>Handphone</th>
                             <th>Email</th>
+                            <th>Admin</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
@@ -32,6 +33,13 @@ User
                             <td>{{ $user->alamat }}</td>
                             <td>{{ $user->hp }}</td>
                             <td>{{ $user->email }}</td>
+                            <td>
+                                @if ( $user->admin == 1)
+                                Ya
+                                @else
+                                Bukan
+                                @endif                            
+                            </td>
                             <td>
                                 <div class="input-group mb-3">
                                     <span class="input-group-text border-0">

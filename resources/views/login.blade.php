@@ -17,19 +17,34 @@
                         <!-- /Logo -->
                         <p class="mb-4 text-center">Selamat datang di Laundry Kite</p>
 
-                        <form id="formAuthentication" class="mb-3" action="index.html" method="POST">
+                        @if(session()->has('success'))
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                          {{ session('success') }}
+                          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                      @endif
+                  
+                      @if(session()->has('loginError'))
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                          {{ session('loginError') }}
+                          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                      @endif
+
+                        <form id="formAuthentication" class="mb-3" action="{{ route('user.otentifikasi') }}" method="POST">
+                            @csrf
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email</label>
-                                <input type="text" class="form-control" id="email" name="email"
-                                    placeholder="Masukkan email Anda" autofocus />
+                                <input type="text" id="email_address" class="form-control @error('email') is-invalid @enderror" name="email" autofocus required value="{{ old('email') }}">
+                                @error('email')
+                                <div class="invalid-feedback">
+                                    {{ $message }}
+                                </div>
+                                @enderror    
                             </div>
                             <div class="mb-3 form-password-toggle">
-                                <div class="input-group input-group-merge">
-                                    <input type="password" id="password" class="form-control" name="password"
-                                        placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
-                                        aria-describedby="password" />
-                                    <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
-                                </div>
+                                <label for="email" class="form-label">Password</label>
+                                <input type="password" id="password" class="form-control" name="password" required>
                             </div>
                             <div class="mb-3">
                                 <button class="btn btn-primary d-grid w-100" type="submit">Masuk</button>
