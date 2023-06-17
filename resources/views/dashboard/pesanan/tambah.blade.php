@@ -8,7 +8,7 @@ Tambah Pesanan
 <div class="container-xxl flex-grow-1 container-p-y">    
     <!-- Hoverable Table rows -->
               <div class="row">
-                <div class="col-8">
+                <div class="col-lg-8 col-sm-12 col-md-12">
                   <div class="card mb-4">
                     <div class="card-body">
                       <form action="{{route('pesanan.simpan')}}" method="POST">

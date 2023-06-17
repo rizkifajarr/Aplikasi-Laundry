@@ -140,7 +140,7 @@
 
                     <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
                         <div class="member d-flex align-items-start">
-                            <div class="pic"><img src="{{ asset('assets/img/team/team-1.jpg') }}" class="img-fluid"
+                            <div class="pic"><img src="{{ asset('assets/img/team/rizki.jpeg') }}" class="img-fluid"
                                     alt=""></div>
                             <div class="member-info">
                                 <h4>Rizki Fajar Setyawan</h4>
@@ -158,7 +158,7 @@
 
                     <div class="col-lg-4 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
                         <div class="member d-flex align-items-start">
-                            <div class="pic"><img src="{{ asset('assets/img/team/team-2.jpg') }}" class="img-fluid"
+                            <div class="pic"><img src="{{ asset('assets/img/team/putri.jpeg') }}" class="img-fluid"
                                     alt=""></div>
                             <div class="member-info">
                                 <h4>Putri Nirwana</h4>

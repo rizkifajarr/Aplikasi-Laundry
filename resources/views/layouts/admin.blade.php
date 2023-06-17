@@ -121,6 +121,12 @@
               </a>
             </li>
             @endcan
+            <li class="menu-item">
+              <form action="{{ route('user.logout') }}" method="post">
+                @csrf
+              <a type="submit" class="menu-link"><i class="menu-icon tf-icons bx bx-power-off me-2"></i> Logout</a>
+              </form>
+            </li>
 
             <!-- Layouts -->
             {{-- <li class="menu-item">
@@ -466,7 +472,7 @@
                
 
                 <!-- User -->
-                <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                <li class="nav-item d-none d-md-block navbar-dropdown dropdown-user dropdown">
                   <a class="nav-link dropdown-toggle" href="javascript:void(0);" data-bs-toggle="dropdown">
                     Halo, {{ auth()->user()->nama }}
                   </a>
@@ -516,7 +522,7 @@
                     <li>
                       <form action="{{ route('user.logout') }}" method="post">
                         @csrf
-                      <button type="submit" class="dropdown-item"><i class="bi bi-box-arrow-right"></i> Logout</button>
+                      <button type="submit" class="dropdown-item"><i class="bx bx-power-off me-2"></i> Logout</button>
                       </form>
                     </li>
                   </ul>
