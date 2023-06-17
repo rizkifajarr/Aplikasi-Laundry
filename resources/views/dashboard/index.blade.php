@@ -10,27 +10,35 @@ Beranda
 <!-- Content -->
             <div class="container-xxl flex-grow-1 container-p-y">
               <div class="row">
+                
                 <div class="col-lg-8 mb-12 order-0">
                   <div class="card">
                     <div class="d-flex align-items-end row">
-                      <div class="col-sm-7">
-                        <div class="card-body">
+                      <div class="col-12">
+                        <div class="card-body pb-0">
                           <h5 class="card-title text-primary">Selamat Datang {{ auth()->user()->nama }}! 🎉</h5>
-                          <p class="mb-4">
+                          <p class="mb-0">
                             @can('admin-gate')
                               @if ($jumlahPesanan == 0)
                               Saat ini belum ada pesanan masuk.                     
                               @else
-                              Saat ini terdapat <span class="fw-bold">{{ $jumlahPesanan }}</span> pesanan. Silakan cek dibagian <a href="{{ route('pesanan.index')}}">pesanan</a>.    
+                              Saat ini terdapat <span class="fw-bold">{{ $jumlahPesanan }}</span> pesanan.  
                               @endif  
+                              Silakan cek dibagian <a href="{{ route('pesanan.index')}}">pesanan</a>.   
                             @else
                               @if ($jumlahPesanan == 0)
-                              Saat ini kamu tidak memiliki pesanan                          
+                              Saat ini kamu tidak memiliki pesanan. 
                               @else
-                              Saat ini kamu memiliki <span class="fw-bold">{{ $jumlahPesanan }}</span> pesanan. Silakan cek dibagian <a href="{{ route('pesanan.index')}}">pesanan</a>.    
+                              Saat ini kamu memiliki <span class="fw-bold">{{ $jumlahPesanan }}</span> pesanan. Silakan cek dibagian <a href="{{ route('pesanan.index')}}">pesanan</a>. 
                               @endif  
+                              Kamu juga dapat menambahkan pesanan di <a class="btn btn-xs btn-primary" href="{{ route('pesanan.tambah')}}">Pesan Sekarang</a>. 
                             @endcan                                                      
                           </p>
+                        </div>
+                      </div>
+                      <div class="col-sm-7">
+                        <div class="card-body">                          
+                          
                           <p>Profil Anda</p>
                           <p>Nama :<br><strong>{{ auth()->user()->nama }}</strong></p>
                           <p>HP :<br><strong>{{ auth()->user()->hp }}</strong></p>

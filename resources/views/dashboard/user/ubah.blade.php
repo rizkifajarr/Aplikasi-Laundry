@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 @section('judul')
-Edit User
+{{ $judul }}
 @endsection
 @section('content')
 <!-- Content -->

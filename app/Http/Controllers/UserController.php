@@ -68,10 +68,16 @@ class UserController extends Controller
     {
         $userId = Auth::id();
         if (Gate::allows('admin-gate')) {
-            return view('dashboard.user.ubah', compact('user'));
+            if ($user->id == $userId ) {
+                $judul = "Ubah Profil";
+            }else {
+                $judul = "Ubah User";
+            }   
+            return view('dashboard.user.ubah', compact('user','judul'));
         } else {
             if ($user->id == $userId ) {
-                return view('dashboard.user.ubah', compact('user'));
+                $judul = "Ubah Profil";
+                return view('dashboard.user.ubah', compact('user','judul'));
             }else {
                 return redirect(route('dashboard.tak-berhak'));
             }   
