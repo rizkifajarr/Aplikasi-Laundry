@@ -43,10 +43,18 @@ Route::controller(UserController::class)->name('user.')->group(function () {
 
 Route::middleware('auth')->group(function () {
     // Rute-rute yang memerlukan autentikasi
-    Route::get('/dashboard', function () { return view('dashboard.index'); })->name('admin');
-    Route::get('/dashboard/tak-berhak', function () { return view('dashboard.tak-berhak'); })->name('admin.tak-berhak');
-    
-    
+    // Route::get('/dashboard', function () { return view('dashboard.index'); })->name('admin');
+    // Route::get('/dashboard/tak-berhak', function () { return view('dashboard.tak-berhak'); })->name('admin.tak-berhak');
+    Route::controller(UserController::class)->prefix('dashboard/user')->name('user.')->group(function () {
+        Route::get('/ubah/{user}', 'ubah')->name('ubah');
+        Route::patch('/update/{user}', 'update')->name('update');
+    });
+
+    Route::controller(UserController::class)->prefix('dashboard')->group(function () {
+        Route::get('/', 'indexAdmin')->name('admin');
+        Route::get('/tak-berhak', function () { return view('dashboard.tak-berhak'); })->name('dashboard.tak-berhak');
+    });
+
     Route::controller(PesananController::class)->prefix('dashboard/pesanan')->name('pesanan.')->group(function () {
         Route::get('/', 'index')->name('index');
         Route::get('/tambah', 'tambah')->name('tambah');
@@ -69,8 +77,6 @@ Route::middleware('auth')->group(function () {
         Route::controller(UserController::class)->prefix('dashboard/user')->name('user.')->group(function () {
             Route::get('/', 'index')->name('index');
             Route::get('/tambah', 'tambah')->name('tambah');
-            Route::get('/ubah/{user}', 'ubah')->name('ubah');
-            Route::patch('/update/{user}', 'update')->name('update');
             Route::delete('/hapus/{user}', 'delete')->name('delete');
             Route::post('/simpan', 'create')->name('simpan');
         });

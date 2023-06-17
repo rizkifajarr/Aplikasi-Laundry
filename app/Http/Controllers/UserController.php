@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Gate;
 use App\Http\Requests\AuthUserRequest;
 use App\Http\Requests\StoreUserRequest;
 use App\Http\Requests\UpdateUserRequest;
@@ -18,6 +19,14 @@ class UserController extends Controller
     {
         $dataUser = $user->get();
         return view('dashboard.user.index', compact('dataUser'));
+    }
+
+    public function indexAdmin(User $user)
+    {
+        $userId = Auth::id();
+        $dataUser = $user->where('id', $userId)->get();
+        return view('dashboard.index', compact('dataUser'));
+        
     }
 
     public function tambah()
@@ -58,7 +67,13 @@ class UserController extends Controller
         $data = $request->all();
         // dd($data);
         $user->update($data);
-        return redirect(route('user.index'))->with('success', 'Data user berhasil diubah');
+
+        if (Gate::allows('admin-gate')) {
+            return redirect(route('user.index'))->with('success', 'Data user berhasil diubah');
+        } else {
+            return redirect(route('admin'))->with('success', 'Data user berhasil diubah');
+        }
+        
     }
    
     public function otentifikasi(AuthUserRequest $request)
