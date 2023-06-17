@@ -59,7 +59,17 @@ class UserController extends Controller
 
     public function ubah(User $user)
     {
-        return view('dashboard.user.ubah', compact('user'));
+        $userId = Auth::id();
+        if (Gate::allows('admin-gate')) {
+            return view('dashboard.user.ubah', compact('user'));
+        } else {
+            if ($user->id == $userId ) {
+                return view('dashboard.user.ubah', compact('user'));
+            }else {
+                return redirect(route('dashboard.tak-berhak'));
+            }   
+        }
+        
     }
 
     public function update(User $user, UpdateUserRequest $request)
