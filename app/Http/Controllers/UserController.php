@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Gate;
 use App\Http\Requests\AuthUserRequest;
 use App\Http\Requests\StoreUserRequest;
 use App\Http\Requests\UpdateUserRequest;
+use App\Models\Pesanan;
 use Illuminate\Support\Facades\Redirect;
 
 class UserController extends Controller
@@ -21,11 +22,17 @@ class UserController extends Controller
         return view('dashboard.user.index', compact('dataUser'));
     }
 
-    public function indexAdmin(User $user)
+    public function indexAdmin(User $user,Pesanan $pesanan)
     {
         $userId = Auth::id();
         $dataUser = $user->where('id', $userId)->get();
-        return view('dashboard.index', compact('dataUser'));
+        if (Gate::allows('admin-gate')) {
+            $jumlahPesanan = $pesanan->count();
+        } else {
+            $jumlahPesanan = $pesanan->where('user_id', $userId)->count();
+        }
+        
+        return view('dashboard.index', compact('dataUser','jumlahPesanan'));
         
     }
 

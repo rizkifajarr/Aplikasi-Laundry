@@ -105,3 +105,10 @@
   text-align: center;
   margin-top: 1rem;
 }
+.li-menu{
+  border: 0px;
+  background-color:#fff;
+}
+.bg-menu-theme .menu-header:before {
+  width: 0rem;
+}

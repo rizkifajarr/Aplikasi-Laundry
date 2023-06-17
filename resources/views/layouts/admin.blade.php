@@ -100,7 +100,7 @@
             </li>
             <li class="menu-item {{ Request::is('dashboard/pesanan*') ? 'active' : '' }}">
               <a href="{{ route('pesanan.index')}}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                <i class="menu-icon tf-icons bx bx-layout"></i>
                 <div data-i18n="Analytics">Pesanan</div>
               </a>
             </li>
@@ -110,13 +110,13 @@
             </li>
             <li class="menu-item {{ Request::is('dashboard/paket*') ? 'active' : '' }}">
               <a href="{{ route('paket.index')}}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                <i class="menu-icon tf-icons bx bx-dock-top"></i>
                 <div data-i18n="Analytics">Paket</div>
               </a>
             </li>
             <li class="menu-item {{ Request::is('dashboard/user*') ? 'active' : '' }}">
               <a href="{{ route('user.index')}}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                <i class="menu-icon tf-icons bx bx-cube-alt"></i>
                 <div data-i18n="Analytics">User</div>
               </a>
             </li>
@@ -124,7 +124,7 @@
             <li class="menu-item">
               <form action="{{ route('user.logout') }}" method="post">
                 @csrf
-              <a type="submit" class="menu-link"><i class="menu-icon tf-icons bx bx-power-off me-2"></i> Logout</a>
+              <button type="submit" class="menu-link li-menu"><i class="menu-icon tf-icons bx bx-power-off me-2"></i> Logout</button>
               </form>
             </li>
 
@@ -151,7 +151,7 @@
               <!-- Search -->
               <div class="navbar-nav align-items-center">
                 <div class="nav-item d-flex align-items-center">                
-                  <h5 class="mb-0">@yield('judul')</h5>
+                  <h5 class="mb-0 card-title text-primary">@yield('judul')</h5>
                 </div>
               </div>
               <!-- /Search -->
@@ -236,9 +236,9 @@
                     document.write(new Date().getFullYear());
                   </script>
                   , made with ❤️ by 
-                  <a href="/about" target="_blank" class="footer-link fw-bolder">Rizki, Putri & Kanada</a>
+                  <a class="footer-link fw-bolder">Rizki, Putri & Kanada</a>
                 </div>
-                <div>
+                {{-- <div>
                   <a href="https://themeselection.com/license/" class="footer-link me-4" target="_blank">License</a>
                   <a href="https://themeselection.com/" target="_blank" class="footer-link me-4">More Themes</a>
 
@@ -255,7 +255,7 @@
                     class="footer-link me-4"
                     >Support</a
                   >
-                </div>
+                </div> --}}
               </div>
             </footer>
             <!-- / Footer -->
