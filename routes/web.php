@@ -16,12 +16,6 @@ use App\Http\Controllers\PesananController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('index');
-// })->name('index');
-
-
-
 Route::get('/register', function () {
     return view('register');
 })->name('register');
@@ -42,9 +36,6 @@ Route::controller(UserController::class)->name('user.')->group(function () {
 });
 
 Route::middleware('auth')->group(function () {
-    // Rute-rute yang memerlukan autentikasi
-    // Route::get('/dashboard', function () { return view('dashboard.index'); })->name('admin');
-    // Route::get('/dashboard/tak-berhak', function () { return view('dashboard.tak-berhak'); })->name('admin.tak-berhak');
     Route::controller(UserController::class)->prefix('dashboard/user')->name('user.')->group(function () {
         Route::get('/ubah/{user}', 'ubah')->name('ubah');
         Route::patch('/update/{user}', 'update')->name('update');
@@ -71,7 +62,7 @@ Route::middleware('auth')->group(function () {
             Route::get('/ubah/{paket}', 'ubah')->name('ubah');
             Route::patch('/update/{paket}', 'update')->name('update');
             Route::delete('/hapus/{paket}', 'delete')->name('delete');
-            Route::get('/tambah', function () { return view('admin.paket.tambah'); })->name('tambah');
+            Route::get('/tambah', function () { return view('dashboard.paket.tambah'); })->name('tambah');
         });    
         
         Route::controller(UserController::class)->prefix('dashboard/user')->name('user.')->group(function () {

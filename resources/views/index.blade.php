@@ -218,7 +218,7 @@
                                     <li><i class="bx bx-check"></i> Cusi dan lipat</li>
                                     <li><i class="bx bx-check"></i> Termasuk antar jemput pakaian</li>
                                 </ul>
-                                <a href="#" class="buy-btn">Pesan</a>
+                                <a href="{{route('register')}}" class="buy-btn">Pesan</a>
                             </div>
                         </div>
                     @endforeach

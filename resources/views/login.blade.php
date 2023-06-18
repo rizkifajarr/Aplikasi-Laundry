@@ -1,4 +1,7 @@
 @extends('layouts.admin-empty')
+@section('judul')
+Login
+@endsection
 @section('content')
     <!-- Content -->
 
