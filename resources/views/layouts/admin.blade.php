@@ -27,19 +27,19 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>      
-      @if(request()->is('/'))
-          Laundry Kite
-      @else
-          @yield('judul') | Laundry Kite
-      @endif 
+    <title>
+      @if (request()->is('/'))
+Laundry Kite
+@else
+@yield('judul') | Laundry Kite
+@endif
     </title>
 
     <meta name="description" content="" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('backend-assets/img/favicon/laundry-kite.ico') }}" />
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -79,7 +79,7 @@
 
         <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
           <div class="app-brand demo">
-            <a href="{{ route('admin')}}" class="app-brand-link">
+            <a href="{{ route('admin') }}" class="app-brand-link">
               <img src="{{ asset('backend-assets/img/logo.png') }}" height="40px"/>
             </a>
 
@@ -93,42 +93,46 @@
           <ul class="menu-inner py-1">
             <!-- Dashboard -->
             <li class="menu-item {{ Request::is('dashboard') ? 'active' : '' }}">
-              <a href="{{ route('admin')}}" class="menu-link">
+              <a href="{{ route('admin') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">Dashboard</div>
               </a>
             </li>
             <li class="menu-item {{ Request::is('dashboard/pesanan*') ? 'active' : '' }}">
-              <a href="{{ route('pesanan.index')}}" class="menu-link">
+              <a href="{{ route('pesanan.index') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-layout"></i>
                 <div data-i18n="Analytics">Pesanan</div>
               </a>
             </li>
+            <li class="menu-item {{ Request::is('/') ? 'active' : '' }}">
+              <a href="{{ route('paket.landingpage') }}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-left-arrow-circle"></i>
+                <div data-i18n="Analytics">Halaman Utama</div>
+              </a>
+            </li>
             @can('admin-gate')
-            <li class="menu-header small text-uppercase">
-              <span class="menu-header-text">Admin</span>
-            </li>
-            <li class="menu-item {{ Request::is('dashboard/paket*') ? 'active' : '' }}">
-              <a href="{{ route('paket.index')}}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-dock-top"></i>
-                <div data-i18n="Analytics">Paket</div>
-              </a>
-            </li>
-            <li class="menu-item {{ Request::is('dashboard/user*') ? 'active' : '' }}">
-              <a href="{{ route('user.index')}}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-cube-alt"></i>
-                <div data-i18n="Analytics">User</div>
-              </a>
-            </li>
-            @endcan
+    <li class="menu-header small text-uppercase">
+                                                                                          <span class="menu-header-text">Admin</span>
+                                                                                        </li>
+                                                                                        <li class="menu-item {{ Request::is('dashboard/paket*') ? 'active' : '' }}">
+                                                                                          <a href="{{ route('paket.index') }}" class="menu-link">
+                                                                                            <i class="menu-icon tf-icons bx bx-dock-top"></i>
+                                                                                            <div data-i18n="Analytics">Paket</div>
+                                                                                          </a>
+                                                                                        </li>
+                                                                                        <li class="menu-item {{ Request::is('dashboard/user*') ? 'active' : '' }}">
+                                                                                          <a href="{{ route('user.index') }}" class="menu-link">
+                                                                                            <i class="menu-icon tf-icons bx bx-cube-alt"></i>
+                                                                                            <div data-i18n="Analytics">User</div>
+                                                                                          </a>
+                                                                                        </li>
+@endcan
             <li class="menu-item">
               <form action="{{ route('user.logout') }}" method="post">
                 @csrf
               <button type="submit" class="menu-link li-menu"><i class="menu-icon tf-icons bx bx-power-off me-2"></i> Logout</button>
               </form>
             </li>
-
-          
           </ul>
         </aside>
         <!-- / Menu -->
@@ -136,30 +140,24 @@
         <!-- Layout container -->
         <div class="layout-page">
           <!-- Navbar -->
-
           <nav
             class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
-            id="layout-navbar"
-          >
+            id="layout-navbar">
             <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
               <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
                 <i class="bx bx-menu bx-sm"></i>
               </a>
             </div>
-
             <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
               <!-- Search -->
               <div class="navbar-nav align-items-center">
-                <div class="nav-item d-flex align-items-center">                
+                <div class="nav-item d-flex align-items-center">
                   <h5 class="mb-0 card-title text-primary">@yield('judul')</h5>
                 </div>
               </div>
               <!-- /Search -->
-
               <ul class="navbar-nav flex-row align-items-center ms-auto">
                 <!-- Place this tag where you want the button to render. -->
-               
-
                 <!-- User -->
                 <li class="nav-item d-none d-md-block navbar-dropdown dropdown-user dropdown">
                   <a class="nav-link dropdown-toggle" href="javascript:void(0);" data-bs-toggle="dropdown">
@@ -220,9 +218,7 @@
               </ul>
             </div>
           </nav>
-
           <!-- / Navbar -->
-
           <!-- Content wrapper -->
           <div class="content-wrapper">
 @yield('content')
@@ -233,9 +229,9 @@
                 <div class="mb-2 mb-md-0">
                   ©
                   <script>
-                    document.write(new Date().getFullYear());
+                      document.write(new Date().getFullYear());
                   </script>
-                  , made with ❤️ by 
+                  , made with ❤️ by
                   <a class="footer-link fw-bolder">Rizki, Putri & Kanada</a>
                 </div>
                 {{-- <div>

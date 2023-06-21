@@ -10,7 +10,7 @@
                     <h1>Laundry Kite</h1>
                     <h2>Solusi praktis untuk semua kebutuhan laundry kiloan Anda!</h2>
                     <div class="d-flex justify-content-center justify-content-lg-start">
-                        <a href="#paket" class="btn-get-started scrollto">Pesan Sekarang</a>
+                        <a href="{{ route('admin') }}" class="btn-get-started scrollto">Pesan Sekarang</a>
                     </div>
                 </div>
                 <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
@@ -218,7 +218,7 @@
                                     <li><i class="bx bx-check"></i> Cusi dan lipat</li>
                                     <li><i class="bx bx-check"></i> Termasuk antar jemput pakaian</li>
                                 </ul>
-                                <a href="{{route('register')}}" class="buy-btn">Pesan</a>
+                                <a href="{{ route('register') }}" class="buy-btn">Pesan</a>
                             </div>
                         </div>
                     @endforeach

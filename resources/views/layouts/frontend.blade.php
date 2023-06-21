@@ -57,24 +57,28 @@
                     <li><a class="nav-link scrollto" href="#tim">Tim</a></li>
                     <li><a class="nav-link scrollto" href="#paket">Paket</a></li>
                     @auth
-                    <div class="dropdown text-end">
-                      <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        Halo, {{ auth()->user()->nama }}
-                      </a>
-                      <ul class="dropdown-menu text-small">
-                        <li><a class="dropdown-item" href="{{ route('admin') }}">Admin</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li>
-                          <form action="{{ route('user.logout') }}" method="post">
-                            @csrf
-                          <button type="submit" class="dropdown-item"><i class="bi bi-box-arrow-right"></i> Logout</button>
-                          </form>
-                        </li>
-                      </ul>
-                    </div>
+                        <div class="dropdown text-end">
+                            <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Halo, {{ auth()->user()->nama }}
+                            </a>
+                            <ul class="dropdown-menu text-small">
+                                <li><a class="dropdown-item" href="{{ route('admin') }}">Admin</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <form action="{{ route('user.logout') }}" method="post">
+                                        @csrf
+                                        <button type="submit" class="dropdown-item"><i class="bi bi-box-arrow-right"></i>
+                                            Logout</button>
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
                     @else
-                      <li><a class="getstarted scrollto" href="{{ route('login') }}">Masuk</a></li>
-                      <li><a class="getstarted scrollto" href="{{ route('register') }}">Daftar</a></li>
+                        <li><a class="getstarted scrollto" href="{{ route('login') }}">Masuk</a></li>
+                        <li><a class="getstarted scrollto" href="{{ route('register') }}">Daftar</a></li>
                     @endauth
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
