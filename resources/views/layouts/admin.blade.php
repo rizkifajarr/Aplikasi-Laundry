@@ -112,20 +112,20 @@ Laundry Kite
             </li>
             @can('admin-gate')
     <li class="menu-header small text-uppercase">
-                                                                                          <span class="menu-header-text">Admin</span>
-                                                                                        </li>
-                                                                                        <li class="menu-item {{ Request::is('dashboard/paket*') ? 'active' : '' }}">
-                                                                                          <a href="{{ route('paket.index') }}" class="menu-link">
-                                                                                            <i class="menu-icon tf-icons bx bx-dock-top"></i>
-                                                                                            <div data-i18n="Analytics">Paket</div>
-                                                                                          </a>
-                                                                                        </li>
-                                                                                        <li class="menu-item {{ Request::is('dashboard/user*') ? 'active' : '' }}">
-                                                                                          <a href="{{ route('user.index') }}" class="menu-link">
-                                                                                            <i class="menu-icon tf-icons bx bx-cube-alt"></i>
-                                                                                            <div data-i18n="Analytics">User</div>
-                                                                                          </a>
-                                                                                        </li>
+                                                                                                  <span class="menu-header-text">Admin</span>
+                                                                                                </li>
+                                                                                                <li class="menu-item {{ Request::is('dashboard/paket*') ? 'active' : '' }}">
+                                                                                                  <a href="{{ route('paket.index') }}" class="menu-link">
+                                                                                                    <i class="menu-icon tf-icons bx bx-dock-top"></i>
+                                                                                                    <div data-i18n="Analytics">Paket</div>
+                                                                                                  </a>
+                                                                                                </li>
+                                                                                                <li class="menu-item {{ Request::is('dashboard/user*') ? 'active' : '' }}">
+                                                                                                  <a href="{{ route('user.index') }}" class="menu-link">
+                                                                                                    <i class="menu-icon tf-icons bx bx-cube-alt"></i>
+                                                                                                    <div data-i18n="Analytics">User</div>
+                                                                                                  </a>
+                                                                                                </li>
 @endcan
             <li class="menu-item">
               <form action="{{ route('user.logout') }}" method="post">
