@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Faq;
 use App\Models\Paket;
+use App\Models\Sosmed;
 use App\Http\Requests\StorePaketRequest;
 use App\Http\Requests\UpdatePaketRequest;
 
@@ -17,10 +19,12 @@ class PaketController extends Controller
         return view('dashboard.paket.index', compact('dataPaket'));
     }
     
-    public function landingpage(Paket $paket)
+    public function landingpage(Paket $paket, Faq $faq, Sosmed $sosmed)
     {
         $dataPaket = $paket->get();
-        return view('index', compact('dataPaket'));
+        $dataFaq = $faq->get();
+        $dataSosmed = $sosmed->get();
+        return view('index', compact('dataPaket','dataFaq','dataSosmed'));
     }
 
     /**

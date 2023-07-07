@@ -1,8 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FaqController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\PaketController;
+use App\Http\Controllers\SosmedController;
 use App\Http\Controllers\PesananController;
 
 /*
@@ -70,6 +72,12 @@ Route::middleware('auth')->group(function () {
             Route::get('/tambah', 'tambah')->name('tambah');
             Route::delete('/hapus/{user}', 'delete')->name('delete');
             Route::post('/simpan', 'create')->name('simpan');
+        });
+
+        # Admin
+        Route::prefix('dashboard')->group(function () {
+            Route::resource('faq', FaqController::class);
+            Route::resource('sosmed', SosmedController::class);
         });
     });
 });
