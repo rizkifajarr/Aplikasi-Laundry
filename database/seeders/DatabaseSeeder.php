@@ -43,7 +43,7 @@ class DatabaseSeeder extends Seeder
             'alamat' => 'Jalan M. Yamin Gg. PGA no27',
             'email' => 'putri@gmail.com',
             'password' => bcrypt('123'),
-            'admin' => 0
+            'admin' => 1
         ]);
 
         User::create([
@@ -52,7 +52,7 @@ class DatabaseSeeder extends Seeder
             'alamat' => 'Jalan M. Yamin Gg. PGA no27',
             'email' => 'riski@gmail.com',
             'password' => bcrypt('123'),
-            'admin' => 0
+            'admin' => 1
         ]);
 
         Paket::create([
