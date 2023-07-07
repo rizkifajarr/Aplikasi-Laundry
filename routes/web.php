@@ -45,7 +45,9 @@ Route::middleware('auth')->group(function () {
 
     Route::controller(UserController::class)->prefix('dashboard')->group(function () {
         Route::get('/', 'indexAdmin')->name('admin');
-        Route::get('/tak-berhak', function () { return view('dashboard.tak-berhak'); })->name('dashboard.tak-berhak');
+        Route::get('/tak-berhak', function () {
+            return view('dashboard.tak-berhak');
+        })->name('dashboard.tak-berhak');
     });
 
     Route::controller(PesananController::class)->prefix('dashboard/pesanan')->name('pesanan.')->group(function () {
@@ -56,7 +58,7 @@ Route::middleware('auth')->group(function () {
         Route::patch('/update/{pesanan}', 'update')->name('update');
         Route::delete('/hapus/{pesanan}', 'delete')->name('delete');
     });
-    
+
     Route::middleware('admin')->group(function () {
         Route::controller(PaketController::class)->prefix('dashboard/paket')->name('paket.')->group(function () {
             Route::get('/', 'index')->name('index');
@@ -64,9 +66,11 @@ Route::middleware('auth')->group(function () {
             Route::get('/ubah/{paket}', 'ubah')->name('ubah');
             Route::patch('/update/{paket}', 'update')->name('update');
             Route::delete('/hapus/{paket}', 'delete')->name('delete');
-            Route::get('/tambah', function () { return view('dashboard.paket.tambah'); })->name('tambah');
-        });    
-        
+            Route::get('/tambah', function () {
+                return view('dashboard.paket.tambah');
+            })->name('tambah');
+        });
+
         Route::controller(UserController::class)->prefix('dashboard/user')->name('user.')->group(function () {
             Route::get('/', 'index')->name('index');
             Route::get('/tambah', 'tambah')->name('tambah');

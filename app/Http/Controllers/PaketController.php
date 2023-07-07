@@ -18,8 +18,13 @@ class PaketController extends Controller
         $dataPaket = $paket->get();
         return view('dashboard.paket.index', compact('dataPaket'));
     }
+<<<<<<< HEAD
     
     public function landingpage(Paket $paket, Faq $faq, Sosmed $sosmed)
+=======
+
+    public function landingpage(Paket $paket)
+>>>>>>> c10d203909a01a3fb39a85bbe06522bda9453712
     {
         $dataPaket = $paket->get();
         $dataFaq = $faq->get();

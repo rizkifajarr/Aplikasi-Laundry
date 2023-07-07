@@ -1,6 +1,6 @@
 @extends('layouts.admin-empty')
 @section('judul')
-Login
+    Login
 @endsection
 @section('content')
     <!-- Content -->
@@ -20,30 +20,35 @@ Login
                         <!-- /Logo -->
                         <p class="mb-4 text-center">Selamat datang di Laundry Kite</p>
 
-                        @if(session()->has('success'))
-                        <div class="alert alert-success alert-dismissible fade show" role="alert">
-                          {{ session('success') }}
-                          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                        </div>
-                      @endif
-                  
-                      @if(session()->has('loginError'))
-                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                          {{ session('loginError') }}
-                          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                        </div>
-                      @endif
+                        @if (session()->has('success'))
+                            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                {{ session('success') }}
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                    aria-label="Close"></button>
+                            </div>
+                        @endif
 
-                        <form id="formAuthentication" class="mb-3" action="{{ route('user.otentifikasi') }}" method="POST">
+                        @if (session()->has('loginError'))
+                            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                {{ session('loginError') }}
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                    aria-label="Close"></button>
+                            </div>
+                        @endif
+
+                        <form id="formAuthentication" class="mb-3" action="{{ route('user.otentifikasi') }}"
+                            method="POST">
                             @csrf
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email</label>
-                                <input type="text" id="email_address" class="form-control @error('email') is-invalid @enderror" name="email" autofocus required value="{{ old('email') }}">
+                                <input type="text" id="email_address"
+                                    class="form-control @error('email') is-invalid @enderror" name="email" autofocus
+                                    required value="{{ old('email') }}">
                                 @error('email')
-                                <div class="invalid-feedback">
-                                    {{ $message }}
-                                </div>
-                                @enderror    
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
                             </div>
                             <div class="mb-3 form-password-toggle">
                                 <label for="email" class="form-label">Password</label>

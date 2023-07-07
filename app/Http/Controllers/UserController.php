@@ -22,7 +22,7 @@ class UserController extends Controller
         return view('dashboard.user.index', compact('dataUser'));
     }
 
-    public function indexAdmin(User $user,Pesanan $pesanan)
+    public function indexAdmin(User $user, Pesanan $pesanan)
     {
         $userId = Auth::id();
         $dataUser = $user->where('id', $userId)->get();
@@ -31,9 +31,8 @@ class UserController extends Controller
         } else {
             $jumlahPesanan = $pesanan->where('user_id', $userId)->count();
         }
-        
-        return view('dashboard.index', compact('dataUser','jumlahPesanan'));
-        
+
+        return view('dashboard.index', compact('dataUser', 'jumlahPesanan'));
     }
 
     public function tambah()
@@ -68,21 +67,20 @@ class UserController extends Controller
     {
         $userId = Auth::id();
         if (Gate::allows('admin-gate')) {
-            if ($user->id == $userId ) {
+            if ($user->id == $userId) {
                 $judul = "Ubah Profil";
-            }else {
+            } else {
                 $judul = "Ubah User";
-            }   
-            return view('dashboard.user.ubah', compact('user','judul'));
+            }
+            return view('dashboard.user.ubah', compact('user', 'judul'));
         } else {
-            if ($user->id == $userId ) {
+            if ($user->id == $userId) {
                 $judul = "Ubah Profil";
-                return view('dashboard.user.ubah', compact('user','judul'));
-            }else {
+                return view('dashboard.user.ubah', compact('user', 'judul'));
+            } else {
                 return redirect(route('dashboard.tak-berhak'));
-            }   
+            }
         }
-        
     }
 
     public function update(User $user, UpdateUserRequest $request)
@@ -96,9 +94,8 @@ class UserController extends Controller
         } else {
             return redirect(route('admin'))->with('success', 'Data user berhasil diubah');
         }
-        
     }
-   
+
     public function otentifikasi(AuthUserRequest $request)
     {
         $request->validate([
@@ -109,11 +106,11 @@ class UserController extends Controller
         $credentials = $request->only('email', 'password');
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
-            return redirect()->intended('dashboard') 
+            return redirect()->intended('dashboard')
                 ->withSuccess('You have Successfully loggedin');
         }
         //return redirect("login")->withErrors('Oppes! You have entered invalid credentials');
-        return Redirect::back()->with('loginError','Login gagal!');        //
+        return Redirect::back()->with('loginError', 'Login gagal!');        //
     }
 
     public function logout()

@@ -30,12 +30,12 @@ class PesananController extends Controller
             return view('dashboard.pesanan.index', compact('dataPesanan'));
         }
     }
-    
-    public function tambah(User $user,Paket $paket)
+
+    public function tambah(User $user, Paket $paket)
     {
         $dataUser = $user->get();
         $dataPaket = $paket->get();
-        return view('dashboard.pesanan.tambah', compact('dataPaket','dataUser'));
+        return view('dashboard.pesanan.tambah', compact('dataPaket', 'dataUser'));
     }
     /**
      * Show the form for creating a new resource.
@@ -55,11 +55,11 @@ class PesananController extends Controller
         }
     }
 
-    public function ubah(Pesanan $pesanan,User $user,Paket $paket)
+    public function ubah(Pesanan $pesanan, User $user, Paket $paket)
     {
         $dataUser = $user->get();
         $dataPaket = $paket->get();
-        return view('dashboard.pesanan.ubah', compact('pesanan','dataPaket','dataUser'));
+        return view('dashboard.pesanan.ubah', compact('pesanan', 'dataPaket', 'dataUser'));
     }
 
     /**
@@ -104,5 +104,4 @@ class PesananController extends Controller
     {
         //
     }
-
 }
