@@ -92,6 +92,12 @@ Laundry Kite
 
           <ul class="menu-inner py-1">
             <!-- Dashboard -->
+            <li class="menu-item">
+              <a href="{{ route('paket.landingpage') }}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-left-arrow-circle"></i>
+                <div data-i18n="Analytics">Halaman Utama</div>
+              </a>
+            </li>
             <li class="menu-item {{ Request::is('dashboard') ? 'active' : '' }}">
               <a href="{{ route('admin') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
@@ -102,12 +108,6 @@ Laundry Kite
               <a href="{{ route('pesanan.index') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-layout"></i>
                 <div data-i18n="Analytics">Pesanan</div>
-              </a>
-            </li>
-            <li class="menu-item {{ Request::is('/') ? 'active' : '' }}">
-              <a href="{{ route('paket.landingpage') }}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-left-arrow-circle"></i>
-                <div data-i18n="Analytics">Halaman Utama</div>
               </a>
             </li>
             @can('admin-gate')
@@ -122,19 +122,19 @@ Laundry Kite
             </li>
             <li class="menu-item {{ Request::is('dashboard/user*') ? 'active' : '' }}">
               <a href="{{ route('user.index')}}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-cube-alt"></i>
+                <i class="menu-icon tf-icons bx bx-user-circle"></i>
                 <div data-i18n="Analytics">User</div>
               </a>
             </li>
             <li class="menu-item {{ Request::is('dashboard/faq*') ? 'active' : '' }}">
               <a href="{{ route('faq.index')}}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-cube-alt"></i>
+                <i class="menu-icon tf-icons bx bx-question-mark"></i>
                 <div data-i18n="Analytics">FAQ</div>
               </a>
             </li>
             <li class="menu-item {{ Request::is('dashboard/sosmed*') ? 'active' : '' }}">
               <a href="{{ route('sosmed.index')}}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-cube-alt"></i>
+                <i class="menu-icon tf-icons bx bx-hash"></i>
                 <div data-i18n="Analytics">Sosmed</div>
               </a>
             </li>
