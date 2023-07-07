@@ -37,6 +37,24 @@ class DatabaseSeeder extends Seeder
             'admin' => 0
         ]);
 
+        User::create([
+            'nama' => 'putri',
+            'hp' => '08115737027',
+            'alamat' => 'Jalan M. Yamin Gg. PGA no27',
+            'email' => 'putri@gmail.com',
+            'password' => bcrypt('123'),
+            'admin' => 0
+        ]);
+
+        User::create([
+            'nama' => 'rizki',
+            'hp' => '08115737027',
+            'alamat' => 'Jalan M. Yamin Gg. PGA no27',
+            'email' => 'riski@gmail.com',
+            'password' => bcrypt('123'),
+            'admin' => 0
+        ]);
+
         Paket::create([
             'nama' => 'Reguler',
             'harga' => 10000,
