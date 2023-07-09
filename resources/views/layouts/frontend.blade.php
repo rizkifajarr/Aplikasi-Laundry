@@ -47,17 +47,16 @@
             <!-- Uncomment below if you prefer to use an image logo -->
             <a href="index.html" class="logo me-auto"><img src="{{ asset('assets/img/logo-white.png') }}"
                     alt="" class="img-fluid"></a>
-
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
                     <li><a class="nav-link scrollto" href="#about">Tentang</a></li>
                     <li><a class="nav-link scrollto" href="#kelebihan">Kelebihan</a></li>
-                    <li><a class="nav-link   scrollto" href="#hubungi">Kontak</a></li>
+                    <li><a class="nav-link scrollto" href="#hubungi">Kontak</a></li>
                     <li><a class="nav-link scrollto" href="#tim">Tim</a></li>
                     <li><a class="nav-link scrollto" href="#paket">Paket</a></li>
                     @auth
-                        <div class="dropdown text-end">
+                        <div class="dropdown">
                             <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Halo, {{ auth()->user()->nama }}
@@ -70,7 +69,8 @@
                                 <li>
                                     <form action="{{ route('user.logout') }}" method="post">
                                         @csrf
-                                        <button type="submit" class="dropdown-item"><i class="bi bi-box-arrow-right"></i>
+                                        <button type="submit" class="dropdown-item align-items-center"><i
+                                                class="bi bi-box-arrow-right"></i>
                                             Logout</button>
                                     </form>
                                 </li>
@@ -127,17 +127,21 @@
                         <h4>Sosial Media</h4>
                         <p>Ikuti kami melalui sosial media berikut</p>
                         <div class="social-links mt-3">
-                          @foreach ($dataSosmed as $index => $sosmed)
-                          @if ($sosmed->jenis == "Twitter")
-                            <a href="https://twitter.com/{{ $sosmed->sosmed_id }}" class="twitter"><i class="bx bxl-twitter"></i></a>
-                          @elseif($sosmed->jenis == "Facebook")
-                            <a href="https://facebook.com/{{ $sosmed->sosmed_id }}" class="facebook"><i class="bx bxl-facebook"></i></a>
-                          @elseif($sosmed->jenis == "Instagram")
-                            <a href="https://instagram.com/{{ $sosmed->sosmed_id }}" class="instagram"><i class="bx bxl-instagram"></i></a>
-                          @elseif($sosmed->jenis == "LinkedIn")
-                            <a href="https://linkedin.com/{{ $sosmed->sosmed_id }}" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                          @endif                          
-                          @endforeach
+                            @foreach ($dataSosmed as $index => $sosmed)
+                                @if ($sosmed->jenis == 'Twitter')
+                                    <a href="https://twitter.com/{{ $sosmed->sosmed_id }}" class="twitter"><i
+                                            class="bx bxl-twitter"></i></a>
+                                @elseif($sosmed->jenis == 'Facebook')
+                                    <a href="https://facebook.com/{{ $sosmed->sosmed_id }}" class="facebook"><i
+                                            class="bx bxl-facebook"></i></a>
+                                @elseif($sosmed->jenis == 'Instagram')
+                                    <a href="https://instagram.com/{{ $sosmed->sosmed_id }}" class="instagram"><i
+                                            class="bx bxl-instagram"></i></a>
+                                @elseif($sosmed->jenis == 'LinkedIn')
+                                    <a href="https://linkedin.com/{{ $sosmed->sosmed_id }}" class="linkedin"><i
+                                            class="bx bxl-linkedin"></i></a>
+                                @endif
+                            @endforeach
                         </div>
                     </div>
 
