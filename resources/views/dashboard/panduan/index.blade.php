@@ -8,7 +8,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col">
-                            {{-- <div class="card shadow-sm mb-3">
+                            <div class="card shadow-sm mb-3">
                                 <div class="card-body">
                                     <h5 class="card-title">Panduan - Dashboard</h5>
                                     <p class="card-text">Pada panduan ini sebagai seorang admin anda akan melihat tampilan
@@ -16,7 +16,7 @@
                                         anda serta anda dapat melihat notifikasi pesanan yang ada.</p>
                                     <button href="#" class="btn btn-outline-primary">Tampilkan</button>
                                 </div>
-                            </div> --}}
+                            </div>
                             <div class="card shadow-sm mb-3">
                                 <div class="card-body">
                                     <h5 class="card-title">Panduan - Pesanan</h5>
