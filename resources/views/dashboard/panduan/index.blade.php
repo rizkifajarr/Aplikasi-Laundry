@@ -25,7 +25,7 @@
                                     <button href="#" class="btn btn-outline-primary">Tampilkan</button>
                                 </div>
                             </div>
-                            {{-- <div class="card shadow-sm mb-3">
+                            <div class="card shadow-sm mb-3">
                                 <div class="card-body">
                                     <h5 class="card-title">Panduan - User</h5>
                                     <p class="card-text">Pada panduan ini sebagai seorang admin anda harus mengecek tiap
@@ -33,7 +33,7 @@
                                     <button href="#" class="btn btn-outline-primary">Tampilkan</button>
                                 </div>
                             </div>
-                            <div class="card shadow-sm mb-3">
+                            {{-- <div class="card shadow-sm mb-3">
                                 <div class="card-body">
                                     <h5 class="card-title">Panduan - FAQ</h5>
                                     <p class="card-text">Pada panduan ini sebagai seorang admin anda harus mengecek tiap
