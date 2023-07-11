@@ -42,7 +42,6 @@
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top ">
         <div class="container d-flex align-items-center">
-
             {{-- <h1 class="logo me-auto"><a href="index.html">Arsha</a></h1> --}}
             <!-- Uncomment below if you prefer to use an image logo -->
             <a href="index.html" class="logo me-auto"><img src="{{ asset('assets/img/logo-white.png') }}"
@@ -66,6 +65,10 @@
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
+                                <li><a class="dropdown-item" href="{{ route('admin') }}">Panduan User</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
                                 <li>
                                     <form action="{{ route('user.logout') }}" method="post">
                                         @csrf
@@ -83,7 +86,6 @@
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
-
         </div>
     </header><!-- End Header -->
 
@@ -106,11 +108,9 @@
         </div>
       </div>
     </div> --}}
-
         <div class="footer-top">
             <div class="container">
                 <div class="row">
-
                     <div class="col-lg-6 col-md-6 footer-contact">
                         <h3>Laundry Kite</h3>
                         <p>
@@ -122,29 +122,6 @@
                             <strong>Email:</strong> info@laundrykite.com<br>
                         </p>
                     </div>
-
-                    <div class="col-lg-6 col-md-6 footer-links">
-                        <h4>Sosial Media</h4>
-                        <p>Ikuti kami melalui sosial media berikut</p>
-                        <div class="social-links mt-3">
-                            @foreach ($dataSosmed as $index => $sosmed)
-                                @if ($sosmed->jenis == 'Twitter')
-                                    <a href="https://twitter.com/{{ $sosmed->sosmed_id }}" class="twitter"><i
-                                            class="bx bxl-twitter"></i></a>
-                                @elseif($sosmed->jenis == 'Facebook')
-                                    <a href="https://facebook.com/{{ $sosmed->sosmed_id }}" class="facebook"><i
-                                            class="bx bxl-facebook"></i></a>
-                                @elseif($sosmed->jenis == 'Instagram')
-                                    <a href="https://instagram.com/{{ $sosmed->sosmed_id }}" class="instagram"><i
-                                            class="bx bxl-instagram"></i></a>
-                                @elseif($sosmed->jenis == 'LinkedIn')
-                                    <a href="https://linkedin.com/{{ $sosmed->sosmed_id }}" class="linkedin"><i
-                                            class="bx bxl-linkedin"></i></a>
-                                @endif
-                            @endforeach
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>
