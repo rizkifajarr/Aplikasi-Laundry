@@ -33,14 +33,14 @@
                                     <button href="#" class="btn btn-outline-primary">Tampilkan</button>
                                 </div>
                             </div>
-                            {{-- <div class="card shadow-sm mb-3">
+                            <div class="card shadow-sm mb-3">
                                 <div class="card-body">
                                     <h5 class="card-title">Panduan - FAQ</h5>
                                     <p class="card-text">Pada panduan ini sebagai seorang admin anda harus mengecek tiap
                                         user yang telah terdaftar seperti nama customer, alamat, no handphone dan email.</p>
                                     <button href="#" class="btn btn-outline-primary">Tampilkan</button>
                                 </div>
-                            </div> --}}
+                            </div>
                         </div>
                     </div>
                 </div>
