@@ -17,10 +17,9 @@
                 </div>
             </div>
         </div>
-    </section><!-- End Hero -->
-
+    </section>
+    <!-- End Hero -->
     <main id="main">
-
         <!-- ======= About Us Section ======= -->
         <section id="about" class="about">
             <div class="container" data-aos="fade-up">
@@ -41,8 +40,8 @@
                     </div>
                 </div>
             </div>
-        </section><!-- End About Us Section -->
-
+        </section>
+        <!-- End About Us Section -->
         <!-- ======= Services Section ======= -->
         <section id="kelebihan" class="services section-bg">
             <div class="container" data-aos="fade-up">
@@ -92,12 +91,11 @@
                     </div>
                 </div>
             </div>
-        </section><!-- End Services Section -->
-
+        </section>
+        <!-- End Services Section -->
         <!-- ======= Cta Section ======= -->
         <section id="hubungi" class="cta">
             <div class="container" data-aos="zoom-in">
-
                 <div class="row">
                     <div class="col-lg-9 text-center text-lg-start">
                         <h3>Hubungi Kami</h3>
@@ -109,8 +107,8 @@
                     </div>
                 </div>
             </div>
-        </section><!-- End Cta Section -->
-
+        </section>
+        <!-- End Cta Section -->
         <!-- ======= Team Section ======= -->
         <section id="tim" class="team section-bg">
             <div class="container" data-aos="fade-up">
@@ -174,8 +172,8 @@
                     </div>
                 </div>
             </div>
-        </section><!-- End Team Section -->
-
+        </section>
+        <!-- End Team Section -->
         <!-- ======= Pricing Section ======= -->
         <section id="paket" class="pricing">
             <div class="container" data-aos="fade-up">
@@ -201,12 +199,11 @@
                     @endforeach
                 </div>
             </div>
-        </section><!-- End Pricing Section -->
-
+        </section>
+        <!-- End Pricing Section -->
         <!-- ======= Frequently Asked Questions Section ======= -->
         <section id="faq" class="faq section-bg">
             <div class="container" data-aos="fade-up">
-
                 <div class="section-title">
                     <h2>Frequently Asked Questions</h2>
                     <p>Kami telah merangkum beberapa pertanyaan yang sering ditanyakan oleh pelanggan kami, sehingga Anda
@@ -229,6 +226,8 @@
                     </ul>
                 </div>
             </div>
-        </section><!-- End Frequently Asked Questions Section -->
-    </main><!-- End #main -->
+        </section>
+        <!-- End Frequently Asked Questions Section -->
+    </main>
+    <!-- End #main -->
 @endsection

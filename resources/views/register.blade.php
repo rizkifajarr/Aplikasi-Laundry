@@ -4,7 +4,6 @@
 @endsection
 @section('content')
     <!-- Content -->
-
     <div class="container-xxl">
         <div class="authentication-wrapper authentication-basic container-p-y">
             <div class="authentication-inner">
@@ -17,10 +16,9 @@
                                 <img src="{{ asset('backend-assets/img/logo.png') }}" height="40px" />
                             </a>
                         </div>
-                        {{-- <!-- /Logo -->
-                <h4 class="mb-2">Solusi praktis untuk semua kebutuhan laundry kiloan Anda!</h4> --}}
+                        <!-- /Logo -->
+                        {{-- <h4 class="mb-2">Solusi praktis untuk semua kebutuhan laundry kiloan Anda!</h4> --}}
                         <p class="mb-4 text-center">Silakan isi form untuk melakukan pendaftaran</p>
-
                         <form id="formAuthentication" class="mb-3" action="{{ route('user.simpan-frontend') }}"
                             method="POST">
                             @csrf
@@ -51,19 +49,17 @@
                                     <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
                                 </div>
                             </div>
-
                             {{-- <div class="mb-3">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="terms-conditions" name="terms" />
-                      <label class="form-check-label" for="terms-conditions">
-                        I agree to
-                        <a href="javascript:void(0);">privacy policy & terms</a>
-                      </label>
-                    </div>
-                  </div> --}}
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="terms-conditions" name="terms" />
+                                    <label class="form-check-label" for="terms-conditions">
+                                        I agree to
+                                        <a href="javascript:void(0);">privacy policy & terms</a>
+                                    </label>
+                                </div>
+                            </div> --}}
                             <button type="submit" class="btn btn-primary d-grid w-100">Daftar</button>
                         </form>
-
                         <p class="text-center">
                             <span>Sudah punya akun?</span>
                             <a href="{{ route('login') }}">
@@ -76,6 +72,5 @@
             </div>
         </div>
     </div>
-
     <!-- / Content -->
 @endsection

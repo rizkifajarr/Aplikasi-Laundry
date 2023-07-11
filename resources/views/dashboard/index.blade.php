@@ -16,7 +16,6 @@
                     <div class="d-flex align-items-end row">
                         <div class="col-12">
                             <div class="card-body pb-0">
-
                                 @can('admin-gate')
                                     <h5 class="card-title text-primary">Halo, Admin {{ auth()->user()->nama }}! 🎉</h5>
                                     <p class="mb-0">
@@ -44,18 +43,15 @@
                         </div>
                         <div class="col-sm-7">
                             <div class="card-body">
-
                                 <p>Profil Anda</p>
                                 <p>Nama :<br><strong>{{ auth()->user()->nama }}</strong></p>
                                 <p>HP :<br><strong>{{ auth()->user()->hp }}</strong></p>
                                 <p>Alamat :<br><strong>{{ auth()->user()->alamat }}</strong></p>
                                 <p>Email :<br><strong>{{ auth()->user()->email }}</strong></p>
-
                                 <a href="{{ route('user.ubah', [auth()->user()->id]) }}"
                                     class="btn btn-sm btn-outline-primary">Ubah Profil</a>
                             </div>
                         </div>
-
                         <div class="col-sm-5 text-center text-sm-left">
                             <div class="card-body pb-0 px-0 px-md-4">
                                 <img src="{{ asset('backend-assets/img/illustrations/man-with-laptop-light.png') }}"
