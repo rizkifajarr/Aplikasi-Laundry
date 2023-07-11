@@ -83,5 +83,10 @@ Route::middleware('auth')->group(function () {
             Route::resource('faq', FaqController::class);
             Route::resource('sosmed', SosmedController::class);
         });
+        Route::prefix('dashboard/panduan')->name('panduan.')->group(function () {
+            Route::get('/', function () {
+                return view('dashboard.panduan.index');
+            })->name('index');
+        });
     });
 });

@@ -77,7 +77,7 @@ Laundry Kite
       <div class="layout-container">
         <!-- Menu -->
 
-        <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+        <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme  shadow-lg">
           <div class="app-brand demo">
             <a href="{{ route('admin') }}" class="app-brand-link">
               <img src="{{ asset('backend-assets/img/logo.png') }}" height="40px"/>
@@ -106,39 +106,45 @@ Laundry Kite
             </li>
             <li class="menu-item {{ Request::is('dashboard/pesanan*') ? 'active' : '' }}">
               <a href="{{ route('pesanan.index') }}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-layout"></i>
+                <i class="menu-icon tf-icons bx bx-notepad"></i>
                 <div data-i18n="Analytics">Pesanan</div>
               </a>
             </li>
             @can('admin-gate')
-            <li class="menu-header small text-uppercase">
-              <span class="menu-header-text">Admin</span>
-            </li>
-            <li class="menu-item {{ Request::is('dashboard/paket*') ? 'active' : '' }}">
-              <a href="{{ route('paket.index')}}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-dock-top"></i>
-                <div data-i18n="Analytics">Paket</div>
-              </a>
-            </li>
-            <li class="menu-item {{ Request::is('dashboard/user*') ? 'active' : '' }}">
-              <a href="{{ route('user.index')}}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-user-circle"></i>
-                <div data-i18n="Analytics">User</div>
-              </a>
-            </li>
-            <li class="menu-item {{ Request::is('dashboard/faq*') ? 'active' : '' }}">
-              <a href="{{ route('faq.index')}}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-question-mark"></i>
-                <div data-i18n="Analytics">FAQ</div>
-              </a>
-            </li>
-            <li class="menu-item {{ Request::is('dashboard/sosmed*') ? 'active' : '' }}">
-              <a href="{{ route('sosmed.index')}}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-hash"></i>
-                <div data-i18n="Analytics">Sosmed</div>
-              </a>
-            </li>
-            @endcan
+    <li class="menu-header small text-uppercase">
+                                                                      <span class="menu-header-text">Admin</span>
+                                                                    </li>
+                                                                    <li class="menu-item {{ Request::is('dashboard/paket*') ? 'active' : '' }}">
+                                                                      <a href="{{ route('paket.index') }}" class="menu-link">
+                                                                        <i class="menu-icon tf-icons bx bx-box"></i>
+                                                                        <div data-i18n="Analytics">Paket</div>
+                                                                      </a>
+                                                                    </li>
+                                                                    <li class="menu-item {{ Request::is('dashboard/user*') ? 'active' : '' }}">
+                                                                      <a href="{{ route('user.index') }}" class="menu-link">
+                                                                        <i class="menu-icon tf-icons bx bx-user-circle"></i>
+                                                                        <div data-i18n="Analytics">User</div>
+                                                                      </a>
+                                                                    </li>
+                                                                    <li class="menu-item {{ Request::is('dashboard/faq*') ? 'active' : '' }}">
+                                                                      <a href="{{ route('faq.index') }}" class="menu-link">
+                                                                        <i class="menu-icon tf-icons bx bx-help-circle"></i>
+                                                                        <div data-i18n="Analytics">FAQ</div>
+                                                                      </a>
+                                                                    </li>
+                                                                    <li class="menu-item {{ Request::is('dashboard/sosmed*') ? 'active' : '' }}">
+                                                                      <a href="{{ route('sosmed.index') }}" class="menu-link">
+                                                                        <i class="menu-icon tf-icons bx bx-donate-heart"></i>
+                                                                        <div data-i18n="Analytics">Sosmed</div>
+                                                                      </a>
+                                                                    </li>
+                                                                    <li class="menu-item {{ Request::is('dashboard/panduan*') ? 'active' : '' }}">
+                                                                      <a href="{{ route('panduan.index') }}" class="menu-link">
+                                                                        <i class="menu-icon tf-icons bx bx-book-open"></i>
+                                                                        <div data-i18n="Analytics">Panduan</div>
+                                                                      </a>
+                                                                    </li>
+@endcan
             <li class="menu-item">
               <form action="{{ route('user.logout') }}" method="post">
                 @csrf
