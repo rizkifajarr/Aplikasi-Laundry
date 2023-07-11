@@ -1,8 +1,7 @@
 @extends('layouts.admin')
 @section('judul')
     Panduan Admin
-@endsection
-@section('content')
+    @endsection @section('content')
     <div class="container-xxl flex-grow-1 container-p-y">
         <div class="card">
             <div class="card-body">
