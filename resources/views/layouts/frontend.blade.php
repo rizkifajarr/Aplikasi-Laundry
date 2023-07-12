@@ -56,16 +56,18 @@
                                 Halo, {{ auth()->user()->nama }}
                             </a>
                             <ul class="dropdown-menu text-small">
-                                <li><a class="dropdown-item" href="{{ route('admin') }}">Admin</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="{{ route('admin') }}">Admin</a>
+                                </li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
                                 <li>
                                     <form action="{{ route('user.logout') }}" method="post">
                                         @csrf
-                                        <button type="submit" class="dropdown-item align-items-center"><i
-                                                class="bi bi-box-arrow-right"></i>
-                                            Logout</button>
+                                        <button type="submit" class="dropdown-item">
+                                            <i class="bi bi-box-arrow-right me-2"></i>Logout
+                                        </button>
                                     </form>
                                 </li>
                             </ul>
@@ -98,7 +100,6 @@
         <div class="footer-top">
             <div class="container">
                 <div class="row">
-
                     <div class="col-lg-6 col-md-6 footer-contact">
                         <h3>Laundry Kite</h3>
                         <p>
@@ -130,6 +131,12 @@
                                 @endif
                             @endforeach
                         </div>
+                        <h4 class="pb-0 mt-4">Panduan User</h4>
+                        <button class="btn btn-info mt-2">
+                            <a href="#" class="text-white d-flex align-items-center">
+                                <i class="bx bx-book-open me-1"></i>Panduan
+                            </a>
+                        </button>
                     </div>
                 </div>
             </div>
