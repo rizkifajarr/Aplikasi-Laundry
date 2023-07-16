@@ -34,20 +34,19 @@
                                     <p class="card-text">Pada panduan ini sebagai seorang admin anda dapat mengedit FAQ
                                         yaitu pertanyaan dan jawaban yang sering ditanyakan oleh customer.</p>
                                 </div>
-                                <img src="{{ asset('assets/img/panduan/pesanan3.png') }}"
-                                    class="card-img-top border rounded" alt="#">
+                                <img src="{{ asset('assets/img/panduan/faq3.png') }}" class="card-img-top border rounded"
+                                    alt="#">
                             </div>
-                            {{-- <div class="card shadow-sm">
+                            <div class="card shadow-sm">
                                 <div class="card-body">
-                                    <h5 class="card-title">Panduan - Menghapus Pesanan</h5>
-                                    <p class="card-text">Pada panduan ini sebagai seorang admin anda dapat menghapus
-                                        pesanan
-                                        dengan menghapus pesanan yang sudah terdaftar dengan meng-klik tombol "Delete" yang
-                                        berwarna merah.</p>
+                                    <h5 class="card-title">Panduan - Menghapus FAQ</h5>
+                                    <p class="card-text">Pada panduan ini sebagai seorang admin anda dapat menghapus FAQ
+                                        yaitu pertanyaan dan jawaban yang sering ditanyakan oleh customer dengan meng-klik
+                                        tombol "Delete" yang berwarna merah.</p>
                                 </div>
-                                <img src="{{ asset('assets/img/panduan/pesanan4.png') }}"
-                                    class="card-img-top border rounded" alt="#">
-                            </div> --}}
+                                <img src="{{ asset('assets/img/panduan/faq4.png') }}" class="card-img-top border rounded"
+                                    alt="#">
+                            </div>
                         </div>
                     </div>
                 </div>
