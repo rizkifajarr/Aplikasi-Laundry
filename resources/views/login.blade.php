@@ -4,7 +4,6 @@
 @endsection
 @section('content')
     <!-- Content -->
-
     <div class="container-xxl">
         <div class="authentication-wrapper authentication-basic container-p-y">
             <div class="authentication-inner">
@@ -19,7 +18,6 @@
                         </div>
                         <!-- /Logo -->
                         <p class="mb-4 text-center">Selamat datang di Laundry Kite</p>
-
                         @if (session()->has('success'))
                             <div class="alert alert-success alert-dismissible fade show" role="alert">
                                 {{ session('success') }}
@@ -27,7 +25,6 @@
                                     aria-label="Close"></button>
                             </div>
                         @endif
-
                         @if (session()->has('loginError'))
                             <div class="alert alert-danger alert-dismissible fade show" role="alert">
                                 {{ session('loginError') }}
@@ -35,7 +32,6 @@
                                     aria-label="Close"></button>
                             </div>
                         @endif
-
                         <form id="formAuthentication" class="mb-3" action="{{ route('user.otentifikasi') }}"
                             method="POST">
                             @csrf

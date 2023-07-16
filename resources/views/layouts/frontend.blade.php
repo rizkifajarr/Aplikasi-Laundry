@@ -7,7 +7,6 @@
     <title>Laundry Kite</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
-
     <!-- Favicons -->
     <link href="{{ asset('backend-assets/img/favicon/laundry-kite.ico') }}" rel="icon">
     <link href="{{ asset('backend-assets/img/favicon/laundry-kite.ico') }}" rel="apple-touch-icon">
@@ -15,7 +14,6 @@
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
         rel="stylesheet">
-
     <!-- Vendor CSS Files -->
     <link href="{{ asset('assets/vendor/aos/aos.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -24,10 +22,8 @@
     <link href="{{ asset('assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/vendor/remixicon/remixicon.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
-
     <!-- Template Main CSS File -->
     <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
-
     <!-- =======================================================
   * Template Name: Arsha
   * Updated: Mar 10 2023 with Bootstrap v5.2.3
@@ -38,11 +34,9 @@
 </head>
 
 <body>
-
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top ">
         <div class="container d-flex align-items-center">
-
             {{-- <h1 class="logo me-auto"><a href="index.html">Arsha</a></h1> --}}
             <!-- Uncomment below if you prefer to use an image logo -->
             <a href="index.html" class="logo me-auto"><img src="{{ asset('assets/img/logo-white.png') }}"
@@ -62,16 +56,18 @@
                                 Halo, {{ auth()->user()->nama }}
                             </a>
                             <ul class="dropdown-menu text-small">
-                                <li><a class="dropdown-item" href="{{ route('admin') }}">Admin</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="{{ route('admin') }}">Admin</a>
+                                </li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
                                 <li>
                                     <form action="{{ route('user.logout') }}" method="post">
                                         @csrf
-                                        <button type="submit" class="dropdown-item align-items-center"><i
-                                                class="bi bi-box-arrow-right"></i>
-                                            Logout</button>
+                                        <button type="submit" class="dropdown-item">
+                                            <i class="bi bi-box-arrow-right me-2"></i>Logout
+                                        </button>
                                     </form>
                                 </li>
                             </ul>
@@ -83,34 +79,27 @@
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
-
         </div>
     </header><!-- End Header -->
-
     @yield('content')
-
-
     <!-- ======= Footer ======= -->
     <footer id="footer">
-
         {{-- <div class="footer-newsletter">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <h4>Join Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
-        </div>
-      </div>
-    </div> --}}
-
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h4>Join Our Newsletter</h4>
+                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                        <form action="" method="post">
+                            <input type="email" name="email"><input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div> --}}
         <div class="footer-top">
             <div class="container">
                 <div class="row">
-
                     <div class="col-lg-6 col-md-6 footer-contact">
                         <h3>Laundry Kite</h3>
                         <p>
@@ -122,7 +111,6 @@
                             <strong>Email:</strong> info@laundrykite.com<br>
                         </p>
                     </div>
-
                     <div class="col-lg-6 col-md-6 footer-links">
                         <h4>Sosial Media</h4>
                         <p>Ikuti kami melalui sosial media berikut</p>
@@ -143,12 +131,16 @@
                                 @endif
                             @endforeach
                         </div>
+                        <h4 class="pb-0 mt-4">Panduan User</h4>
+                        <button class="btn btn-info mt-2">
+                            <a href="#" class="text-white d-flex align-items-center">
+                                <i class="bx bx-book-open me-1"></i>Panduan
+                            </a>
+                        </button>
                     </div>
-
                 </div>
             </div>
         </div>
-
         <div class="container footer-bottom clearfix">
             <div class="copyright">
                 &copy; Copyright <strong><span>Laundry Kite</span></strong>. All Rights Reserved
@@ -161,12 +153,11 @@
                 Designed by <a href="/about" target="_blank">Rizki, Putri &amp; Kanada</a>
             </div>
         </div>
-    </footer><!-- End Footer -->
-
+    </footer>
+    <!-- End Footer -->
     <div id="preloader"></div>
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>
-
     <!-- Vendor JS Files -->
     <script src="{{ asset('assets/vendor/aos/aos.js') }}"></script>
     <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
@@ -175,7 +166,6 @@
     <script src="{{ asset('assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
     <script src="{{ asset('assets/vendor/waypoints/noframework.waypoints.js') }}"></script>
     <script src="{{ asset('assets/vendor/php-email-form/validate.js') }}"></script>
-
     <!-- Template Main JS File -->
     <script src="{{ asset('assets/js/main.js') }}"></script>
 

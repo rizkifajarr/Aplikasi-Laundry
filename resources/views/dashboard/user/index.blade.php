@@ -4,9 +4,7 @@
 @endsection
 @section('content')
     <!-- Content -->
-
     <div class="container-xxl flex-grow-1 container-p-y">
-
         <!-- Hoverable Table rows -->
         <div class="card">
             <h5 class="card-header"><a href="{{ route('user.tambah') }}"><button type="button"
@@ -73,7 +71,6 @@
             </div>
         </div>
         <!--/ Hoverable Table rows -->
-
         <hr class="my-5" />
     </div>
     <!-- / Content -->
