@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 @section('judul')
-    Panduan Fitur FAQ
+    Panduan Fitur Sosmed
 @endsection
 @section('content')
     <div class="container-xxl flex-grow-1 container-p-y">
