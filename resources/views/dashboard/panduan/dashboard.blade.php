@@ -11,16 +11,15 @@
                         <div class="col">
                             <div class="card shadow-sm mb-3">
                                 <div class="card-body">
-                                    <h5 class="card-title">Panduan - Paket</h5>
-                                    <p class="card-text">Pada panduan ini sebagai seorang admin anda dapat melihat
-                                        jenis-jenis paket yang tertera, paket ini diperuntukkan customer yang berlangganan
-                                        di
-                                        "Loundry Kite".</p>
+                                    <h5 class="card-title">Panduan - Dashboard</h5>
+                                    <p class="card-text">Pada panduan ini sebagai seorang admin anda akan melihat tampilan
+                                        awal pada aplikasi web "Laundry Kite" yang dimana akan tertera sebuah profil pribadi
+                                        anda, serta anda dapat melihat notifikasi pesanan yang ada.</p>
                                 </div>
                                 <img src="{{ asset('assets/img/panduan/dashboard.png') }}"
                                     class="card-img-top border rounded" alt="#">
                             </div>
-                            <div class="card shadow-sm mb-3">
+                            {{-- <div class="card shadow-sm mb-3">
                                 <div class="card-body">
                                     <h5 class="card-title">Panduan - Menambah Paket</h5>
                                     <p class="card-text">Pada panduan ini sebagai seorang admin anda dapat menambah jenis
@@ -30,7 +29,7 @@
                                 </div>
                                 <img src="{{ asset('assets/img/panduan/paket2.png') }}" class="card-img-top border rounded"
                                     alt="#">
-                            </div>
+                            </div> --}}
                             <div class="card shadow-sm mb-3">
                                 <div class="card-body">
                                     <h5 class="card-title">Panduan - Mengedit Paket</h5>
