@@ -17,7 +17,7 @@
                                     <button href="#" class="btn btn-outline-primary">Tampilkan</button>
                                 </div>
                             </div>
-                            {{-- <div class="card shadow-sm mb-3">
+                            <div class="card shadow-sm mb-3">
                                 <div class="card-body">
                                     <h5 class="card-title">Panduan - Pesanan</h5>
                                     <p class="card-text">Pada panduan ini sebagai seorang admin anda harus rutin melihat
@@ -26,7 +26,7 @@
                                     <button href="#" class="btn btn-outline-primary">Tampilkan</button>
                                 </div>
                             </div>
-                            <div class="card shadow-sm mb-3">
+                            {{-- <div class="card shadow-sm mb-3">
                                 <div class="card-body">
                                     <h5 class="card-title">Panduan - Paket</h5>
                                     <p class="card-text">Pada panduan ini sebagai seorang admin anda harus melihat tiap
