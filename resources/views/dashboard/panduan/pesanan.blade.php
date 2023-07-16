@@ -23,22 +23,24 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Panduan - Menambah Pesanan</h5>
                                     <p class="card-text">Pada panduan ini sebagai seorang admin anda dapat menambah jumlah
-                                        pesanan dengan menyertakan nama lengkap, jenis paket dan jumlah pesanan dalam bentuk
+                                        pesanan dengan menyertakan nama customer, jenis paket dan jumlah pesanan dalam
+                                        bentuk
                                         per-kilogram.</p>
                                 </div>
                                 <img src="{{ asset('assets/img/panduan/pesanan2.png') }}"
                                     class="card-img-top border-top rounded shadow-sm" alt="#">
                             </div>
-                            {{-- <div class="card shadow-sm mb-3">
+                            <div class="card shadow-sm mb-3">
                                 <div class="card-body">
-                                    <h5 class="card-title">Panduan - Mengedit User</h5>
+                                    <h5 class="card-title">Panduan - Mengedit Pesanan</h5>
                                     <p class="card-text">Pada panduan ini sebagai seorang admin anda dapat mengedit user
-                                        dengan mengubah nama lengkap, alamat, no handphone dan email.</p>
+                                        dengan mengubah nama customer, jenis paket dan jumlah pesanan dalam bentuk
+                                        per-kilogram.</p>
                                 </div>
-                                <img src="{{ asset('assets/img/panduan/user3.png') }}"
+                                <img src="{{ asset('assets/img/panduan/pesanan3.png') }}"
                                     class="card-img-top border-top rounded shadow-sm" alt="#">
                             </div>
-                            <div class="card shadow-sm">
+                            {{-- <div class="card shadow-sm">
                                 <div class="card-body">
                                     <h5 class="card-title">Panduan - Menghapus User</h5>
                                     <p class="card-text">Pada panduan ini sebagai seorang admin anda dapat menghapus
