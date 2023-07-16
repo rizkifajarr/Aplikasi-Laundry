@@ -11,24 +11,24 @@
                         <div class="col">
                             <div class="card shadow-sm mb-3">
                                 <div class="card-body">
-                                    <h5 class="card-title">Panduan - Pesanan</h5>
+                                    <h5 class="card-title">Panduan - FAQ</h5>
                                     <p class="card-text">Pada panduan ini sebagai seorang admin anda dapat melihat beberapa
                                         pertanyaan yang sering ditanyakan oleh customer dan juga jawabannya.</p>
                                 </div>
                                 <img src="{{ asset('assets/img/panduan/faq1.png') }}" class="card-img-top border rounded"
                                     alt="#">
                             </div>
-                            {{-- <div class="card shadow-sm mb-3">
+                            <div class="card shadow-sm mb-3">
                                 <div class="card-body">
-                                    <h5 class="card-title">Panduan - Menambah Pesanan</h5>
+                                    <h5 class="card-title">Panduan - Menambah FAQ</h5>
                                     <p class="card-text">Pada panduan ini sebagai seorang admin anda dapat menambah jumlah
                                         pesanan dengan menyertakan nama customer, jenis paket dan jumlah pesanan dalam
                                         bentuk
                                         per-kilogram.</p>
                                 </div>
-                                <img src="{{ asset('assets/img/panduan/pesanan2.png') }}"
-                                    class="card-img-top border rounded" alt="#">
-                            </div> --}}
+                                <img src="{{ asset('assets/img/panduan/faq2.png') }}" class="card-img-top border rounded"
+                                    alt="#">
+                            </div>
                             {{-- <div class="card shadow-sm mb-3">
                                 <div class="card-body">
                                     <h5 class="card-title">Panduan - Mengedit Pesanan</h5>
