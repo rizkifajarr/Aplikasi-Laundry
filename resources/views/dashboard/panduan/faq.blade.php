@@ -21,10 +21,9 @@
                             <div class="card shadow-sm mb-3">
                                 <div class="card-body">
                                     <h5 class="card-title">Panduan - Menambah FAQ</h5>
-                                    <p class="card-text">Pada panduan ini sebagai seorang admin anda dapat menambah jumlah
-                                        pesanan dengan menyertakan nama customer, jenis paket dan jumlah pesanan dalam
-                                        bentuk
-                                        per-kilogram.</p>
+                                    <p class="card-text">Pada panduan ini sebagai seorang admin anda dapat menambah
+                                        pertanyaa baru yang sering ditanyakan oleh beberapa customer serta anda dapat
+                                        menambahkan jawaban dari pertanyaan tersebut.</p>
                                 </div>
                                 <img src="{{ asset('assets/img/panduan/faq2.png') }}" class="card-img-top border rounded"
                                     alt="#">
