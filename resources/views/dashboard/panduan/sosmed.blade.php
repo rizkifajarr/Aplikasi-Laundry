@@ -23,7 +23,8 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Panduan - Menambah Sosmed</h5>
                                     <p class="card-text">Pada panduan ini sebagai seorang admin anda dapat menambahkan
-                                        sosmed baru untuk Aplikasi Web "Loundry Kite".</p>
+                                        sosmed baru untuk Aplikasi Web "Loundry Kite" dengan menyertakan nama aplikasi yang
+                                        digunakan dan ID / Username yang digunakan pada aplikasi tersebut.</p>
                                 </div>
                                 <img src="{{ asset('assets/img/panduan/sosmed2.png') }}" class="card-img-top border rounded"
                                     alt="#">
