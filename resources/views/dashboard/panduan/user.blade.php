@@ -16,7 +16,7 @@
                                         user yang telah terdaftar seperti nama, alamat, no handphone dan email.</p>
                                 </div>
                                 <img src="{{ asset('assets/img/panduan/user1.png') }}"
-                                    class="card-img-top border-top rounded shadow-sm" alt="#">
+                                    class="card-img-top border-top border rounded" alt="#">
                             </div>
                             <div class="card shadow-sm mb-3">
                                 <div class="card-body">
@@ -25,7 +25,7 @@
                                         user dengan menyertakan nama lengkap, alamat, no handphone dan email.</p>
                                 </div>
                                 <img src="{{ asset('assets/img/panduan/user2.png') }}"
-                                    class="card-img-top border-top rounded shadow-sm" alt="#">
+                                    class="card-img-top border-top border rounded" alt="#">
                             </div>
                             <div class="card shadow-sm mb-3">
                                 <div class="card-body">
@@ -34,7 +34,7 @@
                                         dengan mengubah nama lengkap, alamat, no handphone dan email.</p>
                                 </div>
                                 <img src="{{ asset('assets/img/panduan/user3.png') }}"
-                                    class="card-img-top border-top rounded shadow-sm" alt="#">
+                                    class="card-img-top border-top border rounded" alt="#">
                             </div>
                             <div class="card shadow-sm">
                                 <div class="card-body">
@@ -44,8 +44,8 @@
                                         dengan menghapus akun yang sudah terdaftar dengan meng-klik tombol "Delete" yang
                                         berwarna merah.</p>
                                 </div>
-                                <img src="{{ asset('assets/img/panduan/user4.png') }}"
-                                    class="card-img-top border-top rounded" alt="#">
+                                <img src="{{ asset('assets/img/panduan/user4.png') }}" class="card-img-top border rounded"
+                                    alt="#">
                             </div>
                         </div>
                     </div>

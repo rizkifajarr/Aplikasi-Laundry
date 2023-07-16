@@ -17,38 +17,40 @@
                                         dan jumlah pesanan.</p>
                                 </div>
                                 <img src="{{ asset('assets/img/panduan/pesanan1.png') }}"
-                                    class="card-img-top border-top rounded shadow-sm" alt="#">
+                                    class="card-img-top border rounded" alt="#">
                             </div>
                             <div class="card shadow-sm mb-3">
                                 <div class="card-body">
                                     <h5 class="card-title">Panduan - Menambah Pesanan</h5>
                                     <p class="card-text">Pada panduan ini sebagai seorang admin anda dapat menambah jumlah
-                                        pesanan dengan menyertakan nama lengkap, jenis paket dan jumlah pesanan dalam bentuk
+                                        pesanan dengan menyertakan nama customer, jenis paket dan jumlah pesanan dalam
+                                        bentuk
                                         per-kilogram.</p>
                                 </div>
                                 <img src="{{ asset('assets/img/panduan/pesanan2.png') }}"
-                                    class="card-img-top border-top rounded shadow-sm" alt="#">
+                                    class="card-img-top border rounded" alt="#">
                             </div>
-                            {{-- <div class="card shadow-sm mb-3">
+                            <div class="card shadow-sm mb-3">
                                 <div class="card-body">
-                                    <h5 class="card-title">Panduan - Mengedit User</h5>
+                                    <h5 class="card-title">Panduan - Mengedit Pesanan</h5>
                                     <p class="card-text">Pada panduan ini sebagai seorang admin anda dapat mengedit user
-                                        dengan mengubah nama lengkap, alamat, no handphone dan email.</p>
+                                        dengan mengubah nama customer, jenis paket dan jumlah pesanan dalam bentuk
+                                        per-kilogram.</p>
                                 </div>
-                                <img src="{{ asset('assets/img/panduan/user3.png') }}"
-                                    class="card-img-top border-top rounded shadow-sm" alt="#">
+                                <img src="{{ asset('assets/img/panduan/pesanan3.png') }}"
+                                    class="card-img-top border rounded" alt="#">
                             </div>
                             <div class="card shadow-sm">
                                 <div class="card-body">
-                                    <h5 class="card-title">Panduan - Menghapus User</h5>
+                                    <h5 class="card-title">Panduan - Menghapus Pesanan</h5>
                                     <p class="card-text">Pada panduan ini sebagai seorang admin anda dapat menghapus
-                                        user
-                                        dengan menghapus akun yang sudah terdaftar dengan meng-klik tombol "Delete" yang
+                                        pesanan
+                                        dengan menghapus pesanan yang sudah terdaftar dengan meng-klik tombol "Delete" yang
                                         berwarna merah.</p>
                                 </div>
-                                <img src="{{ asset('assets/img/panduan/user4.png') }}"
-                                    class="card-img-top border-top rounded" alt="#">
-                            </div> --}}
+                                <img src="{{ asset('assets/img/panduan/pesanan4.png') }}"
+                                    class="card-img-top border rounded" alt="#">
+                            </div>
                         </div>
                     </div>
                 </div>
