@@ -29,15 +29,15 @@
                                 <img src="{{ asset('assets/img/panduan/sosmed2.png') }}" class="card-img-top border rounded"
                                     alt="#">
                             </div>
-                            {{-- <div class="card shadow-sm mb-3">
+                            <div class="card shadow-sm mb-3">
                                 <div class="card-body">
-                                    <h5 class="card-title">Panduan - Mengedit FAQ</h5>
-                                    <p class="card-text">Pada panduan ini sebagai seorang admin anda dapat mengedit FAQ
-                                        yaitu pertanyaan dan jawaban yang sering ditanyakan oleh customer.</p>
+                                    <h5 class="card-title">Panduan - Mengedit Sosmed</h5>
+                                    <p class="card-text">Pada panduan ini sebagai seorang admin anda dapat mengedit sosmed
+                                        yang digunakan pada Aplikasi Web "Loundry Kite".</p>
                                 </div>
                                 <img src="{{ asset('assets/img/panduan/faq3.png') }}" class="card-img-top border rounded"
                                     alt="#">
-                            </div> --}}
+                            </div>
                             {{-- <div class="card shadow-sm">
                                 <div class="card-body">
                                     <h5 class="card-title">Panduan - Menghapus FAQ</h5>
