@@ -23,7 +23,7 @@
                                     <p class="card-text">Pada panduan ini sebagai seorang admin anda harus rutin melihat
                                         jumlah pesanan yang masuk setiap harinya, dimulai dari nama customer, jenis paket,
                                         status pesanan, jumlah pesanan dan juga waktu pemesanan.</p>
-                                    <a class="btn btn-outline-primary" href="{{ route('panduan.user') }}">
+                                    <a class="btn btn-outline-primary" href="{{ route('panduan.pesanan') }}">
                                         Tampilkan
                                     </a>
                                 </div>
