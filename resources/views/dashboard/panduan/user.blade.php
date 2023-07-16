@@ -16,7 +16,7 @@
                                         user yang telah terdaftar seperti nama, alamat, no handphone dan email.</p>
                                 </div>
                                 <img src="{{ asset('assets/img/panduan/user1.png') }}"
-                                    class="card-img-top border-top rounded shadow-sm" alt="#">
+                                    class="card-img-top border-top border rounded" alt="#">
                             </div>
                             <div class="card shadow-sm mb-3">
                                 <div class="card-body">
