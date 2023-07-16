@@ -25,7 +25,7 @@
                                         user dengan menyertakan nama lengkap, alamat, no handphone dan email.</p>
                                 </div>
                                 <img src="{{ asset('assets/img/panduan/user2.png') }}"
-                                    class="card-img-top border-top rounded shadow-sm" alt="#">
+                                    class="card-img-top border-top border rounded" alt="#">
                             </div>
                             <div class="card shadow-sm mb-3">
                                 <div class="card-body">
