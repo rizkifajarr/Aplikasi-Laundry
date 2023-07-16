@@ -9,7 +9,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col">
-                            <div class="card shadow-sm mb-3">
+                            {{-- <div class="card shadow-sm mb-3">
                                 <div class="card-body">
                                     <h5 class="card-title">Panduan - User</h5>
                                     <p class="card-text">Pada panduan ini sebagai seorang admin anda dapat melihat pesanan
@@ -18,7 +18,7 @@
                                 </div>
                                 <img src="{{ asset('assets/img/panduan/pesanan1.png') }}"
                                     class="card-img-top border-top rounded shadow-sm" alt="#">
-                            </div>
+                            </div> --}}
                             {{-- <div class="card shadow-sm mb-3">
                                 <div class="card-body">
                                     <h5 class="card-title">Panduan - Menambah User</h5>
