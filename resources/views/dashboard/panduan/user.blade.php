@@ -44,8 +44,8 @@
                                         dengan menghapus akun yang sudah terdaftar dengan meng-klik tombol "Delete" yang
                                         berwarna merah.</p>
                                 </div>
-                                <img src="{{ asset('assets/img/panduan/user4.png') }}"
-                                    class="card-img-top border-top rounded" alt="#">
+                                <img src="{{ asset('assets/img/panduan/user4.png') }}" class="card-img-top border rounded"
+                                    alt="#">
                             </div>
                         </div>
                     </div>
