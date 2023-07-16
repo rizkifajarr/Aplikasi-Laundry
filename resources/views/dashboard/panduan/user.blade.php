@@ -27,7 +27,7 @@
                                 <img src="{{ asset('assets/img/panduan/user2.png') }}"
                                     class="card-img-top border-top border rounded" alt="#">
                             </div>
-                            {{-- <div class="card shadow-sm mb-3">
+                            <div class="card shadow-sm mb-3">
                                 <div class="card-body">
                                     <h5 class="card-title">Panduan - Mengedit User</h5>
                                     <p class="card-text">Pada panduan ini sebagai seorang admin anda dapat mengedit user
@@ -35,7 +35,7 @@
                                 </div>
                                 <img src="{{ asset('assets/img/panduan/user3.png') }}"
                                     class="card-img-top border-top border rounded" alt="#">
-                            </div> --}}
+                            </div>
                             {{-- <div class="card shadow-sm">
                                 <div class="card-body">
                                     <h5 class="card-title">Panduan - Menghapus User</h5>
