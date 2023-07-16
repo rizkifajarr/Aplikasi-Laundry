@@ -9,17 +9,16 @@
                 <div class="container">
                     <div class="row">
                         <div class="col">
-                            {{-- <div class="card shadow-sm mb-3">
+                            <div class="card shadow-sm mb-3">
                                 <div class="card-body">
                                     <h5 class="card-title">Panduan - Pesanan</h5>
-                                    <p class="card-text">Pada panduan ini sebagai seorang admin anda dapat melihat pesanan
-                                        yang muncul setiap harinya, dengan detail nama customer, jenis paket, status pesanan
-                                        dan jumlah pesanan.</p>
+                                    <p class="card-text">Pada panduan ini sebagai seorang admin anda dapat melihat beberapa
+                                        pertanyaan yang sering ditanyakan oleh customer dan juga jawabannya.</p>
                                 </div>
-                                <img src="{{ asset('assets/img/panduan/pesanan1.png') }}"
-                                    class="card-img-top border rounded" alt="#">
+                                <img src="{{ asset('assets/img/panduan/faq1.png') }}" class="card-img-top border rounded"
+                                    alt="#">
                             </div>
-                            <div class="card shadow-sm mb-3">
+                            {{-- <div class="card shadow-sm mb-3">
                                 <div class="card-body">
                                     <h5 class="card-title">Panduan - Menambah Pesanan</h5>
                                     <p class="card-text">Pada panduan ini sebagai seorang admin anda dapat menambah jumlah
@@ -29,8 +28,8 @@
                                 </div>
                                 <img src="{{ asset('assets/img/panduan/pesanan2.png') }}"
                                     class="card-img-top border rounded" alt="#">
-                            </div>
-                            <div class="card shadow-sm mb-3">
+                            </div> --}}
+                            {{-- <div class="card shadow-sm mb-3">
                                 <div class="card-body">
                                     <h5 class="card-title">Panduan - Mengedit Pesanan</h5>
                                     <p class="card-text">Pada panduan ini sebagai seorang admin anda dapat mengedit user
@@ -39,8 +38,8 @@
                                 </div>
                                 <img src="{{ asset('assets/img/panduan/pesanan3.png') }}"
                                     class="card-img-top border rounded" alt="#">
-                            </div>
-                            <div class="card shadow-sm">
+                            </div> --}}
+                            {{-- <div class="card shadow-sm">
                                 <div class="card-body">
                                     <h5 class="card-title">Panduan - Menghapus Pesanan</h5>
                                     <p class="card-text">Pada panduan ini sebagai seorang admin anda dapat menghapus
