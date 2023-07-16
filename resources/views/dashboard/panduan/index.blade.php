@@ -12,7 +12,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Panduan - Dashboard</h5>
                                     <p class="card-text">Pada panduan ini sebagai seorang admin anda akan melihat tampilan
-                                        awal pada aplikasi web "Loundry Kite" yang dimana akan tertera sebuah profil pribadi
+                                        awal pada aplikasi web "Laundry Kite" yang dimana akan tertera sebuah profil pribadi
                                         anda serta anda dapat melihat notifikasi pesanan yang ada.</p>
                                     <button href="#" class="btn btn-outline-primary">Tampilkan</button>
                                 </div>
@@ -54,7 +54,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Panduan - Sosmed</h5>
                                     <p class="card-text">Pada panduan ini sebagai seorang admin anda harus melihat
-                                        perkembangan sosial media "Loundry Kite".</p>
+                                        perkembangan sosial media "Laundry Kite".</p>
                                     <button href="#" class="btn btn-outline-primary">Tampilkan</button>
                                 </div>
                             </div>
