@@ -34,7 +34,7 @@
                                         dengan mengubah nama lengkap, alamat, no handphone dan email.</p>
                                 </div>
                                 <img src="{{ asset('assets/img/panduan/user3.png') }}"
-                                    class="card-img-top border-top rounded shadow-sm" alt="#">
+                                    class="card-img-top border-top border rounded" alt="#">
                             </div>
                             <div class="card shadow-sm">
                                 <div class="card-body">
