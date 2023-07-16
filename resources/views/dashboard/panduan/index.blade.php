@@ -14,7 +14,9 @@
                                     <p class="card-text">Pada panduan ini sebagai seorang admin anda akan melihat tampilan
                                         awal pada aplikasi web "Laundry Kite" yang dimana akan tertera sebuah profil pribadi
                                         anda serta anda dapat melihat notifikasi pesanan yang ada.</p>
-                                    <button href="#" class="btn btn-outline-primary">Tampilkan</button>
+                                    <a class="btn btn-outline-primary" href="{{ route('panduan.dashboard') }}">
+                                        Tampilkan
+                                    </a>
                                 </div>
                             </div>
                             <div class="card shadow-sm mb-3">
