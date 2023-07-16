@@ -28,16 +28,15 @@
                                 <img src="{{ asset('assets/img/panduan/faq2.png') }}" class="card-img-top border rounded"
                                     alt="#">
                             </div>
-                            {{-- <div class="card shadow-sm mb-3">
+                            <div class="card shadow-sm mb-3">
                                 <div class="card-body">
-                                    <h5 class="card-title">Panduan - Mengedit Pesanan</h5>
-                                    <p class="card-text">Pada panduan ini sebagai seorang admin anda dapat mengedit user
-                                        dengan mengubah nama customer, jenis paket dan jumlah pesanan dalam bentuk
-                                        per-kilogram.</p>
+                                    <h5 class="card-title">Panduan - Mengedit FAQ</h5>
+                                    <p class="card-text">Pada panduan ini sebagai seorang admin anda dapat mengedit FAQ
+                                        yaitu pertanyaan dan jawaban yang sering ditanyakan oleh customer.</p>
                                 </div>
                                 <img src="{{ asset('assets/img/panduan/pesanan3.png') }}"
                                     class="card-img-top border rounded" alt="#">
-                            </div> --}}
+                            </div>
                             {{-- <div class="card shadow-sm">
                                 <div class="card-body">
                                     <h5 class="card-title">Panduan - Menghapus Pesanan</h5>
