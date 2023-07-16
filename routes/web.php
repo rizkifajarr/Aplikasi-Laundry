@@ -89,6 +89,7 @@ Route::middleware('auth')->group(function () {
             Route::get('/user', function () { return view('dashboard.panduan.user'); })->name('user');
             Route::get('/pesanan', function () { return view('dashboard.panduan.pesanan'); })->name('pesanan');
             Route::get('/paket', function () { return view('dashboard.panduan.paket'); })->name('paket');
+            Route::get('/faq', function () { return view('dashboard.panduan.faq'); })->name('faq');
         });
     });
 });
