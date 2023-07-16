@@ -90,6 +90,7 @@ Route::middleware('auth')->group(function () {
             Route::get('/pesanan', function () { return view('dashboard.panduan.pesanan'); })->name('pesanan');
             Route::get('/paket', function () { return view('dashboard.panduan.paket'); })->name('paket');
             Route::get('/faq', function () { return view('dashboard.panduan.faq'); })->name('faq');
+            Route::get('/sosmed', function () { return view('dashboard.panduan.sosmed'); })->name('sosmed');
         });
     });
 });
