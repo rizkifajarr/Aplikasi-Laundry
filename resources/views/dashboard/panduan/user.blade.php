@@ -27,15 +27,15 @@
                                 <img src="{{ asset('assets/img/panduan/user2.png') }}"
                                     class="card-img-top border-top rounded shadow-sm" alt="#">
                             </div>
-                            {{-- <div class="card shadow-sm mb-3">
+                            <div class="card shadow-sm mb-3">
                                 <div class="card-body">
                                     <h5 class="card-title">Panduan - Mengedit User</h5>
                                     <p class="card-text">Pada panduan ini sebagai seorang admin anda dapat mengedit user
                                         dengan mengubah nama lengkap, alamat, no handphone dan email.</p>
                                 </div>
-                                <img src="{{ asset('assets/img/panduan/user3.png') }}" class="card-img-top border-top rounded shadow-sm"
-                                    alt="#">
-                            </div> --}}
+                                <img src="{{ asset('assets/img/panduan/user3.png') }}"
+                                    class="card-img-top border-top rounded shadow-sm" alt="#">
+                            </div>
                             {{-- <div class="card shadow-sm">
                                 <div class="card-body">
                                     <h5 class="card-title">Panduan - Menghapus User</h5>
