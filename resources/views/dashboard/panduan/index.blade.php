@@ -33,7 +33,9 @@
                                     <h5 class="card-title">Panduan - Paket</h5>
                                     <p class="card-text">Pada panduan ini sebagai seorang admin anda harus melihat tiap
                                         pesanan dengan tipe paket apa yang telah dipilih oleh customer.</p>
-                                    <button href="#" class="btn btn-outline-primary">Tampilkan</button>
+                                    <a class="btn btn-outline-primary" href="{{ route('panduan.paket') }}">
+                                        Tampilkan
+                                    </a>
                                 </div>
                             </div>
                             <div class="card shadow-sm mb-3">
