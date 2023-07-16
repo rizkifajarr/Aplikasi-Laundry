@@ -55,7 +55,7 @@
                                     <h5 class="card-title">Panduan - FAQ</h5>
                                     <p class="card-text">Pada panduan ini sebagai seorang admin anda harus melihat
                                         pertanyaan dari customer.</p>
-                                    <a class="btn btn-outline-primary" href="{{ route('panduan.user') }}">
+                                    <a class="btn btn-outline-primary" href="{{ route('panduan.faq') }}">
                                         Tampilkan
                                     </a>
                                 </div>
