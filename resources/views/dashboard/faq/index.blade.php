@@ -22,10 +22,10 @@
                                 <th>Aksi</th>
                             </tr>
                         </thead>
-                        <tbody class="table-border-bottom-0 text-center">
+                        <tbody class="table-border-bottom-0">
                             @foreach ($dataFaqs as $index => $faq)
                                 <tr>
-                                    <td>{{ ++$index }}</td>
+                                    <td class="text-center">{{ ++$index }}</td>
                                     <td><i class="fab fa-angular fa-lg text-danger me-3"></i>
                                         <strong>{{ $faq->pertanyaan }}</strong>
                                     </td>

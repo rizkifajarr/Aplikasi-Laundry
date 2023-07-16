@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 @section('judul')
-    Panduan Admin
+    Panduan Fitur Admin
     @endsection @section('content')
     <div class="container-xxl flex-grow-1 container-p-y">
         <div class="card">
@@ -39,7 +39,9 @@
                                     <h5 class="card-title">Panduan - User</h5>
                                     <p class="card-text">Pada panduan ini sebagai seorang admin anda harus melihat tiap
                                         user yang telah terdaftar seperti nama customer, alamat, no handphone dan email.</p>
-                                    <button href="#" class="btn btn-outline-primary">Tampilkan</button>
+                                    <a class="btn btn-outline-primary" href="{{ route('panduan.user') }}">
+                                        Tampilkan
+                                    </a>
                                 </div>
                             </div>
                             <div class="card shadow-sm mb-3">
