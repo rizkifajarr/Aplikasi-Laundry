@@ -41,17 +41,17 @@
                                 <img src="{{ asset('assets/img/panduan/paket3.png') }}" class="card-img-top border rounded"
                                     alt="#">
                             </div>
-                            {{-- <div class="card shadow-sm">
+                            <div class="card shadow-sm">
                                 <div class="card-body">
-                                    <h5 class="card-title">Panduan - Menghapus Pesanan</h5>
+                                    <h5 class="card-title">Panduan - Menghapus Paket</h5>
                                     <p class="card-text">Pada panduan ini sebagai seorang admin anda dapat menghapus
-                                        pesanan
-                                        dengan menghapus pesanan yang sudah terdaftar dengan meng-klik tombol "Delete" yang
+                                        paket
+                                        dengan menghapus paket yang sudah terdaftar dengan meng-klik tombol "Delete" yang
                                         berwarna merah.</p>
                                 </div>
-                                <img src="{{ asset('assets/img/panduan/pesanan4.png') }}"
-                                    class="card-img-top border rounded" alt="#">
-                            </div> --}}
+                                <img src="{{ asset('assets/img/panduan/paket4.png') }}" class="card-img-top border rounded"
+                                    alt="#">
+                            </div>
                         </div>
                     </div>
                 </div>
