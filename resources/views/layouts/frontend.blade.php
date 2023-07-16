@@ -133,7 +133,7 @@
                         </div>
                         <h4 class="pb-0 mt-4">Panduan User</h4>
                         <button class="btn btn-info mt-2">
-                            <a href="#" class="text-white d-flex align-items-center">
+                            <a href="{{ asset('assets/panduan/dokumentasi-user.pdf') }}" class="text-white d-flex align-items-center">
                                 <i class="bx bx-book-open me-1"></i>Panduan
                             </a>
                         </button>
