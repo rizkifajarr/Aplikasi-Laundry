@@ -18,7 +18,7 @@
                                 <img src="{{ asset('assets/img/panduan/user1.png') }}"
                                     class="card-img-top border-top border rounded" alt="#">
                             </div>
-                            <div class="card shadow-sm mb-3">
+                            {{-- <div class="card shadow-sm mb-3">
                                 <div class="card-body">
                                     <h5 class="card-title">Panduan - Menambah User</h5>
                                     <p class="card-text">Pada panduan ini sebagai seorang admin anda dapat menambah jumlah
@@ -26,8 +26,8 @@
                                 </div>
                                 <img src="{{ asset('assets/img/panduan/user2.png') }}"
                                     class="card-img-top border-top border rounded" alt="#">
-                            </div>
-                            <div class="card shadow-sm mb-3">
+                            </div> --}}
+                            {{-- <div class="card shadow-sm mb-3">
                                 <div class="card-body">
                                     <h5 class="card-title">Panduan - Mengedit User</h5>
                                     <p class="card-text">Pada panduan ini sebagai seorang admin anda dapat mengedit user
@@ -35,8 +35,8 @@
                                 </div>
                                 <img src="{{ asset('assets/img/panduan/user3.png') }}"
                                     class="card-img-top border-top border rounded" alt="#">
-                            </div>
-                            <div class="card shadow-sm">
+                            </div> --}}
+                            {{-- <div class="card shadow-sm">
                                 <div class="card-body">
                                     <h5 class="card-title">Panduan - Menghapus User</h5>
                                     <p class="card-text">Pada panduan ini sebagai seorang admin anda dapat menghapus
@@ -46,7 +46,7 @@
                                 </div>
                                 <img src="{{ asset('assets/img/panduan/user4.png') }}" class="card-img-top border rounded"
                                     alt="#">
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
