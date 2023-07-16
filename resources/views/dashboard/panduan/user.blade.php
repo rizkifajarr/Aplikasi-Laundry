@@ -36,7 +36,7 @@
                                 <img src="{{ asset('assets/img/panduan/user3.png') }}"
                                     class="card-img-top border-top border rounded" alt="#">
                             </div>
-                            {{-- <div class="card shadow-sm">
+                            <div class="card shadow-sm">
                                 <div class="card-body">
                                     <h5 class="card-title">Panduan - Menghapus User</h5>
                                     <p class="card-text">Pada panduan ini sebagai seorang admin anda dapat menghapus
@@ -46,7 +46,7 @@
                                 </div>
                                 <img src="{{ asset('assets/img/panduan/user4.png') }}" class="card-img-top border rounded"
                                     alt="#">
-                            </div> --}}
+                            </div>
                         </div>
                     </div>
                 </div>
