@@ -21,8 +21,8 @@
                             <div class="card shadow-sm mb-3">
                                 <div class="card-body">
                                     <h5 class="card-title">Panduan - Menambah FAQ</h5>
-                                    <p class="card-text">Pada panduan ini sebagai seorang admin anda dapat menambah
-                                        pertanyaa baru yang sering ditanyakan oleh beberapa customer serta anda dapat
+                                    <p class="card-text">Pada panduan ini sebagai seorang admin anda dapat menambahkan
+                                        pertanyaan baru yang sering ditanyakan oleh beberapa customer serta anda dapat
                                         menambahkan jawaban dari pertanyaan tersebut.</p>
                                 </div>
                                 <img src="{{ asset('assets/img/panduan/faq2.png') }}" class="card-img-top border rounded"
@@ -32,7 +32,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Panduan - Mengedit FAQ</h5>
                                     <p class="card-text">Pada panduan ini sebagai seorang admin anda dapat mengedit FAQ
-                                        yaitu pertanyaan dan jawaban yang sering ditanyakan oleh customer.</p>
+                                        yaitu pertanyaan dan jawaban yang ditanyakan oleh customer.</p>
                                 </div>
                                 <img src="{{ asset('assets/img/panduan/faq3.png') }}" class="card-img-top border rounded"
                                     alt="#">
@@ -41,7 +41,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Panduan - Menghapus FAQ</h5>
                                     <p class="card-text">Pada panduan ini sebagai seorang admin anda dapat menghapus FAQ
-                                        yaitu pertanyaan dan jawaban yang sering ditanyakan oleh customer dengan meng-klik
+                                        yaitu pertanyaan dan jawaban yang ditanyakan oleh customer dengan meng-klik
                                         tombol "Delete" yang berwarna merah.</p>
                                 </div>
                                 <img src="{{ asset('assets/img/panduan/faq4.png') }}" class="card-img-top border rounded"

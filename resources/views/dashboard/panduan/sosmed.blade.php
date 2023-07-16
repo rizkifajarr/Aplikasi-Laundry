@@ -19,16 +19,15 @@
                                 <img src="{{ asset('assets/img/panduan/sosmed1.png') }}" class="card-img-top border rounded"
                                     alt="#">
                             </div>
-                            {{-- <div class="card shadow-sm mb-3">
+                            <div class="card shadow-sm mb-3">
                                 <div class="card-body">
-                                    <h5 class="card-title">Panduan - Menambah FAQ</h5>
-                                    <p class="card-text">Pada panduan ini sebagai seorang admin anda dapat menambah
-                                        pertanyaa baru yang sering ditanyakan oleh beberapa customer serta anda dapat
-                                        menambahkan jawaban dari pertanyaan tersebut.</p>
+                                    <h5 class="card-title">Panduan - Menambah Sosmed</h5>
+                                    <p class="card-text">Pada panduan ini sebagai seorang admin anda dapat menambahkan
+                                        sosmed baru untuk Aplikasi Web "Loundry Kite".</p>
                                 </div>
-                                <img src="{{ asset('assets/img/panduan/faq2.png') }}" class="card-img-top border rounded"
+                                <img src="{{ asset('assets/img/panduan/sosmed2.png') }}" class="card-img-top border rounded"
                                     alt="#">
-                            </div> --}}
+                            </div>
                             {{-- <div class="card shadow-sm mb-3">
                                 <div class="card-body">
                                     <h5 class="card-title">Panduan - Mengedit FAQ</h5>
