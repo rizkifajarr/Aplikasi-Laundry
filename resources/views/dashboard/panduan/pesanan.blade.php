@@ -17,9 +17,9 @@
                                         dan jumlah pesanan.</p>
                                 </div>
                                 <img src="{{ asset('assets/img/panduan/pesanan1.png') }}"
-                                    class="card-img-top border-top rounded shadow-sm" alt="#">
+                                    class="card-img-top border rounded" alt="#">
                             </div>
-                            <div class="card shadow-sm mb-3">
+                            {{-- <div class="card shadow-sm mb-3">
                                 <div class="card-body">
                                     <h5 class="card-title">Panduan - Menambah Pesanan</h5>
                                     <p class="card-text">Pada panduan ini sebagai seorang admin anda dapat menambah jumlah
@@ -28,9 +28,9 @@
                                         per-kilogram.</p>
                                 </div>
                                 <img src="{{ asset('assets/img/panduan/pesanan2.png') }}"
-                                    class="card-img-top border-top rounded shadow-sm" alt="#">
-                            </div>
-                            <div class="card shadow-sm mb-3">
+                                    class="card-img-top border rounded" alt="#">
+                            </div> --}}
+                            {{-- <div class="card shadow-sm mb-3">
                                 <div class="card-body">
                                     <h5 class="card-title">Panduan - Mengedit Pesanan</h5>
                                     <p class="card-text">Pada panduan ini sebagai seorang admin anda dapat mengedit user
@@ -38,9 +38,9 @@
                                         per-kilogram.</p>
                                 </div>
                                 <img src="{{ asset('assets/img/panduan/pesanan3.png') }}"
-                                    class="card-img-top border-top rounded shadow-sm" alt="#">
-                            </div>
-                            <div class="card shadow-sm">
+                                    class="card-img-top border rounded" alt="#">
+                            </div> --}}
+                            {{-- <div class="card shadow-sm">
                                 <div class="card-body">
                                     <h5 class="card-title">Panduan - Menghapus Pesanan</h5>
                                     <p class="card-text">Pada panduan ini sebagai seorang admin anda dapat menghapus
@@ -49,8 +49,8 @@
                                         berwarna merah.</p>
                                 </div>
                                 <img src="{{ asset('assets/img/panduan/pesanan4.png') }}"
-                                    class="card-img-top border-top rounded" alt="#">
-                            </div>
+                                    class="card-img-top border rounded" alt="#">
+                            </div> --}}
                         </div>
                     </div>
                 </div>
