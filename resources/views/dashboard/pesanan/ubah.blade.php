@@ -14,6 +14,7 @@
                         <form action="{{ route('pesanan.update', $pesanan->id) }}" method="POST">
                             @csrf
                             @method('patch')
+                            @can('admin-gate')
                             <div class="mb-3">
                                 <label class="form-label" for="basic-default-fullname">Nama</label>
                                 <select class="form-select" id="user_id" name="user_id"
@@ -25,6 +26,7 @@
                                     @endforeach
                                 </select>
                             </div>
+                            @endcan
                             <div class="mb-3">
                                 <label class="form-label" for="basic-default-fullname">Paket</label>
                                 <select class="form-select" id="paket_id" name="paket_id"
