@@ -157,7 +157,7 @@ Laundry Kite
                     </div>
                     <div class="col-lg-4 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
                         <div class="member d-flex align-items-start">
-                            <div class="pic"><img src="{{ asset('assets/img/team/team-3.jpg') }}" class="img-fluid"
+                            <div class="pic"><img src="{{ asset('assets/img/team/kanadakurniawan.jpg') }}" class="img-fluid"
                                     alt=""></div>
                             <div class="member-info">
                                 <h4>Kanada Kurniawan</h4>

@@ -57,7 +57,7 @@
                             </a>
                             <ul class="dropdown-menu text-small">
                                 <li>
-                                    <a class="dropdown-item" href="{{ route('admin') }}">Admin</a>
+                                    <a class="dropdown-item" href="{{ route('admin') }}">Dashboard</a>
                                 </li>
                                 <li>
                                     <hr class="dropdown-divider">
