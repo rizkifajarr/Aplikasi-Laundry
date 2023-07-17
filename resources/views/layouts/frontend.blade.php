@@ -39,7 +39,7 @@
         <div class="container d-flex align-items-center">
             {{-- <h1 class="logo me-auto"><a href="index.html">Arsha</a></h1> --}}
             <!-- Uncomment below if you prefer to use an image logo -->
-            <a href="index.html" class="logo me-auto"><img src="{{ asset('assets/img/logo-white.png') }}"
+            <a href="{{ route('paket.landingpage') }}" class="logo me-auto"><img src="{{ asset('assets/img/logo-white.png') }}"
                     alt="" class="img-fluid"></a>
             <nav id="navbar" class="navbar">
                 <ul>
