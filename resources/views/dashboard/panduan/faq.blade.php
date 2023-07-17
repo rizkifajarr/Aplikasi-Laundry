@@ -47,6 +47,9 @@
                                 <img src="{{ asset('assets/img/panduan/faq4.png') }}" class="card-img-top border rounded"
                                     alt="#">
                             </div>
+                                
+                            <a href="{{ route('panduan.sosmed') }}"><button type="button"
+                                class="btn btn-sm btn-primary">Selanjutnya</button></a> 
                         </div>
                     </div>
                 </div>
