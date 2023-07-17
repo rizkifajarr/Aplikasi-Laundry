@@ -26,10 +26,8 @@
                             @foreach ($dataFaqs as $index => $faq)
                                 <tr>
                                     <td class="text-center">{{ ++$index }}</td>
-                                    <td><i class="fab fa-angular fa-lg text-danger me-3"></i>
-                                        <strong>{{ $faq->pertanyaan }}</strong>
-                                    </td>
-                                    <td>{{ $faq->jawaban }}</td>
+                                    <td class="text-wrap"><strong>{{ $faq->pertanyaan }}</strong></td>
+                                    <td class="text-wrap">{{ $faq->jawaban }}</td>
                                     <td>
                                         {{-- <div class="dropdown">
                                             <button type="button" class="btn p-0 dropdown-toggle hide-arrow"
