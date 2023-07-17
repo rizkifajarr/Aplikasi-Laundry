@@ -1,4 +1,7 @@
 @extends('layouts.frontend')
+@section('judul')
+About | Laundry Kite
+@endsection
 @section('content')
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="d-flex align-items-center">
@@ -19,7 +22,7 @@
             <div class="container" data-aos="fade-up">
                 <div class="section-title">
                     <h2>Kelompok Kami</h2>
-                    <p>Project merupakan aplikasi web berbasis laravel yang mencakup frontend & frontend. Project ini dikerjakan secara berkelompok dengan anggota kelompok sebagai berikut</p>                    
+                    <p>Project merupakan aplikasi web berbasis laravel yang mencakup backend & frontend. Project ini dikerjakan secara berkelompok dengan anggota kelompok sebagai berikut</p>                    
                 </div>
                 <div class="row">
                     <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">

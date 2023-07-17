@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Laundry Kite</title>
+    <title>@yield('judul')</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
     <!-- Favicons -->
@@ -133,7 +133,7 @@
                 &copy; Copyright <strong><span>Laundry Kite</span></strong>. All Rights Reserved
             </div>
             <div class="credits">
-                Designed by <a href="{{ route('paket.about') }}" target="_blank">Rizki, Putri &amp; Kanada</a>
+                Made with ❤️ by <a href="{{ route('paket.about') }}">Rizki, Putri &amp; Kanada</a>
             </div>
         </div>
     </footer>

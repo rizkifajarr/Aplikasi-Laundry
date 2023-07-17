@@ -1,4 +1,7 @@
 @extends('layouts.frontend')
+@section('judul')
+Laundry Kite
+@endsection
 @section('content')
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="d-flex align-items-center">
