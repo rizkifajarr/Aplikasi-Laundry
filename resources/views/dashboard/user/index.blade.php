@@ -27,12 +27,12 @@
                             @foreach ($dataUser as $index => $user)
                                 <tr>
                                     <td>{{ ++$index }}</td>
-                                    <td><i class="fab fa-angular fa-lg text-danger me-3"></i>
+                                    <td class="text-left"><i class="fab fa-angular fa-lg text-danger me-3"></i>
                                         <strong>{{ $user->nama }}</strong>
                                     </td>
-                                    <td>{{ $user->alamat }}</td>
+                                    <td class="text-left">{{ $user->alamat }}</td>
                                     <td>{{ $user->hp }}</td>
-                                    <td>{{ $user->email }}</td>
+                                    <td class="text-left">{{ $user->email }}</td>
                                     <td>
                                         @if ($user->admin == 1)
                                             Ya
