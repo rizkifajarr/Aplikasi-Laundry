@@ -19,6 +19,8 @@
                                 <img src="{{ asset('assets/img/panduan/dashboard.png') }}"
                                     class="card-img-top border rounded" alt="#">
                             </div>
+                            <a href="{{ route('panduan.pesanan') }}"><button type="button"
+                                class="btn btn-sm btn-primary">Selanjutnya</button></a>
                             {{-- <div class="card shadow-sm mb-3">
                                 <div class="card-body">
                                     <h5 class="card-title">Panduan - Menambah Paket</h5>

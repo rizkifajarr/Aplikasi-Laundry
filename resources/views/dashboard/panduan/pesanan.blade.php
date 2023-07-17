@@ -50,6 +50,9 @@
                                 </div>
                                 <img src="{{ asset('assets/img/panduan/pesanan4.png') }}"
                                     class="card-img-top border rounded" alt="#">
+                                
+                            <a href="{{ route('panduan.paket') }}"><button type="button"
+                                class="btn btn-sm btn-primary">Selanjutnya</button></a>    
                             </div>
                         </div>
                     </div>
