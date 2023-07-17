@@ -36,7 +36,6 @@
                             pelayanan pelanggan yang prima. Bersama Laundry Kilat, nikmati pengalaman laundry kiloan yang
                             mudah, cepat, dan handal.
                         </p>
-                        <a href="#" class="btn-learn-more text-center">Lebih lanjut ..</a>
                     </div>
                 </div>
             </div>
