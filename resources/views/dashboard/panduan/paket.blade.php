@@ -52,6 +52,9 @@
                                 <img src="{{ asset('assets/img/panduan/paket4.png') }}" class="card-img-top border rounded"
                                     alt="#">
                             </div>
+                                
+                            <a href="{{ route('panduan.user') }}"><button type="button"
+                                class="btn btn-sm btn-primary">Selanjutnya</button></a> 
                         </div>
                     </div>
                 </div>

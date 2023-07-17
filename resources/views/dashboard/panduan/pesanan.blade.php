@@ -49,11 +49,11 @@
                                         berwarna merah.</p>
                                 </div>
                                 <img src="{{ asset('assets/img/panduan/pesanan4.png') }}"
-                                    class="card-img-top border rounded" alt="#">
+                                    class="card-img-top border rounded" alt="#">   
+                            </div>
                                 
                             <a href="{{ route('panduan.paket') }}"><button type="button"
-                                class="btn btn-sm btn-primary">Selanjutnya</button></a>    
-                            </div>
+                                class="btn btn-sm btn-primary">Selanjutnya</button></a> 
                         </div>
                     </div>
                 </div>
