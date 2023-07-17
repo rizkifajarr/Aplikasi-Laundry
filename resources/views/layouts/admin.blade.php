@@ -179,7 +179,7 @@
                                     document.write(new Date().getFullYear());
                                 </script>
                                 , made with ❤️ by
-                                <a class="footer-link fw-bolder">Rizki, Putri & Kanada</a>
+                                <a href="{{ route('paket.about') }}" class="footer-link fw-bolder">Rizki, Putri & Kanada</a>
                             </div>
                         </div>
                     </footer>
