@@ -78,12 +78,14 @@
                             <div data-i18n="Analytics">Pesanan</div>
                         </a>
                     </li>
+                    @can('user-gate')
                     <li class="menu-item">
                         <a href="{{ asset('assets/panduan/dokumentasi-user.pdf') }}" class="menu-link" target="_blank">
                             <i class="menu-icon tf-icons bx bx-book-open"></i>
                             <div data-i18n="Analytics">Panduan PDF</div>
                         </a>
                     </li>
+                    @endcan
                     @can('admin-gate')
                         <li class="menu-header small text-uppercase">
                             <span class="menu-header-text">Admin</span>
