@@ -49,7 +49,7 @@
                             </div>
                                 
                             <a href="{{ route('panduan.faq') }}"><button type="button"
-                                class="btn btn-sm btn-primary">Selanjutnya</button></a> 
+                                class="btn mt-3 btn-sm btn-primary">Selanjutnya</button></a> 
                         </div>
                     </div>
                 </div>

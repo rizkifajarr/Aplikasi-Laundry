@@ -54,7 +54,7 @@
                             </div>
                                 
                             <a href="{{ route('panduan.user') }}"><button type="button"
-                                class="btn btn-sm btn-primary">Selanjutnya</button></a> 
+                                class="btn mt-3 btn-sm btn-primary">Selanjutnya</button></a> 
                         </div>
                     </div>
                 </div>

@@ -65,7 +65,7 @@
                                     <h5 class="card-title">Panduan - Sosmed</h5>
                                     <p class="card-text">Pada panduan ini sebagai seorang admin anda harus melihat
                                         perkembangan sosial media "Laundry Kite".</p>
-                                    <a class="btn btn-outline-primary" href="{{ route('panduan.sosmed') }}">
+                                    <a class="btn mt-3 btn-outline-primary" href="{{ route('panduan.sosmed') }}">
                                         Tampilkan
                                     </a>
                                 </div>
