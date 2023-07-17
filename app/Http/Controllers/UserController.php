@@ -85,12 +85,17 @@ class UserController extends Controller
 
     public function update(User $user, UpdateUserRequest $request)
     {
+        $userId = Auth::id();
         $data = $request->all();
         // dd($data);
         $user->update($data);
 
         if (Gate::allows('admin-gate')) {
-            return redirect(route('user.index'))->with('success', 'Data user berhasil diubah');
+            if ($user->id == $userId) {
+                return redirect(route('admin'))->with('success', 'Data user berhasil diubah');
+            } else {
+                return redirect(route('user.index'))->with('success', 'Data user berhasil diubah');
+            }            
         } else {
             return redirect(route('admin'))->with('success', 'Data user berhasil diubah');
         }
