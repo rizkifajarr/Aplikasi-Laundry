@@ -14,35 +14,6 @@
     </section>
     <!-- End Hero -->
     <main id="main">
-        <!-- ======= About Us Section ======= -->
-        <section id="about" class="about">
-            <div class="container" data-aos="fade-up">
-                <div class="row content">
-                    <div class="col-lg-12 pt-4 pt-lg-0 text-center">
-                        <p>Project merupakan aplikasi web berbasis laravel yang mencakup frontend & frontend</p>
-                        <p>Project ini dikerjakan secara berkelompok dengan anggota kelompok sebagai berikut</p>
-                        
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End About Us Section -->
-        <!-- ======= Cta Section ======= -->
-        <section id="hubungi" class="cta">
-            <div class="container" data-aos="zoom-in">
-                <div class="row">
-                    <div class="col-lg-9 text-center text-lg-start">
-                        <h3>Hubungi Kami</h3>
-                        <p>Hubungi kami hari ini dan nikmati pengalaman laundry kiloan yang mudah, cepat, dan handal bersama
-                            Laundry Kite. bersih, rapi, dan cepat!</p>
-                    </div>
-                    <div class="col-lg-3 cta-btn-container text-center">
-                        <a class="cta-btn align-middle" href="tel:0812345678910">0812345678910</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Cta Section -->
         <!-- ======= Team Section ======= -->
         <section id="tim" class="team section-bg">
             <div class="container" data-aos="fade-up">
