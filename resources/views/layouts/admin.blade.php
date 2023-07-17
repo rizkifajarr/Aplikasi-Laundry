@@ -79,7 +79,7 @@
                         </a>
                     </li>
                     <li class="menu-item">
-                        <a href="{{ asset('assets/panduan/dokumentasi-user.pdf') }}" class="menu-link">
+                        <a href="{{ asset('assets/panduan/dokumentasi-user.pdf') }}" class="menu-link" target="_blank">
                             <i class="menu-icon tf-icons bx bx-book-open"></i>
                             <div data-i18n="Analytics">Panduan PDF</div>
                         </a>
