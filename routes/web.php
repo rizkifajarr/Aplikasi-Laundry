@@ -18,13 +18,9 @@ use App\Http\Controllers\PesananController;
 |
 */
 
-Route::get('/register', function () {
-    return view('register');
-})->name('register');
-
-Route::get('/login', function () {
-    return view('login');
-})->name('login');
+Route::get('/register', function () {return view('register');})->name('register');
+Route::get('/login', function () { return view('login'); })->name('login');
+Route::get('/about', function () { return view('about'); })->name('about');
 
 Route::controller(PaketController::class)->name('paket.')->group(function () {
     Route::get('/', 'landingpage')->name('landingpage');
