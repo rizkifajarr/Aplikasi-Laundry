@@ -42,57 +42,6 @@
             </div>
         </section>
         <!-- End About Us Section -->
-        <!-- ======= Services Section ======= -->
-        <section id="kelebihan" class="services section-bg">
-            <div class="container" data-aos="fade-up">
-                <div class="section-title">
-                    <h2>Kelebihan Kami</h2>
-                    <p>Mengapa memilih Laundry Kite? Berikut adalah beberapa alasan mengapa kami adalah pilihan yang tepat:
-                    </p>
-                </div>
-                <div class="row">
-                    <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-                        <div class="icon-box">
-                            <div class="icon"><i class="bx bxl-dribbble"></i></div>
-                            <h4><a href="">Kualitas Terbaik</a></h4>
-                            <p>Kami menggunakan deterjen dan pewangi berkualitas tinggi yang tidak hanya membersihkan
-                                pakaian, tetapi juga menjaga warna dan tekstur kain. Pakaian Anda akan terlihat dan terasa
-                                seperti baru setiap kali Anda menggunakannya.</p>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
-                        data-aos-delay="200">
-                        <div class="icon-box">
-                            <div class="icon"><i class="bx bx-file"></i></div>
-                            <h4><a href="">Harga Terjangkau</a></h4>
-                            <p>Kami memahami pentingnya anggaran dalam bisnis dan kehidupan sehari-hari. Oleh karena itu,
-                                kami menawarkan harga yang kompetitif untuk layanan laundry kiloan berkualitas tinggi. Anda
-                                akan mendapatkan nilai terbaik untuk uang Anda.</p>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in"
-                        data-aos-delay="300">
-                        <div class="icon-box">
-                            <div class="icon"><i class="bx bx-tachometer"></i></div>
-                            <h4><a href="">Kecepatan dan Efisiensi</a></h4>
-                            <p>Kami menghargai waktu Anda. Dengan sistem kerja yang terorganisir dengan baik, kami menjamin
-                                pengambilan, pencucian, dan pengantaran pakaian Anda dengan cepat dan tepat waktu.</p>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in"
-                        data-aos-delay="400">
-                        <div class="icon-box">
-                            <div class="icon"><i class="bx bx-layer"></i></div>
-                            <h4><a href="">Layanan Terbaik</a></h4>
-                            <p>Tim kami selalu siap membantu Anda dengan segala pertanyaan atau permintaan yang Anda miliki.
-                                Kami berkomitmen untuk memberikan pelayanan pelanggan yang prima dan memberikan kepuasan
-                                kepada setiap pelanggan.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Services Section -->
         <!-- ======= Cta Section ======= -->
         <section id="hubungi" class="cta">
             <div class="container" data-aos="zoom-in">
@@ -174,60 +123,6 @@
             </div>
         </section>
         <!-- End Team Section -->
-        <!-- ======= Pricing Section ======= -->
-        <section id="paket" class="pricing">
-            <div class="container" data-aos="fade-up">
-                <div class="section-title">
-                    <h2>Paket</h2>
-                    <p>Laundry Kite memahami bahwa kesibukan Anda, dan mencuci pakaian mungkin bukan prioritas utama. Oleh
-                        karena itu, kami menyediakan layanan laundry kiloan yang cepat, efisien, dan terjangkau.</p>
-                </div>
-                <div class="row">
-                    @foreach ($dataPaket as $index => $paket)
-                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                            <div class="box">
-                                <h3>{{ $paket->nama }}</h3>
-                                <h4><sup>Rp</sup>.{{ $paket->harga }},-<span>per kilo</span></h4>
-                                <ul>
-                                    <li><i class="bx bx-check"></i> Selesai dalam {{ $paket->waktu }} hari</li>
-                                    <li><i class="bx bx-check"></i> Cusi dan lipat</li>
-                                    <li><i class="bx bx-check"></i> Termasuk antar jemput pakaian</li>
-                                </ul>
-                                <a href="{{ route('register') }}" class="buy-btn">Pesan</a>
-                            </div>
-                        </div>
-                    @endforeach
-                </div>
-            </div>
-        </section>
-        <!-- End Pricing Section -->
-        <!-- ======= Frequently Asked Questions Section ======= -->
-        <section id="faq" class="faq section-bg">
-            <div class="container" data-aos="fade-up">
-                <div class="section-title">
-                    <h2>Frequently Asked Questions</h2>
-                    <p>Kami telah merangkum beberapa pertanyaan yang sering ditanyakan oleh pelanggan kami, sehingga Anda
-                        dapat mendapatkan informasi yang Anda butuhkan dengan cepat dan mudah.</p>
-                </div>
-                <div class="faq-list">
-                    <ul>
-                        @foreach ($dataFaq as $index => $faq)
-                            <li data-aos="fade-up" data-aos-delay="100">
-                                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-                                    data-bs-target="#faq-list-{{ ++$index }}"
-                                    class="collapsed">{{ $faq->pertanyaan }}<i
-                                        class="bx bx-chevron-down icon-show"></i><i
-                                        class="bx bx-chevron-up icon-close"></i></a>
-                                <div id="faq-list-{{ $index++ }}" class="collapse" data-bs-parent=".faq-list">
-                                    <p>{{ $faq->jawaban }}</p>
-                                </div>
-                            </li>
-                        @endforeach
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <!-- End Frequently Asked Questions Section -->
     </main>
     <!-- End #main -->
 @endsection

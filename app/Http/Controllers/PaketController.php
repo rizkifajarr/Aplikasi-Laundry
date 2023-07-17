@@ -25,6 +25,11 @@ class PaketController extends Controller
         $dataSosmed = $sosmed->get();
         return view('index', compact('dataPaket','dataFaq','dataSosmed'));
     }
+    
+    public function about(Sosmed $sosmed){
+        $dataSosmed = $sosmed->get();
+        return view('about', compact('dataSosmed'));
+    }
 
     /**
      * Show the form for creating a new resource.
