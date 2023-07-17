@@ -4,10 +4,10 @@
     <section id="hero" class="d-flex align-items-center">
         <div class="container">
             <div class="row">
-                <div class="col d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
+                <div class="col d-flex flex-column text-center pt-4 pt-lg-0 order-2 order-lg-1"
                     data-aos="fade-up" data-aos-delay="200">
                     <h1>Laundry Kite</h1>
-                    <h2>Solusi praktis untuk semua kebutuhan laundry kiloan Anda!</h2>
+                    <h2>Sebuah project akhir untuk UAS mata kuliah Pemrograman Berbasis Kerangka Kerja</h2>
                 </div>
             </div>
         </div>
@@ -17,20 +17,11 @@
         <!-- ======= About Us Section ======= -->
         <section id="about" class="about">
             <div class="container" data-aos="fade-up">
-                <div class="section-title">
-                    <h2>Tentang Kami</h2>
-                </div>
                 <div class="row content">
                     <div class="col-lg-12 pt-4 pt-lg-0 text-center">
-                        <p>
-                            Laundry Kite adalah mitra tepercaya untuk kebutuhan laundry kiloan Anda. Dengan pengalaman dan
-                            keahlian kami, kami memberikan layanan cuci kiloan yang berkualitas tinggi dengan kecepatan dan
-                            efisiensi yang luar biasa. Kami menggunakan peralatan modern dan bahan pembersih terbaik untuk
-                            memberikan hasil terbaik bagi pakaian Anda. Tim profesional kami siap membantu Anda dengan
-                            pelayanan pelanggan yang prima. Bersama Laundry Kilat, nikmati pengalaman laundry kiloan yang
-                            mudah, cepat, dan handal.
-                        </p>
-                        <a href="#" class="btn-learn-more text-center">Lebih lanjut ..</a>
+                        <p>Project merupakan aplikasi web berbasis laravel yang mencakup frontend & frontend</p>
+                        <p>Project ini dikerjakan secara berkelompok dengan anggota kelompok sebagai berikut</p>
+                        
                     </div>
                 </div>
             </div>
@@ -56,10 +47,8 @@
         <section id="tim" class="team section-bg">
             <div class="container" data-aos="fade-up">
                 <div class="section-title">
-                    <h2>Tim Kami</h2>
-                    <p>Kami percaya bahwa kepuasan pelanggan adalah kunci kesuksesan kami. Itulah sebabnya tim kami selalu
-                        berusaha untuk memberikan layanan yang memenuhi harapan Anda. Kecepatan, ketepatan waktu, dan
-                        keamanan pakaian Anda adalah prioritas utama kami.</p>
+                    <h2>Kelompok Kami</h2>
+                    <p>Project merupakan aplikasi web berbasis laravel yang mencakup frontend & frontend. Project ini dikerjakan secara berkelompok dengan anggota kelompok sebagai berikut</p>                    
                 </div>
                 <div class="row">
                     <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
@@ -68,14 +57,7 @@
                                     alt=""></div>
                             <div class="member-info">
                                 <h4>Rizki Fajar Setyawan</h4>
-                                <span>Chief Executive Officer</span>
-                                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
-                                <div class="social">
-                                    <a href=""><i class="ri-twitter-fill"></i></a>
-                                    <a href=""><i class="ri-facebook-fill"></i></a>
-                                    <a href=""><i class="ri-instagram-fill"></i></a>
-                                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                                </div>
+                                <span>NIM : 201220024</span>
                             </div>
                         </div>
                     </div>
@@ -85,14 +67,7 @@
                                     alt=""></div>
                             <div class="member-info">
                                 <h4>Putri Nirwana</h4>
-                                <span>Product Manager</span>
-                                <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
-                                <div class="social">
-                                    <a href=""><i class="ri-twitter-fill"></i></a>
-                                    <a href=""><i class="ri-facebook-fill"></i></a>
-                                    <a href=""><i class="ri-instagram-fill"></i></a>
-                                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                                </div>
+                                <span>NIM : 201220104</span>
                             </div>
                         </div>
                     </div>
