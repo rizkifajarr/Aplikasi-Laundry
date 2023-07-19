@@ -1,8 +1,9 @@
 <?php
 
-use App\Http\Controllers\FaqController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FaqController;
+use App\Http\Controllers\PaketController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,4 +16,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/faqs', [FaqController::class,'apiIndex'])->name('api.faq.index');
+Route::get('/faqs', [FaqController::class,'apiIndex'])->name('api.faq');
+Route::get('/paket', [PaketController::class,'apiIndex'])->name('api.paket');
