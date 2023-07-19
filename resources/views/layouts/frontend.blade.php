@@ -103,17 +103,17 @@
                         <p>Ikuti kami melalui sosial media berikut</p>
                         <div class="social-links mt-3">
                             @foreach ($dataSosmed as $index => $sosmed)
-                                @if ($sosmed->jenis == 'Twitter')
-                                    <a href="https://twitter.com/{{ $sosmed->sosmed_id }}" class="twitter"><i
+                                @if ($sosmed["jenis"] == 'Twitter')
+                                    <a href="https://twitter.com/{{ $sosmed["sosmed_id"] }}" class="twitter"><i
                                             class="bx bxl-twitter"></i></a>
-                                @elseif($sosmed->jenis == 'Facebook')
-                                    <a href="https://facebook.com/{{ $sosmed->sosmed_id }}" class="facebook"><i
+                                @elseif($sosmed["jenis"] == 'Facebook')
+                                    <a href="https://facebook.com/{{ $sosmed["sosmed_id"] }}" class="facebook"><i
                                             class="bx bxl-facebook"></i></a>
-                                @elseif($sosmed->jenis == 'Instagram')
-                                    <a href="https://instagram.com/{{ $sosmed->sosmed_id }}" class="instagram"><i
+                                @elseif($sosmed["jenis"] == 'Instagram')
+                                    <a href="https://instagram.com/{{ $sosmed["sosmed_id"] }}" class="instagram"><i
                                             class="bx bxl-instagram"></i></a>
-                                @elseif($sosmed->jenis == 'LinkedIn')
-                                    <a href="https://linkedin.com/{{ $sosmed->sosmed_id }}" class="linkedin"><i
+                                @elseif($sosmed["jenis"] == 'LinkedIn')
+                                    <a href="https://linkedin.com/{{ $sosmed["sosmed_id"] }}" class="linkedin"><i
                                             class="bx bxl-linkedin"></i></a>
                                 @endif
                             @endforeach
