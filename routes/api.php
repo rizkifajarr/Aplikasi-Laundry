@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FaqController;
 use App\Http\Controllers\PaketController;
+use App\Http\Controllers\SosmedController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,3 +19,4 @@ use App\Http\Controllers\PaketController;
 
 Route::get('/faqs', [FaqController::class,'apiIndex'])->name('api.faq');
 Route::get('/paket', [PaketController::class,'apiIndex'])->name('api.paket');
+Route::get('/sosmed', [SosmedController::class,'apiIndex'])->name('api.sosmed');
