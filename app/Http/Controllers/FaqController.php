@@ -73,6 +73,6 @@ class FaqController extends Controller
     public function apiIndex()
     {
         $dataFaqs = faq::all();
-        return response()->json($dataFaqs);
+        return response()->json(['data' => $dataFaqs]);
     }
 }
