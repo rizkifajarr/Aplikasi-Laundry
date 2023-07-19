@@ -24,16 +24,17 @@ class PaketController extends Controller
     
     public function landingpage(Paket $paket, Faq $faq, Sosmed $sosmed,Request $request){
         $baseURL = URL::to('/');
-        $dataPaket = $paket->get();
         $dataSosmed = $sosmed->get();
         
         if (str_contains($baseURL, '127.0.0.1')) {
             $dataFaq = $faq->get();
+            $dataPaket = $paket->get();
         } else {
-            // $kontenFAQ = file_get_contents("https://pbkk.kanadakurniawan.com/api/faqs");
-            // $kontenFAQ = file_get_contents(route('api.faq'));
-            $dataFAQ = json_decode(file_get_contents(route('api.faq')), true);       
-            $dataFaq = $dataFAQ['data'];
+            $jsonFaq = json_decode(file_get_contents(route('api.faq')), true);       
+            $dataFaq = $jsonFaq['data'];
+
+            $jsonPaket = json_decode(file_get_contents(route('api.paket')), true);       
+            $dataPaket = $jsonPaket['data'];
         }      
         return view('index', compact('dataPaket','dataFaq','dataSosmed'));
     }
