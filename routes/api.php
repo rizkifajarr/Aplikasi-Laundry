@@ -15,4 +15,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/faqs', [FaqController::class,'apiIndex']);
+Route::get('/faqs', [FaqController::class,'apiIndex'])->name('api.faq.index');

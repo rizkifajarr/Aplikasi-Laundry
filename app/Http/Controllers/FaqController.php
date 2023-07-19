@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Faq;
+use Illuminate\Support\Facades\Http;
 use App\Http\Requests\StoreFaqRequest;
 use App\Http\Requests\UpdateFaqRequest;
 
@@ -12,7 +13,7 @@ class FaqController extends Controller
      * Display a listing of the resource.
      */
     public function index()
-    {
+    {        
         $dataFaqs = faq::all();
         return view('dashboard.faq.index', compact('dataFaqs'));
     }

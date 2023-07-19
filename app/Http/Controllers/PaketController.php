@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Faq;
 use App\Models\Paket;
 use App\Models\Sosmed;
+use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Request;
 use App\Http\Requests\StorePaketRequest;
 use App\Http\Requests\UpdatePaketRequest;
 
@@ -21,8 +23,11 @@ class PaketController extends Controller
     
     public function landingpage(Paket $paket, Faq $faq, Sosmed $sosmed){
         $dataPaket = $paket->get();
-        $dataFaq = $faq->get();
         $dataSosmed = $sosmed->get();
+
+        $konten = file_get_contents("https://pbkk.kanadakurniawan.com/api/faqs");
+        $data = json_decode($konten, true);       
+        $dataFaq = $data['data'];
         return view('index', compact('dataPaket','dataFaq','dataSosmed'));
     }
     
