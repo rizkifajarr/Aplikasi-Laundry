@@ -70,4 +70,10 @@ class SosmedController extends Controller
         $sosmed->delete();
         return redirect()->route('sosmed.index')->with('success','Sosmed berhasil dihapus.');
     }
+
+    public function apiIndex()
+    {
+        $dataSosmed = Sosmed::all();
+        return response()->json(['data' => $dataSosmed]);
+    }
 }
