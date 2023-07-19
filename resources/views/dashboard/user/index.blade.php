@@ -27,7 +27,7 @@
                             @foreach ($dataUser as $index => $user)
                                 <tr>
                                     <td>{{ ++$index }}</td>
-                                    <td class="text-left"><i class="fab fa-angular fa-lg text-danger me-3"></i>
+                                    <td class="text-left">
                                         <strong>{{ $user->nama }}</strong>
                                     </td>
                                     <td class="text-left">{{ $user->alamat }}</td>

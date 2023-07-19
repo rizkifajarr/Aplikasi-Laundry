@@ -69,4 +69,10 @@ class FaqController extends Controller
         $faq->delete();
         return redirect()->route('faq.index')->with('success','FAQ berhasil dihapus.');
     }
+
+    public function apiIndex()
+    {
+        $dataFaqs = faq::all();
+        return response()->json($dataFaqs);
+    }
 }
