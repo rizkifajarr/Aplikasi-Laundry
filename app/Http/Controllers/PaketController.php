@@ -30,9 +30,9 @@ class PaketController extends Controller
         if (str_contains($baseURL, '127.0.0.1')) {
             $dataFaq = $faq->get();
         } else {
-            $kontenFAQ = file_get_contents("https://pbkk.kanadakurniawan.com/api/faqs");
-            $kontenFAQ = file_get_contents(route('api.faq'));
-            $dataFAQ = json_decode($kontenFAQ, true);       
+            // $kontenFAQ = file_get_contents("https://pbkk.kanadakurniawan.com/api/faqs");
+            // $kontenFAQ = file_get_contents(route('api.faq'));
+            $dataFAQ = json_decode(file_get_contents(route('api.faq')), true);       
             $dataFaq = $dataFAQ['data'];
         }      
         return view('index', compact('dataPaket','dataFaq','dataSosmed'));
