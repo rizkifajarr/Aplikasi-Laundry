@@ -5,8 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\Faq;
 use App\Models\Paket;
 use App\Models\Sosmed;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\Request;
 use App\Http\Requests\StorePaketRequest;
 use App\Http\Requests\UpdatePaketRequest;
 
@@ -21,13 +22,18 @@ class PaketController extends Controller
         return view('dashboard.paket.index', compact('dataPaket'));
     }
     
-    public function landingpage(Paket $paket, Faq $faq, Sosmed $sosmed){
+    public function landingpage(Paket $paket, Faq $faq, Sosmed $sosmed,Request $request){
+        $baseURL = URL::to('/');
         $dataPaket = $paket->get();
         $dataSosmed = $sosmed->get();
-
-        $konten = file_get_contents("https://pbkk.kanadakurniawan.com/api/faqs");
-        $data = json_decode($konten, true);       
-        $dataFaq = $data['data'];
+        
+        if (str_contains($baseURL, '127.0.0.1')) {
+            $dataFaq = $faq->get();
+        } else {
+            $konten = file_get_contents("https://pbkk.kanadakurniawan.com/api/faqs");
+            $data = json_decode($konten, true);       
+            $dataFaq = $data['data'];
+        }      
         return view('index', compact('dataPaket','dataFaq','dataSosmed'));
     }
     
@@ -36,9 +42,6 @@ class PaketController extends Controller
         return view('about', compact('dataSosmed'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
     public function create(Paket $paket, StorePaketRequest $paketRequest)
     {
         $data = $paketRequest->all();
@@ -51,17 +54,7 @@ class PaketController extends Controller
         $paket->delete();
         return back()->with(['success' => 'Data berhasil dihapus']);
     }
-    /**
-     * Store a newly created resource in storage.
-     */
-
-    /**
-     * Display the specified resource.
-     */
-
-    /**
-     * Show the form for editing the specified resource.
-     */
+    
     public function ubah(Paket $paket)
     {
         return view('dashboard.paket.ubah', compact('paket'));
@@ -78,11 +71,9 @@ class PaketController extends Controller
         return redirect(route('paket.index'))->with('success', 'Data user berhasil diubah');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(Paket $paket)
+    public function apiIndex()
     {
-        //
+        $dataPaket = Paket::all();
+        return response()->json(['data' => $dataPaket]);
     }
 }
