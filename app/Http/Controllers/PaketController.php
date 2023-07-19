@@ -37,7 +37,7 @@ class PaketController extends Controller
             $dataPaket = $jsonPaket['data'];
 
             $jsonSosmed = json_decode(file_get_contents(route('api.sosmed')), true);       
-            $dataPaket = $jsonSosmed['data'];
+            $dataSosmed = $jsonSosmed['data'];
         }      
         return view('index', compact('dataPaket','dataFaq','dataSosmed'));
     }
