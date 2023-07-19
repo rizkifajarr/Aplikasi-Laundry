@@ -188,10 +188,10 @@ Laundry Kite
                     @foreach ($dataPaket as $index => $paket)
                         <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
                             <div class="box">
-                                <h3>{{ $paket->nama }}</h3>
-                                <h4><sup>Rp</sup>.{{ $paket->harga }},-<span>per kilo</span></h4>
+                                <h3>{{ $paket["nama"] }}</h3>
+                                <h4><sup>Rp</sup>.{{ $paket["harga"] }},-<span>per kilo</span></h4>
                                 <ul>
-                                    <li><i class="bx bx-check"></i> Selesai dalam {{ $paket->waktu }} hari</li>
+                                    <li><i class="bx bx-check"></i> Selesai dalam {{ $paket["waktu"] }} hari</li>
                                     <li><i class="bx bx-check"></i> Cusi dan lipat</li>
                                     <li><i class="bx bx-check"></i> Termasuk antar jemput pakaian</li>
                                 </ul>
