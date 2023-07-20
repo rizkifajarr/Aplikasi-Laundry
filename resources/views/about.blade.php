@@ -59,6 +59,47 @@ About | Laundry Kite
             </div>
         </section>
         <!-- End Team Section -->
+        <section id="fitur" class="cta">
+            <div class="container" data-aos="zoom-in">
+                <div class="row text-white">
+                    <div class="text-center">
+                        <h3>Fitur Aplikasi</h3>
+                        <p>Aplikasi web berbasis Laravel ini memiliki beberapa fitur :</p>                        
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-3 px-4">
+                        Model
+                        <ul>
+                            <li>User</li>
+                            <li>Paket</li>
+                            <li>Pesanan</li>
+                            <li>FAQ</li>
+                            <li>Sosmed</li>
+                        </ul>                        
+                    </div>
+                    <div class="col-md-3 px-4">
+                        User Level
+                        <ul>
+                            <li>Guest (user tanpa login)</li>
+                            <li>User</li>
+                            <li>Admin</li>
+                        </ul>                        
+                    </div>
+                    <div class="col-md-3 px-4">
+                        API
+                        <ul>
+                            <li>Paket</li>
+                            <li>FAQ</li>
+                            <li>Sosmed</li>
+                        </ul>                            
+                    </div> 
+                    <div class="text-center">
+                        <h3>GitHub</h3>
+                        <p>Aplikasi ini telah diupload di GitHub berikut ini&nbsp;<a data-fr-linked="true" href="https://github.com/rizkifajarr/Aplikasi-Laundry/" target="_blank">https://github.com/rizkifajarr/Aplikasi-Laundry/</a></p>                       
+                    </div>                   
+                </div>
+            </div>
+        </section>
     </main>
     <!-- End #main -->
 @endsection
